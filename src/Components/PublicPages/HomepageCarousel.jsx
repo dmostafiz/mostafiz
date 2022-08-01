@@ -4,7 +4,8 @@ import { MdCheckCircle } from 'react-icons/md'
 
 export default function HomepageCarousel() {
     return (
-        <Box w='full' minH='100vh' bg='#2d3183' pt={40}>
+        <Box w='full' minH='100vh' bg='#2d3183' pt={{base: 20, md: 40}}>
+
             <Container maxW='6xl' p={5}>
 
                 <Flex direction={{
@@ -16,15 +17,15 @@ export default function HomepageCarousel() {
 
                     <Box flex={1}>
 
-                        <Text color='#fbbf24' fontSize='75px' lineHeight={1} fontWeight='bold'>Deploy your dream project</Text>
+                        <Text color='#fbbf24' fontSize={{base: '48', md:'50px', lg: '75px'}} lineHeight={1} fontWeight='bold'>Deploy your dream project</Text>
 
                         <Spacer h={8} />
 
-                        <Text color='white' fontSize='24px'>When a question comes with an online business, The first thought becomes on a website or mobile app. we develop any custom mobile app or website based on your idea business structure.</Text>
+                        <Text color='white' fontSize={{base: '18px', md:'20px', lg: '24px'}}>When a question comes with an online business, The first thought becomes on a website or mobile app. we develop any custom mobile app or website based on your idea business structure.</Text>
 
                         <Spacer h={7} />
 
-                        <Button colorScheme='green' color='white' size='lg' shadow='sm' rounded='full'>Create Account</Button>
+                        <Button colorScheme='green' color='white' size={{base: 'md', md: 'lg'}} shadow='sm' rounded='full'>Create Account</Button>
 
 
                     </Box>
