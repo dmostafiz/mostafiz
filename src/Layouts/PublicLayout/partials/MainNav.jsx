@@ -22,7 +22,7 @@ const MainNav = () => {
 
                 <Flex justify='space-between' alignItems='center'>
 
-                    <Box maxW={{ base: '130', lg: '200px' }} maxH='50px'>
+                    <Box maxW={{ base: '150', lg: '250px' }} maxH='50px'>
                         <MainLogo />
                     </Box>
 
