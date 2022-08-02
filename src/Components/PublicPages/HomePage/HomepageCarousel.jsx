@@ -4,7 +4,7 @@ import { MdCheckCircle } from 'react-icons/md'
 
 export default function HomepageCarousel() {
     return (
-        <Box w='full' minH='calc(100vh - 50px)' bg='#2d3183' pt={{base: 16, md: 28}}>
+        <Box w='full' minH='calc(100vh - 50px)' bg='#2d3183' pt={{base: 16, md: 20, lg: 32}}>
 
             <Container maxW='6xl' p={5}>
 
@@ -17,15 +17,17 @@ export default function HomepageCarousel() {
 
                     <Box flex={1}>
 
-                        <Text color='#fbbf24' fontSize={{base: '48', md:'50px', lg: '75px'}} lineHeight={1} fontWeight='bold'>Deploy your dream project</Text>
+                        <Text color='#fbbf24' fontSize={{base: '38px', md:'50px', lg: '75px'}} lineHeight={1} fontWeight='bold'>I`m Mostafiz Rahaman</Text>
 
                         <Spacer h={8} />
 
-                        <Text color='white' fontSize={{base: '18px', md:'20px', lg: '24px'}}>When a question comes with an online business, The first thought becomes on a website or mobile app. we develop any custom mobile app or website based on your idea business structure.</Text>
+                        <Text color='white' fontSize={{base: '16px', md:'18px', lg: '22px'}}>I am a freelance software programmer from Bangladesh. basically I design & develop fully customized fullstack solutions for Web, Mobile or Desktop environment to make any business easier and automated.</Text>
 
                         <Spacer h={7} />
 
-                        <Button colorScheme='green' color='white' size={{base: 'md', md: 'lg'}} shadow='sm' rounded='full'>Create Account</Button>
+                        <Button as='a' href='https://fiverr.com/dmostafiz' target='_blank' rel='noopener,norefferer' colorScheme='green' color='white' size={{base: 'md', md: 'lg'}} shadow='sm' rounded='full'>
+                            Find me on fiverr
+                        </Button>
 
 
                     </Box>

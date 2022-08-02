@@ -5,7 +5,7 @@ import { BsFillPlayCircleFill, BsPlayCircle } from 'react-icons/bs'
 
 export default function SectionOne() {
     return (
-        <Box as='section' py={12}>
+        <Box as='section' pt={16}>
             <Container maxW='6xl' p={5}>
                 <Flex direction={{ base: 'column', lg: 'row' }} alignItems='center' gap={10}>
 
@@ -14,7 +14,7 @@ export default function SectionOne() {
                         lg: '400px'
                     }}>
                         <Image w='full' src='/img/mostafiz2.jpg' rounded='xl' />
-                        <Center position='absolute' w='full' h='full' bg='#00000045' rounded='xl' top='0'>
+                        <Center position='absolute' w='full' h='full' bg='#2d31836b' rounded='xl' top='0'>
                             <IconButton variant='transparent' bg='transparent' size='xl' p={2} color='#e2e8f094' _hover={{ color: 'white' }} icon={<BsFillPlayCircleFill size={66} />} />
                         </Center>
                     </Box>
