@@ -1,13 +1,22 @@
 import { Box, Button, Container, Flex, IconButton, Img, Link, Show, Text } from '@chakra-ui/react';
 import React from 'react';
 import NextLink from 'next/link'
-import {HiMenuAlt3} from 'react-icons/hi'
+import { HiMenuAlt3 } from 'react-icons/hi'
 import MobileMenu from './MobileMenu';
 import MainLogo from '../../../Components/Common/MainLogo';
 
 const MainNav = () => {
     return (
-        <Box position='fixed' w='full' bg='' py={2}>
+        <Box
+            w='full'
+            position='fixed'
+            bg='#2d3183de'
+            backdropFilter='auto'
+            // backdropInvert='80%'
+            backdropBlur='10px'
+            zIndex={999}
+            py={2}
+        >
 
             <Container maxW='6xl'>
 
@@ -18,7 +27,7 @@ const MainNav = () => {
                     </Box>
 
                     <Show above='lg'>
-                        <Flex gap={6} color='white'>
+                        <Flex gap={6} color='whiteAlpha.700'>
 
                             <NextLink href='/about_me'>
                                 <Link href='/about_me'>
@@ -59,7 +68,6 @@ const MainNav = () => {
                         </Flex>
                     </Show>
                 </Flex>
-
 
             </Container>
         </Box>
