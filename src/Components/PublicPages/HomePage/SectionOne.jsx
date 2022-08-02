@@ -28,7 +28,7 @@ export default function SectionOne() {
 
                         <Spacer h={4} />
 
-                        <Text color='gray.600' lineHeight='22px'>We follow ideal software development strategy which bridges the gap between our developers & IT experts. We manage cloud deployments on container platform designed to quickly deploy applications and migrate applications for better optimization</Text>
+                        <Text color='gray.600' lineHeight='22px'>I follow ideal software development strategy which bridges the gap between our developers & IT experts. We manage cloud deployments on container platform designed to quickly deploy applications and migrate applications for better optimization</Text>
 
                         <Spacer h={4} />
 
