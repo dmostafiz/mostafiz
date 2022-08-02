@@ -16,7 +16,7 @@ export default function LatestArticles() {
                     <Stack direction='column' gap={5}>
 
                         <Flex direction={{ base: 'column', md: 'row' }} alignItems='center' gap={{ base: 5, md: 8 }}>
-                            <Box w={{ base: 'full', md: '300px' }}>
+                            <Box w={{ base: 'full', md: '330px' }}>
                                 <Image w='full' rounded='xl' shadow='md' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSs04ZVnZFCUUiAE5XJSLHSWsVcUM86DK99Og&usqp=CAU' />
                             </Box>
                             <Box flex='1'>
@@ -35,10 +35,10 @@ export default function LatestArticles() {
                             </Box>
                         </Flex>
 
-                        <Divider />
+                        {/* <Divider /> */}
 
                         <Flex direction={{ base: 'column', md: 'row' }} alignItems='center' gap={{ base: 5, md: 8 }}>
-                            <Box w={{ base: 'full', md: '300px' }}>
+                            <Box w={{ base: 'full', md: '330px' }}>
                                 <Image w='full' rounded='xl' shadow='md' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY6Jx2k9vXU_HptXpZISN3EUpWWpMEZYQaZw&usqp=CAU' />
                             </Box>
                             <Box flex='1'>
@@ -57,10 +57,10 @@ export default function LatestArticles() {
                             </Box>
                         </Flex>
 
-                        <Divider />
+                        {/* <Divider /> */}
 
                         <Flex direction={{ base: 'column', md: 'row' }} alignItems='center' gap={{ base: 5, md: 8 }}>
-                            <Box w={{ base: 'full', md: '300px' }}>
+                            <Box w={{ base: 'full', md: '330px' }}>
                                 <Image w='full' rounded='xl' shadow='md' src='https://www.codemotion.com/magazine/wp-content/uploads/2022/03/825bc6f1-4341-43ee-9ebe-21dc27378f80-896x504.png' />
                             </Box>
                             <Box flex='1'>

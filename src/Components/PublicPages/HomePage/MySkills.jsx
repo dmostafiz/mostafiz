@@ -3,7 +3,7 @@ import React from 'react'
 import { BsFillPlayCircleFill, BsPlayCircle } from 'react-icons/bs'
 
 
-export default function SectionOne() {
+export default function MySkills() {
     return (
         <Box as='section' py={{base: 0, lg: 16}}>
             <Container maxW='6xl' p={5}>

@@ -82,7 +82,7 @@ export default function HomepageCarousel() {
                             <Spacer h={5} />
 
 
-                            <Button variant='yellow' bg='yellow.400' size='lg' w='full'>HIRE ME TODAY</Button>
+                            <Button colorScheme='yellow' bg='yellow.400' size='lg' rounded='md' w='full'>HIRE ME TODAY</Button>
 
                         </Box>
                     </Box>

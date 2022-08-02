@@ -58,11 +58,11 @@ const MainNav = () => {
                     <Show above='lg'>
                         <Flex gap={3}>
                             <Button bg='white' rounded='full'>Sign In</Button>
-                            <Button colorScheme='green' bg='green.500' color='white' rounded='full'>Create Account</Button>
+                            <Button colorScheme='yellow' bg='yellow.400' rounded='full'>Create Account</Button>
                         </Flex>
                     </Show>
 
-                    <Show below='md'>
+                    <Show below='lg'>
                         <Flex gap={3}>
                             <MobileMenu />
                         </Flex>
