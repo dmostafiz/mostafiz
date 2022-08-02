@@ -17,7 +17,7 @@ export default function HomepageCarousel() {
 
                     <Box flex={1}>
 
-                        <Text color='#fbbf24' fontSize={{base: '38px', md:'50px', lg: '75px'}} lineHeight={1} fontWeight='bold'>I`m Mostafiz Rahaman</Text>
+                        <Text color='yellow.400' fontSize={{base: '38px', md:'50px', lg: '75px'}} lineHeight={1} fontWeight='bold'>I`m Mostafiz Rahaman</Text>
 
                         <Spacer h={8} />
 
@@ -82,7 +82,7 @@ export default function HomepageCarousel() {
                             <Spacer h={5} />
 
 
-                            <Button colorScheme='yellow' bg='#fbbf24' size='lg' w='full'>HIRE ME TODAY</Button>
+                            <Button variant='yellow' bg='yellow.400' size='lg' w='full'>HIRE ME TODAY</Button>
 
                         </Box>
                     </Box>

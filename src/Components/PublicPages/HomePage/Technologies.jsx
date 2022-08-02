@@ -2,7 +2,7 @@ import { Box, Container, Image, SimpleGrid, Spacer, Text } from '@chakra-ui/reac
 import React from 'react'
 import SectionTitle from '../../Common/SectionTitle'
 
-export default function SectionTwo() {
+export default function Technologies() {
     return (
         <Box as='section' py={5}>
             <Container maxW='6xl' p={5}>

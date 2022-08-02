@@ -1,8 +1,8 @@
-import { Box, Container, Divider, Flex, Image, Link, Spacer, Stack, Text } from '@chakra-ui/react'
+import { Badge, Box, Button, Center, Container, Divider, Flex, Image, Link, Spacer, Stack, Text } from '@chakra-ui/react'
 import React from 'react'
 import SectionTitle from '../../Common/SectionTitle'
 
-export default function SectionThree() {
+export default function LatestArticles() {
     return (
         <Box as='section' py={5} bg='white'>
             <Container maxW='6xl' p={5}>
@@ -26,10 +26,10 @@ export default function SectionThree() {
                                 <Spacer h={2} />
 
                                 <Text as='i' fontWeight='thin' fontSize='14px'>Published 14 July, 2022 on</Text> <Link href='#'>
-                                    <Text as='span' color='black' fontWeight='normal' textStyle='italic'>Fiverr Freelancing</Text>
+                                    <Badge variant='solid' colorScheme='green'>Fiverr Freelancing</Badge>
                                 </Link>
 
-                                <Spacer h={2} />
+                                <Spacer h={1} />
 
                                 <Text>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil porro ab dignissimos provident soluta eius natus illo commodi libero, neque, minus eum adipisci quas magnam asperiores, reprehenderit sint a quisquam atque. Eaque in dolores aliquam perferendis aspernatur... <Link href='#'><Text as='span' color='#2d3183'>Continue Reading</Text></Link></Text>
                             </Box>
@@ -48,10 +48,10 @@ export default function SectionThree() {
                                 <Spacer h={2} />
 
                                 <Text as='i' fontWeight='thin' fontSize='14px'>Published 14 July, 2022 on</Text> <Link href='#'>
-                                    <Text as='span' color='black' fontWeight='normal' textStyle='italic'>Fiverr Freelancing</Text>
+                                    <Badge variant='solid' colorScheme='green'>Fiverr Freelancing</Badge>
                                 </Link>
 
-                                <Spacer h={2} />
+                                <Spacer h={1} />
 
                                 <Text>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo magni, optio quos voluptatibus assumenda at? Sint fugit rerum, repellendus nulla deserunt commodi natus illum asperiores, similique enim expedita laudantium necessitatibus... <Link href='#'><Text as='span' color='#2d3183'>Continue Reading</Text></Link></Text>
                             </Box>
@@ -70,14 +70,19 @@ export default function SectionThree() {
                                 <Spacer h={2} />
 
                                 <Text as='i' fontWeight='thin' fontSize='14px'>Published 14 July, 2022 on</Text> <Link href='#'>
-                                    <Text as='span' color='black' fontWeight='normal' textStyle='italic'>NextJs</Text>
+                                    <Badge variant='solid' colorScheme='green'>NextJs</Badge>
                                 </Link>
 
-                                <Spacer h={2} />
+                                <Spacer h={1} />
 
                                 <Text>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo magni, optio quos voluptatibus assumenda at? Sint fugit rerum, repellendus nulla deserunt commodi natus illum asperiores, similique enim expedita laudantium necessitatibus similique enim expedita laudantium necessitatibus... <Link href='#'><Text as='span' color='#2d3183'>Continue Reading</Text></Link></Text>
                             </Box>
                         </Flex>
+
+                        <Center>
+                            <Button variant='yellow' maxW='300px' bg='yellow.400' rounded='full'>Read More Articles</Button>
+
+                        </Center>
 
                     </Stack>
                 </Box>
