@@ -3,7 +3,7 @@ import React from 'react';
 
 const MainLogo = () => {
     return (
-        <Img w='full' rounded='lg' shadow='md' src='/mostafiz.png' />
+        <Img w='full' rounded='xl' shadow='md' src='/mostafiz.png' />
     );
 }
 

@@ -9,7 +9,7 @@ export default function SectionTwo() {
 
                 <SectionTitle
                     title='Technologies'
-                    subTitle="There are tons of technologies that you find on internet. But it' s really important to select some suitable technologies depending on a business requirement to increase its performance, security and scalability."
+                    subTitle="Choose best technologies for your next project to build faster and for scalability"
                 />
 
                 <SimpleGrid columns={{ base: 3, md: 5, lg: 7 }} spacing={{ base: 3, md: 5 }}>

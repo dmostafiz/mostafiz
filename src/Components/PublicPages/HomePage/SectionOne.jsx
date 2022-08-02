@@ -5,7 +5,7 @@ import { BsFillPlayCircleFill, BsPlayCircle } from 'react-icons/bs'
 
 export default function SectionOne() {
     return (
-        <Box as='section' pt={16}>
+        <Box as='section' pt={{base: 0, lg: 16}}>
             <Container maxW='6xl' p={5}>
                 <Flex direction={{ base: 'column', lg: 'row' }} alignItems='center' gap={10}>
 
