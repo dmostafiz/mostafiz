@@ -17,7 +17,7 @@ export default function HomepageCarousel() {
 
                     <Box flex={1}>
 
-                        <Text color='yellow.400' fontSize={{ base: '38px', md: '50px', lg: '95px' }} lineHeight={1} fontWeight='bold'>I'm Mostafiz Rahaman</Text>
+                        <Text color='yellow.400' fontSize={{ base: '38px', md: '50px', lg: '95px' }} lineHeight={1} fontWeight='bold'>I`m Mostafiz Rahaman</Text>
 
                         <Spacer h={8} />
 
