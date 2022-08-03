@@ -63,24 +63,34 @@ export default function HomepageCarousel() {
                                     <List spacing={2}>
                                         <ListItem>
                                             <ListIcon as={MdCheckCircle} color='green.500' />
-                                            Native & Web apps ( PWA, Android, IOS )
+                                            <Text as='span' fontSize={{ base: '14px', md: '16' }}>
+                                                Native & Web apps (PWA, Android, IOS)
+                                            </Text>
                                         </ListItem>
                                         <ListItem>
                                             <ListIcon as={MdCheckCircle} color='green.500' />
-                                            Online business - Problems and solutions
+                                            <Text as='span' fontSize={{ base: '14px', md: '16' }}>
+                                                Online business - Problems and solutions
+                                            </Text>
                                         </ListItem>
                                         <ListItem>
                                             <ListIcon as={MdCheckCircle} color='green.500' />
-                                            Blockchain technology (DAPP)
+                                            <Text as='span' fontSize={{ base: '14px', md: '16' }}>
+                                                Blockchain technology (DAPP)
+                                            </Text>
                                         </ListItem>
                                         {/* You can also use custom icons from react-icons */}
                                         <ListItem>
                                             <ListIcon as={MdCheckCircle} color='green.500' />
-                                            Ecommerce, Affiliates, and MLM solutions
+                                            <Text as='span' fontSize={{ base: '14px', md: '16' }}>
+                                                Ecommerce, Affiliates, and MLM solutions
+                                            </Text>
                                         </ListItem>
                                         <ListItem>
                                             <ListIcon as={MdCheckCircle} color='green.500' />
-                                            EdTech, Finteck and other solutions
+                                            <Text as='span' fontSize={{ base: '14px', md: '16' }}>
+                                                EdTech, Finteck and other solutions
+                                            </Text>
                                         </ListItem>
                                     </List>
                                 </Box>
