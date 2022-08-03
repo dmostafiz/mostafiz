@@ -14,10 +14,10 @@ export default function HomepageCarousel() {
                 }}
                     gap={5}
                 >
-
+ 
                     <Box flex={1}>
-
-                        <Text color='yellow.400' fontSize={{ base: '38px', md: '50px', lg: '95px' }} lineHeight={1} fontWeight='bold'>I`m Mostafiz Rahaman</Text>
+ 
+                        <Text textShadow='' fontFamily={`'Lobster', cursive`} color='yellow.400' fontSize={{ base: '50px', md: '70px', lg: '95px' }} lineHeight={1} fontWeight='normal'>I`m Mostafiz Rahaman</Text>
 
                         <Spacer h={8} />
 
