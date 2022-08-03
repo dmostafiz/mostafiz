@@ -4,7 +4,7 @@ import { MdCheckCircle } from 'react-icons/md'
 
 export default function HomepageCarousel() {
     return (
-        <Box w='full' bg='#2d3183' pb={10} pt={{ base: 28, md: 20, lg: 32 }}>
+        <Box w='full' bg='#2d3183' pb={10} pt={{base:3, md:8}}>
 
             <Container maxW='6xl' p={5}>
 
