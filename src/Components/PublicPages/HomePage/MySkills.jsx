@@ -24,11 +24,11 @@ export default function MySkills() {
 
                         <Spacer h={3} />
 
-                        <Text fontWeight='bold' letterSpacing='0px' lineHeight='38px' fontSize='32px'>I have skills in <br />Coding, deployment, and maintenance</Text>
+                        <Text fontWeight='bold' letterSpacing='0px' lineHeight='38px' fontSize='32px'>My skills in full-stack, <br />Coding, deployment, and maintenance</Text>
 
                         <Spacer h={4} />
 
-                        <Text color='gray.600' lineHeight='22px'>I follow ideal software development strategy which bridges the gap between our developers & IT experts. We manage cloud deployments on container platform designed to quickly deploy applications and migrate applications for better optimization</Text>
+                        <Text color='gray.600' lineHeight='22px'>I follow an ideal software development strategy that bridges the gap between me & my clients. basically manage cloud deployments on a container platform designed to quickly deploy applications and migrate applications for better optimization.</Text>
 
                         <Spacer h={4} />
 

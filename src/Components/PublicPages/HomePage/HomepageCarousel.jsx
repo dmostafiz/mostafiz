@@ -1,10 +1,10 @@
-import { Box, Button, Container, Flex, List, ListIcon, ListItem, Spacer, Text } from '@chakra-ui/react'
+import { Box, Button, Container, Flex, Image, List, ListIcon, ListItem, Spacer, Text } from '@chakra-ui/react'
 import React from 'react'
 import { MdCheckCircle } from 'react-icons/md'
 
 export default function HomepageCarousel() {
     return (
-        <Box w='full' minH='calc(100vh - 50px)' bg='#2d3183' pt={{base: 16, md: 20, lg: 32}}>
+        <Box w='full' bg='#2d3183' pb={10} pt={{ base: 16, md: 20, lg: 32 }}>
 
             <Container maxW='6xl' p={5}>
 
@@ -17,18 +17,22 @@ export default function HomepageCarousel() {
 
                     <Box flex={1}>
 
-                        <Text color='yellow.400' fontSize={{base: '38px', md:'50px', lg: '75px'}} lineHeight={1} fontWeight='bold'>I`m Mostafiz Rahaman</Text>
+                        <Text color='yellow.400' fontSize={{ base: '38px', md: '50px', lg: '95px' }} lineHeight={1} fontWeight='bold'>I'm Mostafiz Rahaman</Text>
 
                         <Spacer h={8} />
 
-                        <Text color='white' fontSize={{base: '16px', md:'18px', lg: '22px'}}>I am a freelance software programmer from Bangladesh. basically I design & develop fully customized fullstack solutions for Web, Mobile or Desktop environment to make any business easier and automated.</Text>
+                        <Text color='white' fontSize={{ base: '16px', md: '18px', lg: '22px' }}>A fulltime Freelance software programmer from Bangladesh. Basically, I offer innovative digital creations in full-stack solutions for web, mobile or desktop environments to simplify and automate any online based business.</Text>
 
                         <Spacer h={7} />
 
-                        <Button as='a' href='https://fiverr.com/dmostafiz' target='_blank' rel='noopener,norefferer' colorScheme='green' color='white' size={{base: 'md', md: 'lg'}} shadow='sm' rounded='full'>
-                            Find me on fiverr
-                        </Button>
+                        <Flex align='center' gap='2'>
+                            <Image maxW='170px' src='/fiverr.png' />
 
+                            <Button as='a' href='https://fiverr.com/dmostafiz' target='_blank' rel='noopener,norefferer' colorScheme='green' color='white' size='lg' shadow='sm' rounded='full'>
+                                Find me on Fiverr
+                            </Button>
+
+                        </Flex>
 
                     </Box>
 
@@ -45,34 +49,38 @@ export default function HomepageCarousel() {
                             <Spacer h={3} />
 
                             <Text color='white' >
-                                I am working as a full-stack software developer with experience of 7 years.
+                                I offer Cost Effective Digital Solutions based on my clients ideas. Everything starts from scratch and you have the ability to customize anything while developing your platform.
                             </Text>
 
                             <Spacer h={5} />
 
                             <Box bg='whiteAlpha.900' w='full' p={4} rounded='md'>
-                                <Text fontWeight='bold' fontSize='20px' color='gray.600'>I am currently working on</Text>
+                                {/* <Text fontWeight='bold' fontSize='20px' color='gray.600'>I have expirtise in</Text> */}
 
-                                <Spacer h={5} />
+                                {/* <Spacer h={3} /> */}
 
                                 <Box>
                                     <List spacing={2}>
                                         <ListItem>
                                             <ListIcon as={MdCheckCircle} color='green.500' />
-                                            The next generation Native Apps
+                                            Native & Web apps ( PWA, Android, IOS )
                                         </ListItem>
                                         <ListItem>
                                             <ListIcon as={MdCheckCircle} color='green.500' />
-                                            Online business with new concepts!
+                                            Online business - Problems and solutions
                                         </ListItem>
                                         <ListItem>
                                             <ListIcon as={MdCheckCircle} color='green.500' />
-                                            Blockchain technology
+                                            Blockchain technology (DAPP)
                                         </ListItem>
                                         {/* You can also use custom icons from react-icons */}
                                         <ListItem>
                                             <ListIcon as={MdCheckCircle} color='green.500' />
-                                            Ecommerce and Multi level Marketing
+                                            Ecommerce, Affiliates, and MLM solutions
+                                        </ListItem>
+                                        <ListItem>
+                                            <ListIcon as={MdCheckCircle} color='green.500' />
+                                            EdTech, Finteck and other solutions
                                         </ListItem>
                                     </List>
                                 </Box>
