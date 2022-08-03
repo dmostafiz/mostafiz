@@ -24,7 +24,7 @@ const MainNav = () => {
                 py={1}
             >
                 <Container maxW='6xl'>
-                    <Text fontWeight='normal' fontSize='14px' color='whiteAlpha.800'>Please be noted, This website is currently under development process, it's containing many fake and dummy contents.</Text>
+                    <Text fontWeight='normal' fontSize='14px' color='whiteAlpha.800'>Please be noted, This website is currently under development process, it`s containing many fake and dummy contents.</Text>
                 </Container>
             </Box>
             <Box
