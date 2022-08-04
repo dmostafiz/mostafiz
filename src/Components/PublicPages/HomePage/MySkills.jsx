@@ -1,6 +1,7 @@
 import { Box, Center, Container, Flex, IconButton, Image, SimpleGrid, Spacer, Text } from '@chakra-ui/react'
 import React from 'react'
 import { BsFillPlayCircleFill, BsPlayCircle } from 'react-icons/bs'
+import IntroVideoModal from '../../Common/IntroVideoModal'
 
 
 export default function MySkills() {
@@ -15,7 +16,7 @@ export default function MySkills() {
                     }}>
                         <Image w='full' src='/img/mostafiz2.jpg' rounded='xl' />
                         <Center position='absolute' w='full' h='full' bg='#2d31836b' rounded='xl' top='0'>
-                            <IconButton variant='transparent' bg='transparent' size='xl' p={2} color='#e2e8f094' _hover={{ color: 'white' }} icon={<BsFillPlayCircleFill size={66} />} />
+                            <IntroVideoModal />
                         </Center>
                     </Box>
 

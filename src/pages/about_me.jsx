@@ -4,11 +4,12 @@ import MySkills from "../Components/PublicPages/HomePage/MySkills";
 import LatestArticles from "../Components/PublicPages/HomePage/LatestArticles";
 import Technologies from "../Components/PublicPages/HomePage/Technologies";
 import PublicLayout from "../Layouts/PublicLayout";
+import AboutMeComponent from "../Components/PublicPages/AboutPage/AboutMeComponent";
 
 export default function AboutMe() {
     return (
         <PublicLayout>
-            <MySkills />
+            <AboutMeComponent />
             <LatestArticles />
             <Technologies />
         </PublicLayout>
