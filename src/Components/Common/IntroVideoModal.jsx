@@ -34,7 +34,7 @@ export default function IntroVideoModal() {
                                 title='naruto'
                                 src='https://www.youtube.com/embed/5tO8sHPP-bA'
                                 allow="autoplay" 
-                                allowfullscreen
+                                allowFullScreen
                             />
                         </AspectRatio>
                         {/* <Lorem count={2} /> */}
