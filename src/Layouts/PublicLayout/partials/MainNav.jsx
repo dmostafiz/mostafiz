@@ -85,7 +85,7 @@ const MainNav = () => {
                             </Box>
 
                             <Show above='lg'>
-                                <Flex gap={6} color='whiteAlpha.700'>
+                                <Flex gap={10} color='whiteAlpha.700'>
 
                                     <NextLink href='/about_me'>
                                         <Link href='/about_me'>
@@ -95,13 +95,13 @@ const MainNav = () => {
 
                                     <NextLink href='/case_studies'>
                                         <Link href='/case_studies'>
-                                            <Text fontWeight='semibold'>Case Studies</Text>
+                                            <Text fontWeight='semibold'>Portfolio</Text>
                                         </Link>
                                     </NextLink>
 
                                     <NextLink href='/about_me'>
                                         <Link href='/about_me'>
-                                            <Text fontWeight='semibold'>Achievments</Text>
+                                            <Text fontWeight='semibold'>Case Studies</Text>
                                         </Link>
                                     </NextLink>
 

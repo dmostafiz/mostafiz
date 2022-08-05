@@ -5,10 +5,11 @@ import IntroVideoModal from '../../Common/IntroVideoModal'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y, Zoom, EffectFade, Autoplay } from 'swiper';
 import SectionTitle from '../../Common/SectionTitle';
+import SocialLinks from '../../Common/SocialLinks';
 
 export default function AboutMeComponent() {
     return (
-        <Box as='section' py={{ base: 0, lg: 16 }}>
+        <Box as='section' py={{ base: 0, lg: 8 }}>
             <Container maxW='6xl' p={5}>
                 <Flex direction={{ base: 'column', lg: 'row' }} alignItems='center' gap={10}>
 
@@ -64,61 +65,8 @@ export default function AboutMeComponent() {
 
                         //   subTitle='I am available in social media like faceboo, linked in, instagram, etc.'
                         />
-                        <ButtonGroup variant='outline' spacing='3'>
-
-                            <IconButton
-                                as='a'
-                                href='https://fb.com/mostafiz.dev'
-                                target='_blank'
-                                rel='noopener'
-                                colorScheme='facebook'
-                                variant='solid'
-                                icon={<BsFacebook size={24} />}
-                            />
-
-                            <IconButton
-                                as='a'
-                                href='https://www.linkedin.com/in/mostafiz-rahaman-010a8913a/'
-                                target='_blank'
-                                rel='noopener'
-                                colorScheme='linkedin'
-                                variant='solid'
-                                icon={<BsLinkedin size={24} />}
-                            />
-
-
-                            <IconButton
-                                as='a'
-                                href='https://www.youtube.com/channel/UC9gB6vHRs34i-By7hW5a6Kg'
-                                target='_blank'
-                                rel='noopener'
-                                colorScheme='red'
-                                variant='solid'
-                                icon={<BsYoutube size={24} />}
-                            />
-
-                            <IconButton
-
-                                as='a'
-                                href='https://github.com/dmostafiz'
-                                target='_blank'
-                                rel='noopener'
-                                colorScheme='black'
-                                variant='outline'
-                                icon={<BsGithub size={24} />}
-                            />
-
-                            <IconButton
-                                as='a'
-                                href='skype:live:.cid.d9d832a6070a1266?add'
-                                // target='_blank'
-                                // rel='noopener'
-                                colorScheme='blue'
-                                variant='solid'
-                                icon={<BsSkype size={24} />}
-                            />
-
-                        </ButtonGroup>
+                        
+                        <SocialLinks />
 
                     </Box>
 
