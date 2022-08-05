@@ -16,7 +16,7 @@ export default function AboutMeComponent() {
                     <Box position='relative' maxW={{
                         base: '100%',
                         lg: '400px'
-                    }} bg='transparent' shadow='xl' rounded='xl'>
+                    }} bg='transparent' rounded='3xl'>
                         {/* <Image w='full' src='/img/mostafiz2.jpg' rounded='xl' /> */}
                         <Swiper
                             modules={[Navigation, Pagination, Scrollbar, A11y, Zoom, EffectFade, Autoplay]}
@@ -28,17 +28,17 @@ export default function AboutMeComponent() {
                             autoplay={true}
                             zoom={true}
                             // navigation
-                            // pagination={{ clickable: true }}
-                            scrollbar={{ draggable: true }}
+                            pagination={{ clickable: true }}
+                            // scrollbar={{ draggable: true }}
                         >
-                            <SwiperSlide><Image w='full' src='/img/mostafiz1.jpg' rounded='xl' /></SwiperSlide>
-                            <SwiperSlide><Image w='full' src='/img/mostafiz2.jpg' rounded='xl' /></SwiperSlide>
-                            <SwiperSlide><Image w='full' src='/img/mostafiz3.jpg' rounded='xl' /></SwiperSlide>
-                            {/* <SwiperSlide><Image w='full' src='/img/mostafiz4.jpg' rounded='xl' /></SwiperSlide> */}
-                            {/* <SwiperSlide><Image w='full' src='/img/mostafiz5.jpg' rounded='xl' /></SwiperSlide> */}
-                            {/* <SwiperSlide><Image w='full' src='/img/mostafiz6.jpg' rounded='xl' /></SwiperSlide> */}
-                            <SwiperSlide><Image w='full' src='/img/mostafiz7.jpg' rounded='xl' /></SwiperSlide>
-                            <SwiperSlide><Image w='full' src='/img/mostafiz8.jpg' rounded='xl' /></SwiperSlide>
+                            <SwiperSlide><Image w='full' src='/img/mostafiz1.jpg' rounded='3xl' /></SwiperSlide>
+                            <SwiperSlide><Image w='full' src='/img/mostafiz2.jpg' rounded='3xl' /></SwiperSlide>
+                            <SwiperSlide><Image w='full' src='/img/mostafiz3.jpg' rounded='3xl' /></SwiperSlide>
+                            {/* <SwiperSlide><Image w='full' src='/img/mostafiz4.jpg' rounded='3xl' /></SwiperSlide> */}
+                            {/* <SwiperSlide><Image w='full' src='/img/mostafiz5.jpg' rounded='3xl' /></SwiperSlide> */}
+                            {/* <SwiperSlide><Image w='full' src='/img/mostafiz6.jpg' rounded='3xl' /></SwiperSlide> */}
+                            <SwiperSlide><Image w='full' src='/img/mostafiz7.jpg' rounded='3xl' /></SwiperSlide>
+                            <SwiperSlide><Image w='full' src='/img/mostafiz8.jpg' rounded='3xl' /></SwiperSlide>
 
                         </Swiper>
                     </Box>

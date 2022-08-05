@@ -38,13 +38,11 @@ body {
   height: 30px !important;
 }
 
-.swiper-pagination-bullet-active {
-  opacity: var(--swiper-pagination-bullet-opacity, 1);
-  background: #d69e2ea1 !important;
+
+.swiper-pagination-bullet {
+  background: #ffffff !important;
 }
 
-
-.swiper-scrollbar-drag {
-
-  background: rgba(233, 202, 28, 0.352) !important;
+.swiper-pagination-bullet-active {
+  background: #474b92 !important;
 }
