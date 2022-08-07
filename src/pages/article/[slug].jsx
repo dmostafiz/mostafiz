@@ -54,9 +54,8 @@ export default function Article() {
                       bg={useColorModeValue('white', 'gray.900')}
                       boxShadow={'md'}
                       rounded={'lg'}
-
-                      textAlign={'center'}>
-
+                      textAlign={'center'}
+                    >
 
                       <Box
                         w='full'
@@ -116,7 +115,7 @@ export default function Article() {
 
                         <Box px={3} py={2}>
                           <Box textAlign='left'>
-                            <Text fontWeight={`semibold`} ml={2}>I am continuesly writing on</Text>
+                            <Text fontWeight={`semibold`} ml={2}>I am writing on</Text>
                             <Spacer h={2} />
                             <SocialLinksAuthor />
                           </Box>
