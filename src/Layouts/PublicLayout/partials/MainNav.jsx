@@ -116,7 +116,7 @@ const MainNav = () => {
                             <Show above='lg'>
                                 <Flex gap={3}>
                                     <Button bg='white' rounded='full'>Sign In</Button>
-                                    <Button colorScheme='yellow' bg='yellow.400' rounded='full'>Be Online Partner</Button>
+                                    <Button colorScheme='yellow' bg='yellow.400' rounded='full'>Be a partner</Button>
                                 </Flex>
                             </Show>
 

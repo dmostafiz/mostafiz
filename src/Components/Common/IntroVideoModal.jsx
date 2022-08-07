@@ -21,13 +21,11 @@ export default function IntroVideoModal() {
             <IconButton onClick={onOpen} rounded='full' variant='transparent' bg='transparent' size='lg' p={2} color='#e2e8f094' _hover={{ color: 'white' }} icon={<BsFillPlayCircleFill size={56} />} />
 
 
-            <Modal size='6xl' isOpen={isOpen} onClose={onClose} isCentered>
+            <Modal size={{base: 'md', md: '6xl'}} isOpen={isOpen} onClose={onClose} isCentered>
                 <ModalOverlay />
-                <ModalContent>
-                    <ModalHeader>
-                        {/* Modal Title */}
-                    </ModalHeader>
-                    <ModalCloseButton p={3} />
+                <ModalContent pos='relative'>
+   
+                    <ModalCloseButton size='sm' bg='yellow.500' _hover={{bg: 'yellow.600', color: 'black'}} _active={{bg: 'yellow.600', color: 'black'}} rounded='full' pos='absolute' top='-8px' right='-8px' zIndex={999} p={3} />
                     <ModalBody p={0}>
                         <AspectRatio minW='full' ratio={16 / 9}>
                             <iframe

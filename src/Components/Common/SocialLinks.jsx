@@ -31,7 +31,7 @@ export default function SocialLinks() {
             />
 
 
-            <IconButton
+            {/* <IconButton
                 rounded='full'
                 shadow='sm'
                 as='a'
@@ -41,6 +41,18 @@ export default function SocialLinks() {
                 colorScheme='red'
                 variant='solid'
                 icon={<BsYoutube size={24} />}
+            /> */}
+
+            <IconButton
+                rounded='full'
+                shadow='sm'
+                as='a'
+                href='skype:live:.cid.d9d832a6070a1266?add'
+                // target='_blank'
+                // rel='noopener'
+                colorScheme='blue'
+                variant='solid'
+                icon={<BsSkype size={24} />}
             />
 
             <IconButton
@@ -54,18 +66,6 @@ export default function SocialLinks() {
                 colorScheme='black'
                 variant='outline'
                 icon={<BsGithub size={24} />}
-            />
-
-            <IconButton
-                rounded='full'
-                shadow='sm'
-                as='a'
-                href='skype:live:.cid.d9d832a6070a1266?add'
-                // target='_blank'
-                // rel='noopener'
-                colorScheme='blue'
-                variant='solid'
-                icon={<BsSkype size={24} />}
             />
 
         </ButtonGroup>

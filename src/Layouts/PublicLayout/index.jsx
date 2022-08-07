@@ -1,4 +1,4 @@
-import { Box, Container, Link, SimpleGrid, Stack, Text, useColorModeValue } from '@chakra-ui/react'
+import { Box, Container, Flex, Link, SimpleGrid, Stack, Text, useColorModeValue } from '@chakra-ui/react'
 import React from 'react'
 import SocialLinks from '../../Components/Common/SocialLinks'
 import MainNav from './partials/MainNav'
@@ -6,13 +6,17 @@ import MainNav from './partials/MainNav'
 export default function PublicLayout({ children }) {
   return (
     <>
+
       <MainNav />
+
       <Box>{children}</Box>
 
-
       <Box
+        w='full'
         bg={useColorModeValue('gray.50', 'gray.900')}
-        color={useColorModeValue('gray.700', 'gray.200')}>
+        color={useColorModeValue('gray.700', 'gray.200')}
+        // alignContent='flex-end'
+      >
 
 
         <Box
