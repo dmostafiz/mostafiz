@@ -7,6 +7,7 @@ import SectionTitle from '../../Components/Common/SectionTitle'
 import SocialLinks from '../../Components/Common/SocialLinks'
 import SocialLinksAuthor from '../../Components/Common/SocialLinksAuthor'
 import PublicLayout from '../../Layouts/PublicLayout'
+import StickyBox from "react-sticky-box";
 
 export default function Article() {
   return (
@@ -41,104 +42,105 @@ export default function Article() {
               </Box>
             </Box>
 
-
             <Box w={{ base: 'full', lg: '340px' }}>
-              <VStack w='full' gap={5}>
 
-                <Center w='full'>
-                  <Box
-                    // maxW={'320px'}
-                    w={'full'}
-                    bg={useColorModeValue('white', 'gray.900')}
-                    boxShadow={'md'}
-                    rounded={'lg'}
+              <StickyBox offsetTop={110} >
+                <VStack w='full' gap={5}>
 
-                    textAlign={'center'}>
-
-
+                  <Center w='full'>
                     <Box
-                      w='full'
-                      roundedTop={{ base: '0', lg: 'lg' }}
-                      color='gray.100'
-                      bg={`#2d3183`}
-                      pt={5}
-                      pb={3}
-                      px={3}
-                    >
-                      <Avatar
-                        border='2px solid white'
-                        size={'2xl'}
-                        src={
-                          '/img/mostafiz1.jpg'
-                        }
-                        alt={'Avatar Alt'}
-                        mb={3}
-                        pos={'relative'}
-                        _after={{
-                          content: '""',
-                          w: 4,
-                          h: 4,
-                          bg: '#fbbf24',
-                          border: '2px solid white',
-                          rounded: 'full',
-                          pos: 'absolute',
-                          bottom: 2,
-                          right: 3,
-                        }}
-                      />
-                      <Heading fontSize={'2xl'} fontFamily={'body'}>
-                        Mostafiz Rahaman
-                      </Heading>
-                      <Text fontWeight={600} color={'gray.400'} mb={2}>
-                        author @ mostafiz.dev
-                      </Text>
-                    </Box>
+                      // maxW={'320px'}
+                      w={'full'}
+                      bg={useColorModeValue('white', 'gray.900')}
+                      boxShadow={'md'}
+                      rounded={'lg'}
 
-                    <Box
-                      pt={3}
-                      pb={5}
-                    // px={1}
-                    >
-                      <Text
-                        fontSize={`13px`}
-                        textAlign={'left'}
-                        color={useColorModeValue('gray.700', 'gray.400')}
+                      textAlign={'center'}>
+
+
+                      <Box
+                        w='full'
+                        roundedTop={{ base: '0', lg: 'lg' }}
+                        color='gray.100'
+                        bg={`#2d3183`}
+                        pt={5}
+                        pb={3}
                         px={3}
                       >
-                        I`m very passionate on gathering knowledge & writing tech related articles. I always try to find out sollutions over internet and write rich content on that topic.
-                      </Text>
-
-
-
-                      <Divider py={1} />
-
-                      <Box px={3} py={2}>
-                        <Box textAlign='left'>
-                          <Text fontWeight={`semibold`} ml={2}>I am continuesly writing on</Text>
-                          <Spacer h={2} />
-                          <SocialLinksAuthor />
-                        </Box>
+                        <Avatar
+                          border='2px solid white'
+                          size={'2xl'}
+                          src={
+                            '/img/mostafiz1.jpg'
+                          }
+                          alt={'Avatar Alt'}
+                          mb={3}
+                          pos={'relative'}
+                          _after={{
+                            content: '""',
+                            w: 4,
+                            h: 4,
+                            bg: '#fbbf24',
+                            border: '2px solid white',
+                            rounded: 'full',
+                            pos: 'absolute',
+                            bottom: 2,
+                            right: 3,
+                          }}
+                        />
+                        <Heading fontSize={'2xl'} fontFamily={'body'}>
+                          Mostafiz Rahaman
+                        </Heading>
+                        <Text fontWeight={600} color={'gray.400'} mb={2}>
+                          author @ mostafiz.dev
+                        </Text>
                       </Box>
 
-                      <Divider py={1} />
+                      <Box
+                        pt={3}
+                        pb={5}
+                      // px={1}
+                      >
+                        <Text
+                          fontSize={`13px`}
+                          textAlign={'left'}
+                          color={useColorModeValue('gray.700', 'gray.400')}
+                          px={3}
+                        >
+                          I`m very passionate on gathering knowledge & writing tech related articles. I always try to find out sollutions over internet and write rich content on that topic.
+                        </Text>
 
-                      <Box px={3} py={2}>
-                        <Box textAlign='left'>
-                          <Text fontWeight={`semibold`} ml={2}>Subscribe my newsletter</Text>
-                          <Spacer h={2} />
-                          <InputGroup size={'md'} spacing={0}>
-                            <Input placeholder='Enter your email' roundedLeft={`full`} _focus={{ borderColor: '#fbbf24', ring: 'none' }} />
-                            <Button loadingText='Wait...' px={6} fontSize={`12px`} roundedRight='full' variant={`solid`} bg='#fbbf24' colorScheme={`yellow`}>Subscribe</Button>
 
-                          </InputGroup>
+
+                        <Divider py={1} />
+
+                        <Box px={3} py={2}>
+                          <Box textAlign='left'>
+                            <Text fontWeight={`semibold`} ml={2}>I am continuesly writing on</Text>
+                            <Spacer h={2} />
+                            <SocialLinksAuthor />
+                          </Box>
                         </Box>
+
+                        <Divider py={1} />
+
+                        <Box px={3} py={2}>
+                          <Box textAlign='left'>
+                            <Text fontWeight={`semibold`} ml={2}>Subscribe my newsletter</Text>
+                            <Spacer h={2} />
+                            <InputGroup size={'md'} spacing={0}>
+                              <Input placeholder='Enter your email' roundedLeft={`full`} _focus={{ borderColor: '#fbbf24', ring: 'none' }} />
+                              <Button loadingText='Wait...' px={6} fontSize={`12px`} roundedRight='full' variant={`solid`} bg='#fbbf24' colorScheme={`yellow`}>Subscribe</Button>
+
+                            </InputGroup>
+                          </Box>
+                        </Box>
+
                       </Box>
 
-                    </Box>
 
 
-
-                    {/* <Stack mt={8} direction={'row'} spacing={4}>
+                      {/* <Stack mt={8} direction={'row'} spacing={4}>
                     <Button
                       flex={1}
                       fontSize={'sm'}
@@ -166,13 +168,16 @@ export default function Article() {
                       Follow
                     </Button>
                   </Stack> */}
-                  </Box>
-                </Center>
+                    </Box>
+                  </Center>
 
-              </VStack>
+                </VStack>
+              </StickyBox>
 
             </Box>
+
           </Flex>
+
 
         </Box>
       </Container>

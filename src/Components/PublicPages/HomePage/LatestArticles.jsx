@@ -17,7 +17,7 @@ export default function LatestArticles() {
                 <Box>
                     <Stack direction='column' gap={5}>
 
-                        <Flex alignItems='center' gap={{ base: 5, md: 8 }}>
+                        <Flex alignItems='flex-start' gap={{ base: 5, md: 8 }}>
                             <Box w={{ base: '190px', md: '330px' }}>
                                 <Image
                                     w='full'
@@ -27,17 +27,19 @@ export default function LatestArticles() {
                                     alt='A detailed article about fiverr freelancing'
                                 />
                             </Box>
-                            <Box flex='1'>
+                            <Box flex='1' mt={{ base: '0px', md: '5px' }}>
                                 <SoftLink to={`/article/${'lorem_ipsum_dolor_sit_amet'}`}>
                                     <Text fontWeight='bold' fontSize={{ base: '17px', md: '24px' }} lineHeight={{ base: '20px', md: '30px' }}>A detailed article about fiverr freelancing</Text>
                                 </SoftLink>
 
                                 <Spacer h={{ base: 0, md: 2 }} />
 
-                                <Text as='i' fontWeight='thin' fontSize='14px'>Published 14 July, 2022 on </Text>
-                                <Link href='#'>
-                                    <Badge variant='solid' colorScheme='green'> Fiverr Freelancing</Badge>
-                                </Link>
+                                <Flex alignItems={{base: '', md: 'center'}} gap={{base: '0', md: '3'}} direction={{base: 'column', md: 'row'}}>
+                                    <Text as='i' fontWeight='thin' fontSize='14px'>Published 14 July, 2022</Text>
+                                    <Link href='#'>
+                                        <Badge variant='solid' colorScheme='green'> Fiverr Freelancing</Badge>
+                                    </Link>
+                                </Flex>
 
                                 <Spacer h={1} />
 
@@ -52,7 +54,7 @@ export default function LatestArticles() {
 
                         {/* <Divider /> */}
 
-                        <Flex alignItems='center' gap={{ base: 5, md: 8 }}>
+                        <Flex alignItems='flex-start' gap={{ base: 5, md: 8 }}>
                             <Box w={{ base: '190px', md: '330px' }}>
                                 <Image
                                     w='full'
@@ -62,16 +64,19 @@ export default function LatestArticles() {
                                     alt='How does fiverr works & make money'
                                 />
                             </Box>
-                            <Box flex='1'>
+                            <Box flex='1' mt={{ base: '0px', md: '5px' }}>
                                 <SoftLink to={`/article/${'lorem_ipsum_dolor_sit_amet'}`}>
                                     <Text fontWeight='bold' fontSize={{ base: '17px', md: '24px' }} lineHeight={{ base: '20px', md: '30px' }}>How does fiverr works & make money</Text>
                                 </SoftLink>
 
                                 <Spacer h={{ base: 0, md: 2 }} />
 
-                                <Text as='i' fontWeight='thin' fontSize='14px'>Published 14 July, 2022 on</Text> <Link href='#'>
-                                    <Badge variant='solid' colorScheme='green'>Fiverr Freelancing</Badge>
-                                </Link>
+                                <Flex alignItems={{base: '', md: 'center'}} gap={{base: '0', md: '3'}} direction={{base: 'column', md: 'row'}}>
+                                    <Text as='i' fontWeight='thin' fontSize='14px'>Published 14 July, 2022</Text>
+                                    <Link href='#'>
+                                        <Badge variant='solid' colorScheme='green'> Fiverr Freelancing</Badge>
+                                    </Link>
+                                </Flex>
 
                                 <Spacer h={1} />
                                 <Show above='md'>
@@ -82,7 +87,7 @@ export default function LatestArticles() {
 
                         {/* <Divider /> */}
 
-                        <Flex alignItems='center' gap={{ base: 5, md: 8 }}>
+                        <Flex alignItems='flex-start' gap={{ base: 5, md: 8 }}>
                             <Box w={{ base: '190px', md: '330px' }}>
                                 <Image
                                     w='full'
@@ -90,9 +95,9 @@ export default function LatestArticles() {
                                     shadow='md'
                                     src='https://www.codemotion.com/magazine/wp-content/uploads/2022/03/825bc6f1-4341-43ee-9ebe-21dc27378f80-896x504.png'
                                     alt='Fully custom web app develop with'
-                               />
+                                />
                             </Box>
-                            <Box flex='1'>
+                            <Box flex='1' mt={{ base: '0px', md: '5px' }}>
 
                                 <SoftLink to={`/article/${'lorem_ipsum_dolor_sit_amet'}`}>
                                     <Text fontWeight='bold' fontSize={{ base: '17px', md: '24px' }} lineHeight={{ base: '20px', md: '30px' }}>Fully custom web app develop with</Text>
@@ -100,9 +105,12 @@ export default function LatestArticles() {
 
                                 <Spacer h={{ base: 0, md: 2 }} />
 
-                                <Text as='i' fontWeight='thin' fontSize='14px'>Published 14 July, 2022 on</Text>  <Link href='#'>
-                                    <Badge variant='solid' colorScheme='green'>NextJs</Badge>
-                                </Link>
+                                <Flex alignItems={{base: '', md: 'center'}} gap={{base: '0', md: '3'}} direction={{base: 'column', md: 'row'}}>
+                                    <Text as='i' fontWeight='thin' fontSize='14px'>Published 14 July, 2022</Text>
+                                    <Link href='#'>
+                                        <Badge variant='solid' colorScheme='green'>NextJs</Badge>
+                                    </Link>
+                                </Flex>
 
                                 <Spacer h={1} />
                                 <Show above='md'>
