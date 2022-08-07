@@ -106,7 +106,7 @@ export default function Article() {
                           color={useColorModeValue('gray.700', 'gray.400')}
                           px={3}
                         >
-                          I`m very passionate on gathering knowledge & writing tech related articles. I always try to find out sollutions over internet and write rich content on that topic.
+                          I`m very passionate about gathering knowledge & writing tech-related articles. I always try to find out solutions over the internet and write quality content on that topic.
                         </Text>
 
 
