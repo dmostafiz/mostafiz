@@ -29,7 +29,7 @@ export default function HomepageCarousel() {
                             <Image maxW='170px' src='/fiverr.png' />
 
                             <Button as='a' href='#' target='_blank' rel='noopener,norefferer' colorScheme='green' color='white' size='lg' shadow='sm' rounded='full'>
-                                Get Started with me
+                                Get Started Today
                             </Button>
 
                         </Flex>
