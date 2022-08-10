@@ -10,8 +10,8 @@ export default function AboutMe() {
     return (
         <PublicLayout>
             <AboutMeComponent />
-            <LatestArticles />
-            <Technologies />
+            {/* <LatestArticles /> */}
+            {/* <Technologies /> */}
         </PublicLayout>
     )
 }
