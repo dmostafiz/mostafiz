@@ -28,8 +28,8 @@ export default function HomepageCarousel() {
                         <Flex align='center' gap='2'>
                             <Image maxW='170px' src='/fiverr.png' />
 
-                            <Button as='a' href='https://fiverr.com/dmostafiz' target='_blank' rel='noopener,norefferer' colorScheme='green' color='white' size='lg' shadow='sm' rounded='full'>
-                                Find me on Fiverr
+                            <Button as='a' href='#' target='_blank' rel='noopener,norefferer' colorScheme='green' color='white' size='lg' shadow='sm' rounded='full'>
+                                Get Started with me
                             </Button>
 
                         </Flex>
