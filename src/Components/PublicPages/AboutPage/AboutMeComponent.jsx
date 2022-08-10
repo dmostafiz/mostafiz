@@ -15,7 +15,7 @@ export default function AboutMeComponent() {
 
                     <Box position='relative' maxW={{
                         base: '100%',
-                        lg: '400px'
+                        lg: '450px'
                     }} bg='transparent' rounded='3xl'>
                         {/* <Image w='full' src='/img/mostafiz2.jpg' rounded='xl' /> */}
                         <Swiper
