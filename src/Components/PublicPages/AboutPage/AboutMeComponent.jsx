@@ -45,12 +45,12 @@ export default function AboutMeComponent() {
                     </Box>
 
                     <Box flex='1'>
-                        <Text fontWeight='semibold' letterSpacing='2px' fontSize='14px'>Mostafiz Rahaman</Text>
+                        <Text fontWeight='semibold' letterSpacing='2px' fontSize='14px'>I'm Mostafiz</Text>
 
                         <Spacer h={3} />
 
                         <Text fontWeight='bold' letterSpacing='0px' lineHeight='38px' fontSize='32px'>
-                            Full-Stack Software engineer
+                            Doing freelance jobs in <br/>  fiverr & upwork
                         </Text>
 
                         <Spacer h={4} />
@@ -85,7 +85,7 @@ export default function AboutMeComponent() {
 
                     <Spacer h={1} />
 
-                    <Text fontWeight='bold' letterSpacing='0px' lineHeight='38px' fontSize='32px'>I'm a freelancer in fiverr & upwork</Text>
+                    <Text fontWeight='bold' letterSpacing='0px' lineHeight='38px' fontSize='32px'>Full-Stack Software engineer</Text>
 
                     <Spacer h={4} />
 
