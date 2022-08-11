@@ -5,6 +5,7 @@ import { HiMenuAlt3 } from 'react-icons/hi'
 import MobileMenu from './MobileMenu';
 import MainLogo from '../../../Components/Common/MainLogo';
 import { useRouter } from 'next/router';
+import StickyBox from "react-sticky-box";
 
 const MainNav = () => {
 
@@ -30,18 +31,8 @@ const MainNav = () => {
 
 
     return (
-        <Box
-            h={(topRef.current && !isOpen) ? (navDimensions?.borderBox?.height - topDimensions?.borderBox?.height || 0) : navDimensions?.borderBox?.height}
-            bg={['/'].includes(router.pathname) ? '#2d3183' : ''}
-            position='relative'
-        >
 
-            <Box
-                w='full'
-                position='fixed'
-                zIndex={999}
-                ref={navRef}
-            >
+            <>
 
                 {isOpen && <Alert ref={topRef} status='success' variant='solid' py={{ base: 3, md: 1 }}>
                     <Container maxW='6xl'>
@@ -59,79 +50,80 @@ const MainNav = () => {
                     />
                 </Alert>}
 
+                <StickyBox offsetTop={0} style={{zIndex: 999}}>
+                    <Box
+                        w='full'
+                        // position='fixed'
+                        bg='#2d3183'
+                        backdropFilter='auto'
+                        // backdropInvert='80%'
+                        backdropBlur='20px'
+                        // zIndex={999}
+                        // shadow='sm'
+                        py={4}
+                    // pt={4}
+                    >
 
-                <Box
-                    w='full'
-                    // position='fixed'
-                    bg='#2d3183de'
-                    backdropFilter='auto'
-                    // backdropInvert='80%'
-                    backdropBlur='10px'
-                    // zIndex={999}
-                    py={4}
-                // pt={4}
-                >
+                        <Container maxW='6xl'>
 
-                    <Container maxW='6xl'>
+                            <Flex justify='space-between' alignItems='center'>
 
-                        <Flex justify='space-between' alignItems='center'>
-
-                            <Box maxW={{ base: '150', lg: '180px' }} maxH='50px'>
-                                <NextLink href='/'>
-                                    <Link href='/'>
-                                        <MainLogo />
-                                    </Link>
-                                </NextLink>
-                            </Box>
-
-                            <Show above='lg'>
-                                <Flex gap={10} color='whiteAlpha.700'>
-
-                                    <NextLink href='/about_me'>
-                                        <Link href='/about_me'>
-                                            <Text fontWeight='semibold'>About Me</Text>
+                                <Box maxW={{ base: '150', lg: '180px' }} maxH='50px'>
+                                    <NextLink href='/'>
+                                        <Link href='/'>
+                                            <MainLogo />
                                         </Link>
                                     </NextLink>
+                                </Box>
 
-                                    <NextLink href='/case_studies'>
-                                        <Link href='/case_studies'>
-                                            <Text fontWeight='semibold'>Portfolio</Text>
-                                        </Link>
-                                    </NextLink>
+                                <Show above='lg'>
+                                    <Flex gap={10} color='whiteAlpha.700'>
 
-                                    <NextLink href='/about_me'>
-                                        <Link href='/about_me'>
-                                            <Text fontWeight='semibold'>Case Studies</Text>
-                                        </Link>
-                                    </NextLink>
+                                        <NextLink href='/about_me'>
+                                            <Link href='/about_me'>
+                                                <Text fontWeight='normal'>About Me</Text>
+                                            </Link>
+                                        </NextLink>
 
-                                    <NextLink href='/tech_articles'>
-                                        <Link href='/tech_articles'>
-                                            <Text fontWeight='semibold'>Tech Articles</Text>
-                                        </Link>
-                                    </NextLink>
-                                </Flex>
-                            </Show>
+                                        <NextLink href='/case_studies'>
+                                            <Link href='/case_studies'>
+                                                <Text fontWeight='normal'>Portfolio</Text>
+                                            </Link>
+                                        </NextLink>
 
-                            <Show above='lg'>
-                                <Flex gap={3}>
-                                    <Button bg='white' rounded='full'>Sign In</Button>
-                                    <Button colorScheme='yellow' bg='yellow.400' rounded='full'>Be a partner</Button>
-                                </Flex>
-                            </Show>
+                                        <NextLink href='/about_me'>
+                                            <Link href='/about_me'>
+                                                <Text fontWeight='normal'>Case Studies</Text>
+                                            </Link>
+                                        </NextLink>
 
-                            <Show below='lg'>
-                                <Flex gap={3}>
-                                    <MobileMenu />
-                                </Flex>
-                            </Show>
-                        </Flex>
+                                        <NextLink href='/tech_articles'>
+                                            <Link href='/tech_articles'>
+                                                <Text fontWeight='normal'>Tech Articles</Text>
+                                            </Link>
+                                        </NextLink>
+                                    </Flex>
+                                </Show>
 
-                    </Container>
-                </Box>
-            </Box>
-            {/* <Box key={onClose} h={navDimensions && navDimensions?.borderBox?.height} bg={['/'].includes(router.pathname) ? '#2d3183' : 'transparent'} /> */}
-        </Box>
+                                <Show above='lg'>
+                                    <Flex gap={3}>
+                                        <Button bg='white' rounded='full'>Sign In</Button>
+                                        <Button colorScheme='yellow' bg='yellow.400' rounded='full'>Be a partner</Button>
+                                    </Flex>
+                                </Show>
+
+                                <Show below='lg'>
+                                    <Flex gap={3}>
+                                        <MobileMenu />
+                                    </Flex>
+                                </Show>
+                            </Flex>
+
+                        </Container>
+                    </Box>
+                </StickyBox>
+
+            </>
     );
 }
 

@@ -56,7 +56,7 @@ export default function MobileMenu() {
                         </Box>
                     </DrawerHeader>
 
-                    <DrawerBody bg='#2d3183'>
+                    <DrawerBody bg=''>
 
                         {/* <Divider /> */}
 

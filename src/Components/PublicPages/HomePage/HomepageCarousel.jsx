@@ -4,7 +4,7 @@ import { MdCheckCircle } from 'react-icons/md'
 
 export default function HomepageCarousel() {
     return (
-        <Box w='full' bg='#2d3183' pb={10} pt={{base:3, md:8}}>
+        <Box w='full' bg='#2d3183' pb={10} pt={{ base: 3, md: 8 }}>
 
             <Container maxW='6xl' p={5}>
 
@@ -14,9 +14,9 @@ export default function HomepageCarousel() {
                 }}
                     gap={5}
                 >
- 
+
                     <Box flex={1}>
- 
+
                         <Text textShadow='' fontFamily={`'Lobster', cursive`} color='yellow.400' fontSize={{ base: '50px', md: '70px', lg: '95px' }} lineHeight={1} fontWeight='normal'>I`m Mostafiz Rahaman</Text>
 
                         <Spacer h={8} />
@@ -49,7 +49,7 @@ export default function HomepageCarousel() {
                             <Spacer h={3} />
 
                             <Text color='white' >
-                                I offer Cost Effective Digital Solutions based on my clients ideas. Everything starts from scratch and you have the ability to customize anything while developing your platform.
+                                I have more than 7 years of extensive experience in participating in all phases of software development cycles. Very proficient in technology and writing code to build reliable and user-friendly systems.
                             </Text>
 
                             <Spacer h={5} />
@@ -89,7 +89,7 @@ export default function HomepageCarousel() {
                                         <ListItem>
                                             <ListIcon as={MdCheckCircle} color='green.500' />
                                             <Text as='span' fontSize={{ base: '14px', md: '16' }}>
-                                                EdTech, Finteck and other solutions
+                                                EdTech, Fintech and other solutions
                                             </Text>
                                         </ListItem>
                                     </List>
