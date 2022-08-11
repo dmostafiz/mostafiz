@@ -54,7 +54,7 @@ const MainNav = () => {
                     <Box
                         w='full'
                         // position='fixed'
-                        bg='#2d3183'
+                        bgGradient='linear(to-r, #050842cc, #2d3183)'
                         backdropFilter='auto'
                         // backdropInvert='80%'
                         backdropBlur='20px'
