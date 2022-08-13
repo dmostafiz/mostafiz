@@ -1,9 +1,11 @@
-import { Badge, Box, Button, Center, Container, Divider, Flex, Image, Link, Show, Spacer, Stack, Text } from '@chakra-ui/react'
+import { Badge, Box, Button, Center, Container, Wrap, Tag, TagLabel, Link, Show, Spacer, Stack, Text } from '@chakra-ui/react'
 import React from 'react'
 import SectionTitle from '../../Common/SectionTitle'
 import NextLink from 'next/link'
 import SoftLink from '../../Common/SoftLink'
 import ArticleListCard from '../../Articles/ArticleListCard'
+import StickyBox from "react-sticky-box";
+
 
 export default function LatestArticles() {
     return (
@@ -14,6 +16,103 @@ export default function LatestArticles() {
                     title='Latest Articles'
                     subTitle="Read latest articles i written about modern technologies, business concepts and many more things"
                 />
+
+                <Wrap spacing={3}>
+
+                    <NextLink href='#'>
+                        <Link href='#'>
+                            <Tag
+                                size='lg'
+                                borderRadius='full'
+                                variant='outline'
+                                colorScheme='gray'
+                            >
+                                <TagLabel>Next Js</TagLabel>
+                            </Tag>
+                        </Link>
+                    </NextLink>
+
+                    <NextLink href='#'>
+                        <Link href='#'>
+                            <Tag
+                                size='lg'
+                                borderRadius='full'
+                                variant='outline'
+                                colorScheme='gray'
+                            >
+                                <TagLabel>Laravel</TagLabel>
+                            </Tag>
+                        </Link>
+                    </NextLink>
+
+                    <NextLink href='#'>
+                        <Link href='#'>
+                            <Tag
+                                size='lg'
+                                borderRadius='full'
+                                variant='outline'
+                                colorScheme='gray'
+                            >
+                                <TagLabel>Full-Stack Development</TagLabel>
+                            </Tag>
+                        </Link>
+                    </NextLink>
+
+                    <NextLink href='#'>
+                        <Link href='#'>
+                            <Tag
+                                size='lg'
+                                borderRadius='full'
+                                variant='outline'
+                                colorScheme='gray'
+                            >
+                                <TagLabel>Mobile App Development</TagLabel>
+                            </Tag>
+                        </Link>
+                    </NextLink>
+
+                    <NextLink href='#'>
+                        <Link href='#'>
+                            <Tag
+                                size='lg'
+                                borderRadius='full'
+                                variant='outline'
+                                colorScheme='gray'
+                            >
+                                <TagLabel>Node Js</TagLabel>
+                            </Tag>
+                        </Link>
+                    </NextLink>
+
+                    <NextLink href='#'>
+                        <Link href='#'>
+                            <Tag
+                                size='lg'
+                                borderRadius='full'
+                                variant='outline'
+                                colorScheme='gray'
+                            >
+                                <TagLabel>Express Js</TagLabel>
+                            </Tag>
+                        </Link>
+                    </NextLink>
+
+                    <NextLink href='#'>
+                        <Link href='#'>
+                            <Tag
+                                size='lg'
+                                borderRadius='full'
+                                variant='outline'
+                                colorScheme='gray'
+                            >
+                                <TagLabel>Web Programming</TagLabel>
+                            </Tag>
+                        </Link>
+                    </NextLink>
+
+                </Wrap>
+
+                <Spacer h={8} />
 
                 <Box>
                     <Stack direction='column' gap={5}>
@@ -59,7 +158,7 @@ export default function LatestArticles() {
 
                     </Stack>
                 </Box>
-            </Container>
-        </Box>
+            </Container >
+        </Box >
     )
 }

@@ -5,7 +5,7 @@ import SoftLink from '../Common/SoftLink'
 export default function ArticleListCard({ article }) {
     return (
         <SoftLink to={`/article/${article.slug}`}>
-            <Flex alignItems='center' gap={{ base: 5, md: 8 }} rounded='xl' _hover={{ bg: 'blackAlpha.50', shadow: 'md' }}>
+            <Flex alignItems='flex-start' gap={{ base: 5, md: 8 }} rounded='xl' _hover={{ bg: 'blackAlpha.50', shadow: 'sm' }}>
                 <Box w={{ base: '190px', md: '330px' }}>
                     <Image
                         w='full'
@@ -16,6 +16,8 @@ export default function ArticleListCard({ article }) {
                     />
                 </Box>
                 <Box flex='1' mt={{ base: '0px', md: '5px' }}>
+
+                    <Spacer h={2} />
 
                     <Text fontWeight='bold' fontSize={{ base: '17px', md: '24px' }} lineHeight={{ base: '20px', md: '30px' }}>
                         {article.title}
