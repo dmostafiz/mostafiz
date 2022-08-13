@@ -8,10 +8,15 @@ import PublicLayout from "../Layouts/PublicLayout";
 export default function Home() {
   return (
     <PublicLayout>
+      
       <HomepageCarousel />
+
       <MySkills />
+
       <LatestArticles />
+
       <Technologies />
+
     </PublicLayout>
   )
 }

@@ -32,98 +32,143 @@ const MainNav = () => {
 
     return (
 
-            <>
+        <>
 
-                {isOpen && <Alert ref={topRef} status='success' variant='solid' py={{ base: 3, md: 1 }}>
+            {isOpen && <Alert ref={topRef} status='success' zIndex={999} variant='solid' py={{ base: 3, md: 1 }}>
+                <Container maxW='6xl'>
+                    <AlertDescription>
+                        <Text lineHeight='18px' fontSize={{ base: '14px', md: '16px' }}>
+                            Please be noted! This website is currently under development process, it`s containing many fake and dummy contents.
+                        </Text>
+                    </AlertDescription>
+                </Container>
+                <CloseButton
+                    alignSelf='flex-start'
+                    position='relative'
+                    rounded='full'
+                    onClick={onClose}
+                />
+            </Alert>}
+
+            <StickyBox offsetTop={0} style={{ zIndex: 999 }}>
+                <Box
+                    w='full'
+                    // position='fixed'
+                    bgGradient='linear(to-r, #050842cc, #2d3183)'
+                    backdropFilter='auto'
+                    // backdropInvert='80%'
+                    backdropBlur='50px'
+                    // zIndex={999}
+                    // shadow='sm'
+                    py={4}
+                // pt={4}
+                >
+
                     <Container maxW='6xl'>
-                        <AlertDescription>
-                            <Text lineHeight='18px' fontSize={{ base: '14px', md: '16px' }}>
-                                Please be noted! This website is currently under development process, it`s containing many fake and dummy contents.
-                            </Text>
-                        </AlertDescription>
-                    </Container>
-                    <CloseButton
-                        alignSelf='flex-start'
-                        position='relative'
-                        rounded='full'
-                        onClick={onClose}
-                    />
-                </Alert>}
 
-                <StickyBox offsetTop={0} style={{zIndex: 999}}>
-                    <Box
-                        w='full'
-                        // position='fixed'
-                        bgGradient='linear(to-r, #050842cc, #2d3183)'
-                        backdropFilter='auto'
-                        // backdropInvert='80%'
-                        backdropBlur='20px'
-                        // zIndex={999}
-                        // shadow='sm'
-                        py={4}
-                    // pt={4}
-                    >
+                        <Flex justify='space-between' alignItems='center'>
 
-                        <Container maxW='6xl'>
+                            <Box maxW={{ base: '150', lg: '180px' }} maxH='50px'>
+                                <NextLink href='/'>
+                                    <Link href='/'>
+                                        <MainLogo />
+                                    </Link>
+                                </NextLink>
+                            </Box>
 
-                            <Flex justify='space-between' alignItems='center'>
+                            <Show above='lg'>
+                                <Flex gap={2} color='whiteAlpha.700'>
 
-                                <Box maxW={{ base: '150', lg: '180px' }} maxH='50px'>
-                                    <NextLink href='/'>
-                                        <Link href='/'>
-                                            <MainLogo />
+                                    <NextLink href='/about_me'>
+                                        <Link
+                                            px={4}
+                                            py={2}
+                                            rounded='3xl'
+                                            _hover={{
+                                                textDecoration: 'none',
+                                                bg: 'blackAlpha.400',
+                                                shadow: 'md'
+                                            }}
+                                            href='/about_me'
+
+                                            bg='blackAlpha.400'
+                                            
+                                        >
+
+                                            <Text fontWeight='normal'>Business</Text>
+
                                         </Link>
                                     </NextLink>
-                                </Box>
 
-                                <Show above='lg'>
-                                    <Flex gap={10} color='whiteAlpha.700'>
+                                    <NextLink href='/case_studies'>
+                                        <Link
+                                            px={4}
+                                            py={2}
+                                            rounded='3xl'
+                                            _hover={{
+                                                textDecoration: 'none',
+                                                bg: 'blackAlpha.400',
+                                                shadow: 'md'
+                                            }}
+                                            href='/case_studies'
+                                        >
+                                            <Text fontWeight='normal'>Portfolio</Text>
+                                        </Link>
+                                    </NextLink>
 
-                                        <NextLink href='/about_me'>
-                                            <Link href='/about_me'>
-                                                <Text fontWeight='normal'>About Me</Text>
-                                            </Link>
-                                        </NextLink>
+                                    <NextLink href='/about_me'>
+                                        <Link
+                                            px={4}
+                                            py={2}
+                                            rounded='3xl'
+                                            _hover={{
+                                                textDecoration: 'none',
+                                                bg: 'blackAlpha.400',
+                                                shadow: 'md'
+                                            }}
+                                            href='/about_me'
+                                        >
+                                            <Text fontWeight='normal'>Case Studies</Text>
+                                        </Link>
+                                    </NextLink>
 
-                                        <NextLink href='/case_studies'>
-                                            <Link href='/case_studies'>
-                                                <Text fontWeight='normal'>Portfolio</Text>
-                                            </Link>
-                                        </NextLink>
+                                    <NextLink href='/tech_articles'>
+                                        <Link
+                                            px={4}
+                                            py={2}
+                                            rounded='3xl'
+                                            _hover={{
+                                                textDecoration: 'none',
+                                                bg: 'blackAlpha.400',
+                                                shadow: 'md'
+                                            }}
+                                            href='/tech_articles'
+                                        >
+                                            <Text fontWeight='normal'>Tech Articles</Text>
+                                        </Link>
+                                    </NextLink>
+                                </Flex>
+                            </Show>
 
-                                        <NextLink href='/about_me'>
-                                            <Link href='/about_me'>
-                                                <Text fontWeight='normal'>Case Studies</Text>
-                                            </Link>
-                                        </NextLink>
+                            <Show above='lg'>
+                                <Flex gap={3}>
+                                    <Button bg='white' rounded='full'>Sign In</Button>
+                                    <Button colorScheme='yellow' bg='yellow.400' rounded='full'>Be a partner</Button>
+                                </Flex>
+                            </Show>
 
-                                        <NextLink href='/tech_articles'>
-                                            <Link href='/tech_articles'>
-                                                <Text fontWeight='normal'>Tech Articles</Text>
-                                            </Link>
-                                        </NextLink>
-                                    </Flex>
-                                </Show>
+                            <Show below='lg'>
+                                <Flex gap={3}>
+                                    <MobileMenu />
+                                </Flex>
+                            </Show>
+                        </Flex>
 
-                                <Show above='lg'>
-                                    <Flex gap={3}>
-                                        <Button bg='white' rounded='full'>Sign In</Button>
-                                        <Button colorScheme='yellow' bg='yellow.400' rounded='full'>Be a partner</Button>
-                                    </Flex>
-                                </Show>
+                    </Container>
+                </Box>
+            </StickyBox>
 
-                                <Show below='lg'>
-                                    <Flex gap={3}>
-                                        <MobileMenu />
-                                    </Flex>
-                                </Show>
-                            </Flex>
-
-                        </Container>
-                    </Box>
-                </StickyBox>
-
-            </>
+        </>
     );
 }
 
