@@ -34,7 +34,7 @@ const MainNav = () => {
 
         <>
 
-            {isOpen && <Alert ref={topRef} status='success' zIndex={999} variant='solid' py={{ base: 3, md: 1 }}>
+            {isOpen && <Alert ref={topRef} bg='yellow.500' zIndex={999} variant='solid' py={{ base: 1, md: 0 }}>
                 <Container maxW='6xl'>
                     <AlertDescription>
                         <Text lineHeight='18px' fontSize={{ base: '14px', md: '16px' }}>
@@ -54,7 +54,7 @@ const MainNav = () => {
                 <Box
                     w='full'
                     // position='fixed'
-                    bgGradient='linear(to-r, #050842cc, #2d3183)'
+                    bgGradient='linear(to-r, #050842b8, #2d3183)'
                     backdropFilter='auto'
                     // backdropInvert='80%'
                     backdropBlur='50px'
@@ -86,12 +86,12 @@ const MainNav = () => {
                                             rounded='3xl'
                                             _hover={{
                                                 textDecoration: 'none',
-                                                bg: 'blackAlpha.400',
+                                                bg: 'blackAlpha.300',
                                                 shadow: 'md'
                                             }}
                                             href='/about_me'
 
-                                            bg='blackAlpha.400'
+                                            bg='blackAlpha.300'
                                             
                                         >
 
@@ -107,7 +107,7 @@ const MainNav = () => {
                                             rounded='3xl'
                                             _hover={{
                                                 textDecoration: 'none',
-                                                bg: 'blackAlpha.400',
+                                                bg: 'blackAlpha.300',
                                                 shadow: 'md'
                                             }}
                                             href='/case_studies'
@@ -123,7 +123,7 @@ const MainNav = () => {
                                             rounded='3xl'
                                             _hover={{
                                                 textDecoration: 'none',
-                                                bg: 'blackAlpha.400',
+                                                bg: 'blackAlpha.300',
                                                 shadow: 'md'
                                             }}
                                             href='/about_me'
@@ -139,7 +139,7 @@ const MainNav = () => {
                                             rounded='3xl'
                                             _hover={{
                                                 textDecoration: 'none',
-                                                bg: 'blackAlpha.400',
+                                                bg: 'blackAlpha.300',
                                                 shadow: 'md'
                                             }}
                                             href='/tech_articles'

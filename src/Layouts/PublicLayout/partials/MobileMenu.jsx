@@ -48,7 +48,7 @@ export default function MobileMenu() {
                 finalFocusRef={btnRef}
             >
                 <DrawerOverlay />
-                <DrawerContent bg='#2d3183'>
+                <DrawerContent bg='transparent' bgGradient='linear(to-r, #000000cc, #2d3183cc)' backdropFilter='auto' backdropBlur='10px'>
                     <DrawerCloseButton color='white'/>
                     <DrawerHeader>
                         <Box maxW='180px'>
