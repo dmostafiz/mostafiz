@@ -54,10 +54,10 @@ const MainNav = () => {
                 <Box
                     w='full'
                     // position='fixed'
-                    bgGradient='linear(to-r, #050842b8, #2d3183)'
+                    bgGradient='linear(to-r, #2372d6bd, #457ddd)'
                     backdropFilter='auto'
                     // backdropInvert='80%'
-                    backdropBlur='50px'
+                    backdropBlur='20px'
                     // zIndex={999}
                     // shadow='sm'
                     py={4}

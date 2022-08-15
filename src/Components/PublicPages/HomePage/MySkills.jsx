@@ -15,7 +15,7 @@ export default function MySkills() {
                         lg: '400px'
                     }}>
                         <Image w='full' src='/img/mostafiz2.jpg' rounded='sm' />
-                        <Center position='absolute' w='full' h='full' bgGradient='linear(to-bl, #fbbf245e, #2d3183cc)' rounded='sm' top='0'>
+                        <Center position='absolute' w='full' h='full' bgGradient='linear(to-bl, #2372d661, #457dd157)' rounded='sm' top='0'>
                             <IntroVideoModal />
                         </Center>
                     </Box>

@@ -1,6 +1,7 @@
 import { Box, Button, Container, Flex, Image, List, ListIcon, ListItem, Spacer, Text } from '@chakra-ui/react'
 import React, { useEffect, useState } from 'react'
 import { MdCheckCircle } from 'react-icons/md'
+import { Fade } from 'react-reveal'
 
 export default function HomepageCarousel() {
 
@@ -37,7 +38,7 @@ export default function HomepageCarousel() {
             pos='relative'
             top='-82px'
         >
-            <Box w='full' bgGradient='linear(to-r, #000000cc, #2d3183cc)' backdropFilter='auto' backdropBlur='3px' pb={10} pt={{ base: '100px', md: '140px' }}>
+            <Box w='full' bgGradient='linear(to-r,blackAlpha.700, #1968cb96)' backdropFilter='auto' backdropBlur='5px' pb={10} pt={{ base: '100px', md: '140px' }}>
 
                 <Container maxW='6xl' p={5}>
 
@@ -50,28 +51,34 @@ export default function HomepageCarousel() {
 
                         <Box flex={1}>
 
-                            <Text
-                                bgGradient='linear(to-r, #fbbf24, #ebd8bc)'
-                                bgClip='text'
-                                textShadow=''
-                                fontFamily={`'Fugaz One', cursiv`}
-                                // color='yellow.400'
-                                fontSize={{ base: '50px', md: '70px', lg: '95px' }}
-                                lineHeight={1}
-                                fontWeight='normal'>
-                                I`m Mostafiz Rahaman
-                            </Text>
+                            <Box>
+                                <Fade>
+                                    <Text
+                                        bgGradient='linear(to-r, #fbbf24, #ebd8bc)'
+                                        bgClip='text'
+                                        textShadow=''
+                                        fontFamily={`'Fugaz One', cursiv`}
+                                        // color='yellow.400'
+                                        fontSize={{ base: '50px', md: '70px', lg: '79px' }}
+                                        lineHeight={1}
+                                        fontWeight='normal'>
+                                        I'm Mostafiz Rahaman
+                                    </Text>
+
+                                </Fade>
+
+                            </Box>
 
                             <Spacer h={5} />
 
-                            <Text color='white' fontSize={{ base: '16px', md: '18px', lg: '22px' }}>A fulltime Freelance software programmer from Bangladesh. Basically, I offer innovative digital creations in full-stack solutions for web, mobile or desktop environments to simplify and automate any online based business.</Text>
+                            <Text color='white' fontSize={{ base: '16px', md: '18px', lg: '20px' }}>A fulltime Freelance software programmer from Bangladesh. Basically, I offer innovative digital creations in full-stack solutions for web, mobile or desktop environments to simplify and automate any online based business.</Text>
 
                             <Spacer h={8} />
 
                             <Flex align='center' gap='2'>
                                 <Image maxW='170px' src='/fiverr.png' />
 
-                                <Button as='a' href='#' target='_blank' rel='noopener,norefferer' colorScheme='green' color='white' size='lg' shadow='sm' rounded='full'>
+                                <Button as='a' href='#' target='_blank' rel='noopener,norefferer' _hover={{bg: '#1ec7b2'}} bg='#33d0bb' color='white' size='lg' shadow='sm' rounded='full'>
                                     Get Started Today
                                 </Button>
 
@@ -143,7 +150,7 @@ export default function HomepageCarousel() {
                                 <Spacer h={5} />
 
 
-                                <Button colorScheme='yellow' bg='yellow.400' size='lg' rounded='md' w='full'>HIRE ME TODAY</Button>
+                                <Button colorScheme='yellow' bg='yellow.400' size='lg' rounded='md' w='full'>HIRE ME TODAY, ITS EASY!</Button>
 
                             </Box>
                         </Box>

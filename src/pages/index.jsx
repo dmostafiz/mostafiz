@@ -4,18 +4,25 @@ import MySkills from "../Components/PublicPages/HomePage/MySkills";
 import LatestArticles from "../Components/PublicPages/HomePage/LatestArticles";
 import Technologies from "../Components/PublicPages/HomePage/Technologies";
 import PublicLayout from "../Layouts/PublicLayout";
+import MobileAppSection from "../Components/PublicPages/HomePage/MobileAppSection";
+import WebsiteSection from "../Components/PublicPages/HomePage/WebsiteSection";
+import { Fade, Zoom } from "react-reveal";
 
 export default function Home() {
   return (
     <PublicLayout>
       
-      <HomepageCarousel />
+        <HomepageCarousel />
 
-      <MySkills />
+        <MySkills />
 
-      <LatestArticles />
+        <LatestArticles />
 
-      <Technologies />
+        <MobileAppSection />
+
+        <WebsiteSection />
+
+        <Technologies />
 
     </PublicLayout>
   )

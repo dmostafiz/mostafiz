@@ -1,5 +1,6 @@
 import { Box, Container, Flex, Link, SimpleGrid, Stack, Text, useColorModeValue } from '@chakra-ui/react'
 import React from 'react'
+import { Fade } from 'react-reveal'
 import SocialLinks from '../../Components/Common/SocialLinks'
 import MainNav from './partials/MainNav'
 
@@ -9,13 +10,15 @@ export default function PublicLayout({ children }) {
 
       <MainNav />
 
-      <Box>{children}</Box>
+      <Fade>
+        <Box>{children}</Box>
+      </Fade>
 
       <Box
         w='full'
         bg={useColorModeValue('gray.50', 'gray.900')}
         color={useColorModeValue('gray.700', 'gray.200')}
-        // alignContent='flex-end'
+      // alignContent='flex-end'
       >
 
 
