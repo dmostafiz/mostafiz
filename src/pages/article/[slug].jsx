@@ -1,6 +1,6 @@
-import { Avatar, Badge, Box, Button, ButtonGroup, Center, Container, Divider, Flex, Heading, Icon, Image, Input, InputGroup, Link, Spacer, Stack, Text, useColorModeValue, VStack } from '@chakra-ui/react'
+import { Avatar, Badge, Box, Button, ButtonGroup, Center, Container, Divider, Flex, Heading, Icon, Image, Input, InputGroup, Link, Spacer, Stack, Text, useColorModeValue, VStack, Breadcrumb, BreadcrumbItem, BreadcrumbLink } from '@chakra-ui/react'
 import React from 'react'
-import { BsQuestion, BsReply } from 'react-icons/bs'
+import { BsArrowRight, BsQuestion, BsReply } from 'react-icons/bs'
 import { HiThumbDown, HiThumbUp } from 'react-icons/hi'
 import { MdMessage } from 'react-icons/md'
 import SectionTitle from '../../Components/Common/SectionTitle'
@@ -10,15 +10,40 @@ import PublicLayout from '../../Layouts/PublicLayout'
 import StickyBox from "react-sticky-box";
 
 export default function Article() {
+
+  const bgImage = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY6Jx2k9vXU_HptXpZISN3EUpWWpMEZYQaZw&usqp=CAU'
+
   return (
     <PublicLayout>
+      <Box py={2} bg={'white'} fontWeight='semibold' shadow='sm'>
+        <Container maxW='6xl'>
+
+          <Breadcrumb spacing='8px' separator={'/'}>
+            <BreadcrumbItem>
+              <BreadcrumbLink href='#'>Home</BreadcrumbLink>
+            </BreadcrumbItem>
+
+            <BreadcrumbItem>
+              <BreadcrumbLink href='#'>Articles</BreadcrumbLink>
+            </BreadcrumbItem>
+
+            <BreadcrumbItem>
+              <BreadcrumbLink href='#'>A detailed article about fiverr freelancing</BreadcrumbLink>
+            </BreadcrumbItem>
+
+          </Breadcrumb>
+        </Container >
+      </Box>
+
       <Container maxW='6xl'>
+
         <Box w='full' py={{ base: 3, md: 8 }}>
 
           <Flex w='full' gap={5} direction={{ base: 'column', lg: 'row' }}>
 
             <Box flex={{ base: '0', lg: '1' }} bg={'white'} boxShadow={'md'} roundedTop={'xl'}>
-              <Image roundedTop={'xl'} w='full' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY6Jx2k9vXU_HptXpZISN3EUpWWpMEZYQaZw&usqp=CAU' />
+
+              <Image roundedTop={'sm'} w='full' src={bgImage} />
 
               <Box p={6}>
                 <Text as={`h1`} fontSize={`3xl`} fontWeight={`bold`} lineHeight='35px'>A detailed article about fiverr freelancing</Text>
@@ -42,7 +67,7 @@ export default function Article() {
               </Box>
             </Box>
 
-            <Box w={{ base: 'full', lg: '340px' }}>
+            <Box w={{ base: 'full', lg: '320px' }}>
 
               <StickyBox offsetTop={110} >
                 <VStack w='full' gap={5}>
@@ -52,71 +77,79 @@ export default function Article() {
                       // maxW={'320px'}
                       w={'full'}
                       bg={useColorModeValue('white', 'gray.900')}
-                      boxShadow={'md'}
+                      shadow={'md'}
                       rounded={'lg'}
                       textAlign={'center'}
                     >
 
                       <Box
-                        w='full'
+                        bgImage={bgImage}
                         roundedTop={{ base: '0', lg: 'lg' }}
-                        color='gray.100'
-                        bg={`#2d3183`}
-                        pt={5}
-                        pb={3}
-                        px={3}
                       >
-                        <Avatar
-                          border='2px solid white'
-                          size={'2xl'}
-                          src={
-                            '/img/mostafiz1.jpg'
-                          }
-                          alt={'Avatar Alt'}
-                          mb={3}
-                          pos={'relative'}
-                          _after={{
-                            content: '""',
-                            w: 4,
-                            h: 4,
-                            bg: '#fbbf24',
-                            border: '2px solid white',
-                            rounded: 'full',
-                            pos: 'absolute',
-                            bottom: 2,
-                            right: 3,
-                          }}
-                        />
-                        <Heading fontSize={'2xl'} fontFamily={'body'}>
-                          Mostafiz Rahaman
-                        </Heading>
-                        <Text fontWeight={600} color={'gray.400'} mb={2}>
-                          author @ mostafiz.dev
-                        </Text>
+                        <Box
+                          w='full'
+                          // roundedTop={{ base: '0', lg: 'lg' }}
+                          color='gray.900'
+                          bg={`#ffffff4d`}
+                          // bgGradient='linear(to-tr, #fbbf2440, #fbbf24a3)'
+                          backdropFilter='auto'
+                          backdropBlur='80px'
+                          pt={5}
+                          pb={3}
+                          px={3}
+                        >
+                          <Avatar
+                            border='2px solid white'
+                            size={'2xl'}
+                            src={
+                              '/img/mostafiz1.jpg'
+                            }
+                            alt={'Avatar Alt'}
+                            mb={3}
+                            pos={'relative'}
+                            _after={{
+                              content: '""',
+                              w: 4,
+                              h: 4,
+                              bg: '#fbbf24',
+                              border: '2px solid white',
+                              rounded: 'full',
+                              pos: 'absolute',
+                              bottom: 2,
+                              right: 3,
+                            }}
+                          />
+                          <Heading fontSize={'2xl'} color={'blackAlpha.900'} fontFamily={'body'}>
+                            Mostafiz Rahaman
+                          </Heading>
+                          <Text fontWeight={600} color={'blackAlpha.700'} mb={2}>
+                            author@mostafiz.dev
+                          </Text>
+                        </Box>
                       </Box>
+
+                      <Divider />
 
                       <Box
                         pt={3}
                         pb={5}
                       // px={1}
+                      // textAlign='center'
                       >
                         <Text
-                          fontSize={`13px`}
+                          fontSize={`14px`}
                           textAlign={'left'}
                           color={useColorModeValue('gray.700', 'gray.400')}
                           px={3}
                         >
-                          I`m very passionate about gathering knowledge & writing tech-related articles. I always try to find out solutions over the internet and write quality content on that topic.
+                          I truly believe that learning never ends and sharing knowledge is key to growth. So, i write here and there.
                         </Text>
 
-
-
-                        <Divider py={1} />
+                        <Spacer h={3} />
 
                         <Box px={3} py={2}>
                           <Box textAlign='left'>
-                            <Text fontWeight={`semibold`} ml={2}>I am writing on</Text>
-                            <Spacer h={2} />
+                         
                             <SocialLinksAuthor />
                           </Box>
                         </Box>
@@ -125,7 +158,7 @@ export default function Article() {
 
                         <Box px={3} py={2}>
                           <Box textAlign='left'>
-                            <Text fontWeight={`semibold`} ml={2}>Subscribe my newsletter</Text>
+                            <Text fontWeight={`semibold`} ml={1}>Subscribe newsletter</Text>
                             <Spacer h={2} />
                             <InputGroup size={'md'} spacing={0}>
                               <Input placeholder='Enter your email' roundedLeft={`full`} _focus={{ borderColor: '#fbbf24', ring: 'none' }} />

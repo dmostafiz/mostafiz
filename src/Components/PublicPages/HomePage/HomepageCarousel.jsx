@@ -12,10 +12,9 @@ export default function HomepageCarousel() {
         'http://www.smbceo.com/wp-content/uploads/2018/01/happy-freelancer.jpg',
         'https://cdn.elearningindustry.com/wp-content/uploads/2018/12/10-best-productivity-apps-for-freelancers-and-bloggers-1024x574.jpg',
         'https://blog.payoneer.com/wp-content/uploads/2020/03/Freelancer-Taxes-2.jpg'
-        
     ]
 
-    const [bgImage, setBgImage] = useState(images[1])
+    const [bgImage, setBgImage] = useState(images[Math.floor(Math.random() * images.length)])
 
     useEffect(() => {
         const intervel = setInterval(() => {
@@ -51,7 +50,15 @@ export default function HomepageCarousel() {
 
                         <Box flex={1}>
 
-                            <Text textShadow='' fontFamily={`'Fugaz One', cursiv`} color='yellow.400' fontSize={{ base: '50px', md: '70px', lg: '95px' }} lineHeight={1} fontWeight='normal'>
+                            <Text
+                                bgGradient='linear(to-r, #fbbf24, #ebd8bc)'
+                                bgClip='text'
+                                textShadow=''
+                                fontFamily={`'Fugaz One', cursiv`}
+                                // color='yellow.400'
+                                fontSize={{ base: '50px', md: '70px', lg: '95px' }}
+                                lineHeight={1}
+                                fontWeight='normal'>
                                 I`m Mostafiz Rahaman
                             </Text>
 

@@ -5,20 +5,20 @@ import { MdFacebook } from 'react-icons/md'
 
 export default function SocialLinksAuthor() {
     return (
-        <ButtonGroup w='full' variant='outline' spacing='2'>
+        <ButtonGroup w='full' variant='outline' spacing='4px'>
 
             <Button
                 as='a'
                 w='full'
                 size='sm'
-                rounded='full'
+                roundedLeft='full'
                 shadow='sm'
                 gap={2}
                 href='https://fb.com/mostafiz.dev'
                 target='_blank'
                 rel='noopener'
                 colorScheme='facebook'
-                variant='outline'
+                variant='solid'
             >
                 <MdFacebook size={24} /> Facebook
             </Button>
@@ -27,14 +27,14 @@ export default function SocialLinksAuthor() {
                 as='a'
                 w='full'
                 size='sm'
-                rounded='full'
+                roundedRight='full'
                 shadow='sm'
                 gap={2}
                 href='https://www.linkedin.com/in/mostafiz-rahaman-010a8913a/'
                 target='_blank'
                 rel='noopener'
                 colorScheme='linkedin'
-                variant='outline'
+                variant='solid'
                 // flex={1}
             >
                <BsTwitter size={24} /> Twitter

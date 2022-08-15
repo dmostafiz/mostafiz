@@ -27,7 +27,7 @@ export default function LatestArticles() {
                                 variant='outline'
                                 colorScheme='gray'
                             >
-                                <TagLabel>Next Js</TagLabel>
+                                <TagLabel fontSize={`12px`}>Next Js</TagLabel>
                             </Tag>
                         </Link>
                     </NextLink>
@@ -40,7 +40,7 @@ export default function LatestArticles() {
                                 variant='outline'
                                 colorScheme='gray'
                             >
-                                <TagLabel>Laravel</TagLabel>
+                                <TagLabel  fontSize={`12px`}>Laravel</TagLabel>
                             </Tag>
                         </Link>
                     </NextLink>
@@ -53,7 +53,7 @@ export default function LatestArticles() {
                                 variant='outline'
                                 colorScheme='gray'
                             >
-                                <TagLabel>Full-Stack Development</TagLabel>
+                                <TagLabel  fontSize={`12px`}>Full-Stack Development</TagLabel>
                             </Tag>
                         </Link>
                     </NextLink>
@@ -66,7 +66,7 @@ export default function LatestArticles() {
                                 variant='outline'
                                 colorScheme='gray'
                             >
-                                <TagLabel>Mobile App Development</TagLabel>
+                                <TagLabel  fontSize={`12px`}>Mobile App Development</TagLabel>
                             </Tag>
                         </Link>
                     </NextLink>
@@ -79,7 +79,7 @@ export default function LatestArticles() {
                                 variant='outline'
                                 colorScheme='gray'
                             >
-                                <TagLabel>Node Js</TagLabel>
+                                <TagLabel  fontSize={`12px`}>Node Js</TagLabel>
                             </Tag>
                         </Link>
                     </NextLink>
@@ -92,7 +92,7 @@ export default function LatestArticles() {
                                 variant='outline'
                                 colorScheme='gray'
                             >
-                                <TagLabel>Express Js</TagLabel>
+                                <TagLabel  fontSize={`12px`}>Express Js</TagLabel>
                             </Tag>
                         </Link>
                     </NextLink>
@@ -105,7 +105,7 @@ export default function LatestArticles() {
                                 variant='outline'
                                 colorScheme='gray'
                             >
-                                <TagLabel>Web Programming</TagLabel>
+                                <TagLabel  fontSize={`12px`}>Web Programming</TagLabel>
                             </Tag>
                         </Link>
                     </NextLink>
