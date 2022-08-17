@@ -11,22 +11,28 @@ export default function ThreeDSection() {
     const { ref, inView } = useInView();
 
     const Show3DContent = () => {
-        return <Fade left>
+        return <Fade>
 
             <Text as='h1' fontWeight='bold' fontSize={{ base: '28px', lg: '35px' }} lineHeight={{ base: '36px', lg: '40px' }}>
-                Let customers play with your products within the website
+                Let customers play with your products within the web.
             </Text>
 
             <Spacer h={4} />
 
-            <Text>Bring your app idea to more users by building with Flutter or React Native on iOS and Android simultaneously, without sacrificing features, quality, or performance. My dedicated team will take care.</Text>
+            <Text fontSize={'17px'} fontWeight='normal'>Nowadays showing static product images to your customers is not enough to grab their attention. So therefor almost all big companies are shoacasing their products as 3D models.
+                Customers can feel it and move it to see all aspects of that product by just touching and moving it. Its really increasing their sales day by day.
+
+                <Spacer h={3} />
+
+                 
+                We are a dedicated team of highly creative peoples and doing very good job in 3D product modeling for varius companies. So why you don't hiring us today to taking care of yours?</Text>
 
             <Spacer h={5} />
 
             <Box>
                 <Wrap>
 
-                    <Box rounded='full' border='2px solid black' p={1} pl={2} pr={3}>
+                    <Box rounded='full' border='1px solid black' p={1} pl={2} pr={3}>
                         <Flex alignItems='center' gap={2}>
                             <Image
                                 src='http://ibthemespro.com/docs/beny/img/side-nav/cmm4.png'
@@ -78,12 +84,12 @@ export default function ThreeDSection() {
     }
 
     return (
-        <Box ref={ref} position={{ base: 'inherit', md: 'relative' }} bg='#ffd801' py={{ base: 18, lg: 0 }}>
+        <Box ref={ref} position={{ base: 'inherit', md: 'relative' }} bg='#ffd801' pt={24} pb={{ base: 18, lg: 0 }}>
 
             {/* <Container maxW='6xl'> */}
             <Flex
                 direction={{
-                    base: 'column',
+                    base: 'column-reverse',
                     lg: 'row'
                 }}
 
@@ -94,7 +100,7 @@ export default function ThreeDSection() {
                 position='relative'
             >
 
-                <Box flex={{ base: '0', lg: '1' }}>
+                <Box flex={{ base: '0', lg: '1' }} px={{ base: 5, md: 0 }}>
 
                     <Show below='md'>
                         <Show3DContent />
@@ -105,11 +111,10 @@ export default function ThreeDSection() {
 
 
                 <Box w={{ base: 'full', md: '50%' }} zIndex={99}>
-                    <Fade right>
-                        {inView &&
-                            <ThreeDCarModel />
-                        }
-                    </Fade>
+
+                    {inView &&
+                        <ThreeDCarModel />
+                    }
 
                 </Box>
 

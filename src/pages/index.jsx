@@ -26,9 +26,7 @@ export default function Home() {
 
       <ThreeDSection />
 
-      <FlowerBgSection>
-        <Technologies />
-      </FlowerBgSection>
+      {/* <Technologies /> */}
 
     </PublicLayout>
   )

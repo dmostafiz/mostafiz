@@ -33,16 +33,17 @@ export default function Three() {
 
             // X axis motion
             timeline.to(ballRef.current.position, {
-                x: 2,
-                duration: 2,
+                x: 1.5,
+                duration: 5,
                 ease: 'power2.out'
             })
 
             timeline.to(ballRef.current.position, {
-                y: 0.5,
-                duration: 1,
+                y: 0.4,
+                duration: 1.8,
                 ease: 'bounce.out'
             }, "<")
+
         }
         
     }, [ballRef.current])
@@ -53,8 +54,8 @@ export default function Three() {
             <OrbitControls ref={orbitControlRef} enableZoom={false} minPolarAngle={angleToRadians(40)} maxPolarAngle={angleToRadians(80)} />
 
             {/* Ball */}
-            <mesh ref={ballRef} position={[-2, 2, 0]} castShadow>
-                <sphereGeometry args={[0.5, 35, 32]} />
+            <mesh ref={ballRef} position={[-3, 2, 0]} castShadow>
+                <sphereGeometry args={[0.4, 35, 32]} />
                 <meshStandardMaterial color='#ffffff' metalness={0.6} roughness={0.2}/>
             </mesh>
 
@@ -67,7 +68,7 @@ export default function Three() {
             {/* Brightness */}
             <ambientLight args={['#ffffff', 1.6]} />
 
-            <spotLight args={['#ffffff', 1.5, 6, angleToRadians(45), 0.4]} position={[-3, 1, 0]} castShadow />
+            <spotLight args={['#ffffff', 2, 7, angleToRadians(45), 0.8]} position={[-3, 1, 0]} castShadow />
 
 
             <Environment background>

@@ -43,7 +43,7 @@ export default function HomepageCarousel() {
                             <Box>
                                 <Fade>
                                     <Text
-                                        bgGradient='linear(to-r, #fbbf24, #ebd8bc)'
+                                        bgGradient='linear(to-r, #ffd801, #ebd8bc)'
                                         bgClip='text'
                                         textShadow=''
                                         fontFamily={`'Fugaz One', cursiv`}
