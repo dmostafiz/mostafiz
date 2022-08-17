@@ -17,7 +17,7 @@ export default function AboutMeComponent() {
                     <Box position='relative' maxW={{
                         base: '100%',
                         lg: '50%'
-                    }} bg='transparent' rounded='3xl'>
+                    }} bg='transparent'>
                         {/* <Image w='full' src='/img/mostafiz2.jpg' rounded='xl' /> */}
                         <Swiper
                             modules={[Navigation, Pagination, Scrollbar, A11y, Zoom, EffectFade, Autoplay]}
@@ -32,14 +32,14 @@ export default function AboutMeComponent() {
                             pagination={{ clickable: true }}
                         // scrollbar={{ draggable: true }}
                         >
-                            <SwiperSlide><Image w='full' src='/img/mostafiz1.jpg' rounded='3xl' /></SwiperSlide>
-                            <SwiperSlide><Image w='full' src='/img/mostafiz2.jpg' rounded='3xl' /></SwiperSlide>
-                            <SwiperSlide><Image w='full' src='/img/mostafiz3.jpg' rounded='3xl' /></SwiperSlide>
-                            {/* <SwiperSlide><Image w='full' src='/img/mostafiz4.jpg' rounded='3xl' /></SwiperSlide> */}
-                            {/* <SwiperSlide><Image w='full' src='/img/mostafiz5.jpg' rounded='3xl' /></SwiperSlide> */}
-                            {/* <SwiperSlide><Image w='full' src='/img/mostafiz6.jpg' rounded='3xl' /></SwiperSlide> */}
-                            <SwiperSlide><Image w='full' src='/img/mostafiz7.jpg' rounded='3xl' /></SwiperSlide>
-                            <SwiperSlide><Image w='full' src='/img/mostafiz8.jpg' rounded='3xl' /></SwiperSlide>
+                            <SwiperSlide><Image w='full' src='/img/mostafiz1.jpg' /></SwiperSlide>
+                            <SwiperSlide><Image w='full' src='/img/mostafiz2.jpg' /></SwiperSlide>
+                            <SwiperSlide><Image w='full' src='/img/mostafiz3.jpg' /></SwiperSlide>
+                            {/* <SwiperSlide><Image w='full' src='/img/mostafiz4.jpg' /></SwiperSlide> */}
+                            {/* <SwiperSlide><Image w='full' src='/img/mostafiz5.jpg' /></SwiperSlide> */}
+                            {/* <SwiperSlide><Image w='full' src='/img/mostafiz6.jpg' /></SwiperSlide> */}
+                            <SwiperSlide><Image w='full' src='/img/mostafiz7.jpg' /></SwiperSlide>
+                            <SwiperSlide><Image w='full' src='/img/mostafiz8.jpg' /></SwiperSlide>
 
                         </Swiper>
                     </Box>
@@ -79,7 +79,7 @@ export default function AboutMeComponent() {
                 <Spacer h={10} />
 
 
-                <Box p={8} bg={`white`} rounded='sm' shadow='md'>
+                <Box p={8} bg={`whiteAlpha.900`} rounded='sm' shadow='md'>
 
                     <Text fontWeight='semibold' letterSpacing='2px' fontSize='14px'>Professional details</Text>
 

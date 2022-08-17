@@ -17,25 +17,13 @@ export default function HomepageCarousel() {
 
     const [bgImage, setBgImage] = useState(images[Math.floor(Math.random() * images.length)])
 
-    useEffect(() => {
-        const intervel = setInterval(() => {
-            setBgImage(images[Math.floor(Math.random() * images.length)])
-        }, 20000)
-        return () => {
-            clearInterval(intervel)
-        };
-    }, []);
-
     return (
         <Box
             bgImage={bgImage}
             bgRepeat="no-repeat"
             bgPosition="center"
             bgSize={`cover`}
-            // bgBlendMode='hue'
-            // bgGradient=''
             backgroundAttachment='fixed'
-            // transform='translateX(100px)'
             pos='relative'
             top='-82px'
         >

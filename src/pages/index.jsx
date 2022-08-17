@@ -8,24 +8,27 @@ import MobileAppSection from "../Components/PublicPages/HomePage/MobileAppSectio
 import WebsiteSection from "../Components/PublicPages/HomePage/WebsiteSection";
 import { Fade, Zoom } from "react-reveal";
 import ThreeDSection from "../Components/PublicPages/HomePage/ThreeDSection";
+import FlowerBgSection from "../Components/Common/FlowerBgSection";
 
 export default function Home() {
   return (
     <PublicLayout>
-      
-        <HomepageCarousel />
 
-        <MySkills />
+      <HomepageCarousel />
 
-        <LatestArticles />
+      <MySkills />
 
-        <MobileAppSection />
+      <LatestArticles />
 
-        <WebsiteSection />
+      <MobileAppSection />
 
-        <ThreeDSection />
+      <WebsiteSection />
 
+      <ThreeDSection />
+
+      <FlowerBgSection>
         <Technologies />
+      </FlowerBgSection>
 
     </PublicLayout>
   )

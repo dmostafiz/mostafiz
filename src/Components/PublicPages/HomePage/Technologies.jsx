@@ -4,7 +4,7 @@ import SectionTitle from '../../Common/SectionTitle'
 
 export default function Technologies() {
     return (
-        <Box bg='' as='section' py={5}>
+        <Box bg='whiteAlpha.500' as='section' py={5}>
             <Container maxW='6xl' p={5}>
 
                 <SectionTitle

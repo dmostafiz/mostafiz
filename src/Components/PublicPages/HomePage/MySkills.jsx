@@ -6,7 +6,7 @@ import IntroVideoModal from '../../Common/IntroVideoModal'
 
 export default function MySkills() {
     return (
-        <Box bg='whiteAlpha.700' backdropFilter='auto' backdropBlur='20px' as='section' mt={`-82px`} pt={10} pb={{base: 0, lg: 10}}>
+        <Box as='section' mt={`-55px`} pb={{base: 0, lg: 10}}>
             <Container maxW='6xl' p={5}>
                 <Flex direction={{ base: 'column', lg: 'row' }} alignItems='center' gap={10}>
 

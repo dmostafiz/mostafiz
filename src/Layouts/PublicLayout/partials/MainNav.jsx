@@ -18,23 +18,11 @@ const MainNav = () => {
         onOpen,
     } = useDisclosure({ defaultIsOpen: true })
 
-
-    const navRef = useRef()
-    const navDimensions = useDimensions(navRef, true)
-
-
-    const topRef = useRef()
-    const topDimensions = useDimensions(topRef, true)
-
-
-    console.log('Nav Dimension is ')
-
-
     return (
 
         <>
 
-            {isOpen && <Alert ref={topRef} bg='yellow.500' zIndex={999} variant='solid' py={{ base: 1, md: 0 }}>
+            {isOpen && <Alert bg='yellow.500' zIndex={999} variant='solid' py={{ base: 1, md: 0 }}>
                 <Container maxW='6xl'>
                     <AlertDescription>
                         <Text lineHeight='18px' fontSize={{ base: '14px', md: '16px' }}>
@@ -51,17 +39,13 @@ const MainNav = () => {
             </Alert>}
 
             <StickyBox offsetTop={0} style={{ zIndex: 999 }}>
+
                 <Box
                     w='full'
-                    // position='fixed'
                     bgGradient='linear(to-r, #2372d6bd, #457ddd)'
                     backdropFilter='auto'
-                    // backdropInvert='80%'
                     backdropBlur='20px'
-                    // zIndex={999}
-                    // shadow='sm'
                     py={4}
-                // pt={4}
                 >
 
                     <Container maxW='6xl'>
@@ -167,10 +151,8 @@ const MainNav = () => {
                     </Container>
                 </Box>
             </StickyBox>
-
         </>
     );
 }
 
-export default MainNav;
-//2d3183
+export default MainNav

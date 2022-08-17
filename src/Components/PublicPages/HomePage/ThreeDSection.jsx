@@ -1,114 +1,168 @@
-import { Box, Container, Flex, Icon, Image, Spacer, Text, Wrap } from '@chakra-ui/react'
+import { Box, Container, Flex, Icon, Image, Show, Spacer, Text, Wrap } from '@chakra-ui/react'
 import Link from 'next/link'
 import React from 'react'
 import { BsArrowRightCircle } from 'react-icons/bs'
+import { useInView } from 'react-intersection-observer'
 import { Fade } from 'react-reveal'
 import ThreeDCarModel from '../../ThreeD/ThreeDCarModel'
 
 export default function ThreeDSection() {
+
+    const { ref, inView } = useInView();
+
+    const Show3DContent = () => {
+        return <Fade left>
+
+            <Text as='h1' fontWeight='bold' fontSize={{ base: '28px', lg: '35px' }} lineHeight={{ base: '36px', lg: '40px' }}>
+                Let your customer play with your products in virtual reality
+            </Text>
+
+            <Spacer h={4} />
+
+            <Text>Bring your app idea to more users by building with Flutter or React Native on iOS and Android simultaneously, without sacrificing features, quality, or performance. My dedicated team will take care.</Text>
+
+            <Spacer h={5} />
+
+            <Box>
+                <Wrap>
+                    <Box rounded='full' border='2px solid #54c5f8' p={1} pl={2} pr={3}>
+                        <Flex alignItems='center' gap={1}>
+                            <Image
+                                src='https://cdn-images-1.medium.com/max/1200/1*5-aoK8IBmXve5whBQM90GA.png'
+                                w='25px'
+                                h='25px'
+                            />
+                            <Text fontSize='16px'>Flutter</Text>
+                        </Flex>
+                    </Box>
+
+                    <Box rounded='full' border='2px solid #61dbfb' p={1} pl={2} pr={3}>
+                        <Flex alignItems='center' gap={2}>
+                            <Image
+                                src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png'
+                                w='25px'
+                                h='25px'
+                            />
+                            <Text fontSize='16px'>React Native</Text>
+                        </Flex>
+                    </Box>
+
+                    <Box rounded='full' border='1px solid #8cc84b' p={1} pl={2} pr={3}>
+                        <Flex alignItems='center' gap={2}>
+                            <Image
+                                src='https://iconape.com/wp-content/files/kh/83759/svg/nodejs-icon.svg'
+                                w='25px'
+                                h='25px'
+                            />
+                            <Text fontSize='16px'>NodeJs API</Text>
+                        </Flex>
+                    </Box>
+
+
+                    <Box rounded='full' border='1px solid #fcca3f' p={1} pl={2} pr={3}>
+                        <Flex alignItems='center' gap={2}>
+                            <Image
+                                src='https://seeklogo.com/images/F/firestore-logo-3828671CC5-seeklogo.com.png'
+                                w='25px'
+                                h='25px'
+                            />
+                            <Text fontSize='16px'>FireStore</Text>
+                        </Flex>
+                    </Box>
+
+                </Wrap>
+
+                <Spacer h={8} />
+
+                <Link href={`#`}>
+                    <a href={`#`}>
+                        <Flex alignItems='center' gap={2}>
+                            <Icon fontSize={20} as={BsArrowRightCircle} />
+                            <Text fontSize={'17px'} fontWeight={'semibold'} fontStyle='italic'>Want to learn more?</Text>
+                        </Flex>
+                    </a>
+                </Link>
+
+            </Box>
+        </Fade>
+    }
+
     return (
-        <Box bg='#f5f5f5' py={{ base: 18, lg: 20 }}>
-            
-            <Container maxW='6xl'>
-                <Flex
-                    direction={{
-                        base: 'column',
-                        lg: 'row'
-                    }}
+        <Box ref={ref} position={{ base: 'inherit', md: 'relative' }} bg='#f5f5f5' py={{ base: 18, lg: 0 }}>
 
-                    alignItems='center'
+            {/* <Container maxW='6xl'> */}
+            <Flex
+                direction={{
+                    base: 'column',
+                    lg: 'row'
+                }}
 
-                    gap={10}
-                >
+                alignItems='center'
 
-                    <Box flex={{ base: '0', lg: '1' }}>
+                gap={10}
 
-                        <Fade left>
+                position='relative'
+            >
 
-                            <Text as='h1' fontWeight='bold' fontSize={{ base: '28px', lg: '35px' }} lineHeight={{ base: '36px', lg: '40px' }}>
-                               Give your users a 3D virtual reality test
-                            </Text>
+                <Box flex={{ base: '0', lg: '1' }}>
 
-                            <Spacer h={4} />
+                    <Show below='md'>
+                        <Show3DContent />
+                    </Show>
 
-                            <Text>Bring your app idea to more users by building with Flutter or React Native on iOS and Android simultaneously, without sacrificing features, quality, or performance. My dedicated team will take care.</Text>
-
-                            <Spacer h={5} />
-
-                            <Box>
-                                <Wrap>
-                                    <Box rounded='full' border='2px solid #54c5f8' p={1} pl={2} pr={3}>
-                                        <Flex alignItems='center' gap={1}>
-                                            <Image
-                                                src='https://cdn-images-1.medium.com/max/1200/1*5-aoK8IBmXve5whBQM90GA.png'
-                                                w='25px'
-                                                h='25px'
-                                            />
-                                            <Text fontSize='16px'>Flutter</Text>
-                                        </Flex>
-                                    </Box>
-
-                                    <Box rounded='full' border='2px solid #61dbfb' p={1} pl={2} pr={3}>
-                                        <Flex alignItems='center' gap={2}>
-                                            <Image
-                                                src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png'
-                                                w='25px'
-                                                h='25px'
-                                            />
-                                            <Text fontSize='16px'>React Native</Text>
-                                        </Flex>
-                                    </Box>
-
-                                    <Box rounded='full' border='1px solid #8cc84b' p={1} pl={2} pr={3}>
-                                        <Flex alignItems='center' gap={2}>
-                                            <Image
-                                                src='https://iconape.com/wp-content/files/kh/83759/svg/nodejs-icon.svg'
-                                                w='25px'
-                                                h='25px'
-                                            />
-                                            <Text fontSize='16px'>NodeJs API</Text>
-                                        </Flex>
-                                    </Box>
+                </Box>
 
 
-                                    <Box rounded='full' border='1px solid #fcca3f' p={1} pl={2} pr={3}>
-                                        <Flex alignItems='center' gap={2}>
-                                            <Image
-                                                src='https://seeklogo.com/images/F/firestore-logo-3828671CC5-seeklogo.com.png'
-                                                w='25px'
-                                                h='25px'
-                                            />
-                                            <Text fontSize='16px'>FireStore</Text>
-                                        </Flex>
-                                    </Box>
 
-                                </Wrap>
+                <Box w={{ base: 'full', md: '50%' }} zIndex={99}>
+                    <Fade right>
+                        {inView &&
+                            <ThreeDCarModel  />
+                        }
+                    </Fade>
 
-                                <Spacer h={8} />
+                </Box>
 
-                                <Link href={`#`}>
-                                    <a href={`#`}>
-                                        <Flex alignItems='center' gap={2}>
-                                            <Icon fontSize={20} as={BsArrowRightCircle} />
-                                            <Text fontSize={'17px'} fontWeight={'semibold'} fontStyle='italic'>Want to learn more?</Text>
-                                        </Flex>
-                                    </a>
-                                </Link>
+
+            </Flex>
+
+            <Show above='md'>
+                <Box position='absolute' w='full' top={'20%'}>
+                    <Container maxW='6xl'>
+                        <Flex
+                            direction={{
+                                base: 'column',
+                                lg: 'row'
+                            }}
+
+                            alignItems='center'
+
+                            gap={10}
+
+                            position='relative'
+                        >
+
+                            <Box flex={{ base: '0', lg: '1' }}>
+
+                                <Show3DContent />
 
                             </Box>
-                        </Fade>
 
-                    </Box>
 
-                    <Box w={{ base: 'full', md: '50%' }}>
 
+                            <Box w={{ base: 'full', md: '50%' }}>
+                                {/* <Fade right>
                         <ThreeDCarModel />
+                    </Fade> */}
+                            </Box>
 
-                    </Box>
+                        </Flex>
 
 
-                </Flex>
-            </Container>
+                    </Container>
+                </Box>
+            </Show>
+
         </Box>
     )
 }
