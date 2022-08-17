@@ -14,7 +14,7 @@ export default function ThreeDSection() {
         return <Fade left>
 
             <Text as='h1' fontWeight='bold' fontSize={{ base: '28px', lg: '35px' }} lineHeight={{ base: '36px', lg: '40px' }}>
-                Let your customer play with your products in virtual reality
+                Let customers play with your products within the website
             </Text>
 
             <Spacer h={4} />
@@ -25,48 +25,38 @@ export default function ThreeDSection() {
 
             <Box>
                 <Wrap>
-                    <Box rounded='full' border='2px solid #54c5f8' p={1} pl={2} pr={3}>
-                        <Flex alignItems='center' gap={1}>
+
+                    <Box rounded='full' border='2px solid black' p={1} pl={2} pr={3}>
+                        <Flex alignItems='center' gap={2}>
                             <Image
-                                src='https://cdn-images-1.medium.com/max/1200/1*5-aoK8IBmXve5whBQM90GA.png'
+                                src='http://ibthemespro.com/docs/beny/img/side-nav/cmm4.png'
                                 w='25px'
                                 h='25px'
                             />
-                            <Text fontSize='16px'>Flutter</Text>
+                            <Text fontSize='16px'>React Js</Text>
                         </Flex>
                     </Box>
 
-                    <Box rounded='full' border='2px solid #61dbfb' p={1} pl={2} pr={3}>
+                    <Box rounded='full' border='1px solid black' p={1} pl={2} pr={3}>
                         <Flex alignItems='center' gap={2}>
                             <Image
-                                src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png'
+                                src='https://seeklogo.com/images/T/three-js-logo-07A32307F1-seeklogo.com.png'
                                 w='25px'
                                 h='25px'
                             />
-                            <Text fontSize='16px'>React Native</Text>
-                        </Flex>
-                    </Box>
-
-                    <Box rounded='full' border='1px solid #8cc84b' p={1} pl={2} pr={3}>
-                        <Flex alignItems='center' gap={2}>
-                            <Image
-                                src='https://iconape.com/wp-content/files/kh/83759/svg/nodejs-icon.svg'
-                                w='25px'
-                                h='25px'
-                            />
-                            <Text fontSize='16px'>NodeJs API</Text>
+                            <Text fontSize='16px'>Three Js</Text>
                         </Flex>
                     </Box>
 
 
-                    <Box rounded='full' border='1px solid #fcca3f' p={1} pl={2} pr={3}>
+                    <Box rounded='full' border='1px solid black' p={1} pl={2} pr={3}>
                         <Flex alignItems='center' gap={2}>
                             <Image
-                                src='https://seeklogo.com/images/F/firestore-logo-3828671CC5-seeklogo.com.png'
+                                src='https://cdn.worldvectorlogo.com/logos/gsap-greensock.svg'
                                 w='25px'
                                 h='25px'
                             />
-                            <Text fontSize='16px'>FireStore</Text>
+                            <Text fontSize='16px'>Gsap</Text>
                         </Flex>
                     </Box>
 
@@ -88,7 +78,7 @@ export default function ThreeDSection() {
     }
 
     return (
-        <Box ref={ref} position={{ base: 'inherit', md: 'relative' }} bg='#f5f5f5' py={{ base: 18, lg: 0 }}>
+        <Box ref={ref} position={{ base: 'inherit', md: 'relative' }} bg='#ffd801' py={{ base: 18, lg: 0 }}>
 
             {/* <Container maxW='6xl'> */}
             <Flex
@@ -117,7 +107,7 @@ export default function ThreeDSection() {
                 <Box w={{ base: 'full', md: '50%' }} zIndex={99}>
                     <Fade right>
                         {inView &&
-                            <ThreeDCarModel  />
+                            <ThreeDCarModel />
                         }
                     </Fade>
 

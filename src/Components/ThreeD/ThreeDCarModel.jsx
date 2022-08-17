@@ -9,7 +9,7 @@ import Three from './Three'
 export default function ThreeDCarModel() {
 
   return (
-    <Box height='480px'>
+    <Box height={{base: '380px', md: '550px'}}>
       <Canvas flat linear shadows>
         {/* <Suspense fallback={'Loading...'}>
            
