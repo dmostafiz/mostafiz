@@ -35,6 +35,7 @@ export default function HomepageCarousel() {
             // bgBlendMode='hue'
             // bgGradient=''
             backgroundAttachment='fixed'
+            // transform='translateX(100px)'
             pos='relative'
             top='-82px'
         >

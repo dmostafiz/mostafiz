@@ -1,22 +1,23 @@
-import { Avatar, Box, Container, Flex, Icon, Image, Spacer, Tag, TagLabel, Text, Wrap } from '@chakra-ui/react'
+import { Box, Container, Flex, Icon, Image, Spacer, Text, Wrap } from '@chakra-ui/react'
 import Link from 'next/link'
 import React from 'react'
-import { BsArrowRightCircle, BsFillArrowRightCircleFill } from 'react-icons/bs'
-import { Fade, Zoom } from 'react-reveal'
+import { BsArrowRightCircle } from 'react-icons/bs'
+import { Fade } from 'react-reveal'
+import ThreeDCarModel from '../../ThreeD/ThreeDCarModel'
 
-export default function MobileAppSection() {
+export default function ThreeDSection() {
     return (
-        <Box bg='#f5f5f5' py={{ base: 18, lg: 6 }}>
-
+        <Box bg='#f5f5f5' py={{ base: 18, lg: 20 }}>
+            
             <Container maxW='6xl'>
-
                 <Flex
                     direction={{
-                        base: 'column-reverse',
+                        base: 'column',
                         lg: 'row'
                     }}
 
                     alignItems='center'
+
                     gap={10}
                 >
 
@@ -25,7 +26,7 @@ export default function MobileAppSection() {
                         <Fade left>
 
                             <Text as='h1' fontWeight='bold' fontSize={{ base: '28px', lg: '35px' }} lineHeight={{ base: '36px', lg: '40px' }}>
-                                Cross platform native application for Android & IOS
+                               Give your users a 3D virtual reality test
                             </Text>
 
                             <Spacer h={4} />
@@ -99,16 +100,15 @@ export default function MobileAppSection() {
 
                     </Box>
 
-                    <Box w={{ base: 'full', lg: '50%' }}>
-                        <Fade right>
-                            <Image w='full' src='https://storage.googleapis.com/cms-storage-bucket/2f118a9971e4ca6ad737.png' />
-                        </Fade>
+                    <Box w={{ base: 'full', md: '50%' }}>
+
+                        <ThreeDCarModel />
+
                     </Box>
+
 
                 </Flex>
             </Container>
-
-
         </Box>
     )
 }
