@@ -4,6 +4,7 @@ import { useFrame } from '@react-three/fiber'
 import { angleToRadians } from '../../Helpers/angleToRadians'
 import * as THREE from 'three'
 import gsap from 'gsap'
+import {CarModelTwo} from './Models/Car/CarModelTwo'
 // import { useInView } from 'react-intersection-observer'
 
 export default function Three() {
@@ -33,7 +34,7 @@ export default function Three() {
 
             // X axis motion
             timeline.to(ballRef.current.position, {
-                x: 1.5,
+                x: 1.9,
                 duration: 5,
                 ease: 'power2.out'
             })
@@ -50,14 +51,18 @@ export default function Three() {
 
     return (
         <mesh>
-            <PerspectiveCamera  makeDefault position={[0, 1, 5]} />
-            <OrbitControls ref={orbitControlRef} enableZoom={false} minPolarAngle={angleToRadians(40)} maxPolarAngle={angleToRadians(80)} />
+            
+            <PerspectiveCamera  makeDefault position={[0, -1, 5]} />
+
+            <OrbitControls ref={orbitControlRef} enableZoom={false} rotation={[1,-1,-10]} minPolarAngle={angleToRadians(40)} maxPolarAngle={angleToRadians(80)} />
 
             {/* Ball */}
             <mesh ref={ballRef} position={[-3, 2, 0]} castShadow>
                 <sphereGeometry args={[0.4, 35, 32]} />
                 <meshStandardMaterial color='#ffffff' metalness={0.6} roughness={0.2}/>
             </mesh>
+
+            <CarModelTwo />
 
             {/* Floor */}
             <mesh rotation={[-(angleToRadians(90)), 0, 0]} receiveShadow>

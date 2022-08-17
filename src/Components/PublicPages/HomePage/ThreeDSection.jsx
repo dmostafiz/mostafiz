@@ -19,8 +19,7 @@ export default function ThreeDSection() {
 
             <Spacer h={4} />
 
-            <Text fontSize={'17px'} fontWeight='normal'>Nowadays showing static product images to your customers is not enough to grab their attention. So therefor almost all big companies are shoacasing their products as 3D models.
-                Customers can feel it and move it to see all aspects of that product by just touching and moving it. Its really increasing their sales day by day.
+            <Text fontSize={'17px'} fontWeight='normal'>Nowadays showing static product images to your customers is not enough to grab their attention. So therefor almost all big companies are showcasing their products as 3D models. Customers can feel and move it to see all aspects of that product by touching and moving it. Its really increasing their sales day by day.
 
                 <Spacer h={3} />
 
