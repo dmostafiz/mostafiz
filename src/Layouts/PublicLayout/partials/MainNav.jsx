@@ -1,7 +1,6 @@
-import { Alert, AlertDescription, AlertIcon, AlertTitle, Box, Button, CloseButton, Container, Flex, IconButton, Img, Link, Show, Text, useDimensions, useDisclosure } from '@chakra-ui/react';
-import React, { useCallback, useEffect, useMemo, useReducer, useRef } from 'react';
+import { Alert, AlertDescription, Box, Button, CloseButton, Container, Flex, Img, Link, Show, Text, useDisclosure } from '@chakra-ui/react';
+import React from 'react';
 import NextLink from 'next/link'
-import { HiMenuAlt3 } from 'react-icons/hi'
 import MobileMenu from './MobileMenu';
 import MainLogo from '../../../Components/Common/MainLogo';
 import { useRouter } from 'next/router';
@@ -21,9 +20,8 @@ const MainNav = () => {
     return (
 
         <>
-
-            {isOpen && <Alert bg='yellow.500' zIndex={999} variant='solid' py={{ base: 1, md: 0 }}>
-                <Container maxW='6xl'>
+            {isOpen && <Alert bg='#ffd801' color='blackAlpha.900' zIndex={999} variant='solid' py={{ base: 1, md: 0 }}>
+                <Container minW='6xl'>
                     <AlertDescription>
                         <Text lineHeight='18px' fontSize={{ base: '14px', md: '16px' }}>
                             Please be noted! This website is currently under development process, it`s containing many fake and dummy contents.
@@ -76,7 +74,7 @@ const MainNav = () => {
                                             href='/about_me'
 
                                             bg='blackAlpha.300'
-                                            
+
                                         >
 
                                             <Text fontWeight='normal'>Business</Text>
