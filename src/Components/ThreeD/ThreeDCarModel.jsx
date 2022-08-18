@@ -9,7 +9,7 @@ import { useInView } from 'react-intersection-observer'
 
 export default function ThreeDCarModel() {
 
-  const { ref, inView } = useInView(null);
+  const { ref, inView } = useInView();
 
   return (
 
