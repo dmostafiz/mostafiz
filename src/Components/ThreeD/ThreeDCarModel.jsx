@@ -1,5 +1,5 @@
 import { Canvas, useFrame } from '@react-three/fiber'
-import React, { Suspense } from 'react'
+import React, { Suspense, useEffect, useState } from 'react'
 import { angleToRadians } from '../../Helpers/angleToRadians'
 // import { SphereGeometry } from 'three'
 // import { SphereGeometry } from 'three'
@@ -11,6 +11,16 @@ export default function ThreeDCarModel() {
 
   const { ref, inView } = useInView();
 
+  const [showThreeD, setShow] = useState(false)
+
+  useEffect(() => {
+
+    if(inView){
+      setShow(true)
+    }
+
+  }, [inView])
+
   return (
     
     <Box height={{ base: '380px', md: '550px' }} w='full' bg='#ffd801'>
@@ -20,7 +30,7 @@ export default function ThreeDCarModel() {
            
       </Suspense> */}
 
-         <Three key={inView} />
+        {showThreeD && <Three />} 
 
       </Canvas>
     </Box>
