@@ -9,28 +9,23 @@ import { useInView } from 'react-intersection-observer'
 
 export default function ThreeDCarModel() {
 
-  const { ref, inView } = useInView();
-
-  const [showThreeD, setShow] = useState(false)
-
-  useEffect(() => {
-
-    if (inView) {
-      setShow(true)
-    }
-
-  }, [inView])
+  const { ref, inView } = useInView(null);
 
   return (
 
-    <Box ref={ref} height={{ base: '380px', md: '550px' }} w='full' bg='#ffd801'>
+    <>
+      <Box ref={ref} />
 
-      {showThreeD && <Canvas flat linear shadows>
+      <Box height={{ base: '380px', md: '550px' }} w='full' bg='#ffd801'>
+
+        {showThreeD && <Canvas flat linear shadows>
 
           <Three />
 
-      </Canvas>}
+        </Canvas>}
 
-    </Box>
+      </Box>
+      
+    </>
   )
 }
