@@ -11,7 +11,7 @@ export default function ThreeDSection() {
     const { ref, inView } = useInView();
 
     return (
-        <Box as='div' ref={ref} py={{base: 5, md:0}}>
+        <Box as='div' ref={ref} py={{ base: 5, md: 0 }}>
 
             <Container maxW='6xl'>
 
@@ -34,7 +34,7 @@ export default function ThreeDSection() {
 
                         <Text as='p' fontSize={'17px'} fontWeight='normal'>Nowadays showing static product images to your customers is not enough to grab their attention. So therefor almost all big companies are showcasing their products as 3D models. Customers can feel and move it to see all aspects of that product by touching and moving it. Its really increasing their sales day by day.
 
-                            <br/> <br />
+                            <br /> <br />
                             We are a dedicated team of highly creative peoples and doing very good job in 3D product modeling for varius companies. So why you don't hiring us today to taking care of yours?</Text>
 
                         <Spacer h={5} />
@@ -96,9 +96,9 @@ export default function ThreeDSection() {
 
                     <Box w={{ base: 'full', md: '50%' }} zIndex={99}>
 
-                        {inView &&
-                            <ThreeDCarModel />
-                        }
+
+                        <ThreeDCarModel key={inView} />
+
 
                     </Box>
 
