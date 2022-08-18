@@ -9,8 +9,12 @@ import WebsiteSection from "../Components/PublicPages/HomePage/WebsiteSection";
 import { Fade, Zoom } from "react-reveal";
 import ThreeDSection from "../Components/PublicPages/HomePage/ThreeDSection";
 import FlowerBgSection from "../Components/Common/FlowerBgSection";
+import { useInView } from "react-intersection-observer";
 
 export default function Home() {
+
+  const { ref, inView } = useInView();
+
   return (
     <PublicLayout>
 

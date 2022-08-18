@@ -47,7 +47,7 @@ export default function Three({show}) {
 
         }
 
-    }, [ballRef.current, show])
+    }, [ballRef.current])
 
     return (
         <mesh>
@@ -57,9 +57,11 @@ export default function Three({show}) {
             <OrbitControls ref={orbitControlRef} enableZoom={false} rotation={[1, -1, -10]} minPolarAngle={angleToRadians(40)} maxPolarAngle={angleToRadians(80)} />
 
             {/* Ball */}
+            <mesh key={show}>
             <mesh ref={ballRef} position={[-3, 2, 0]} castShadow>
                 <sphereGeometry args={[0.4, 35, 32]} />
                 <meshStandardMaterial color='#ffffff' metalness={0.6} roughness={0.2} />
+            </mesh>
             </mesh>
 
             <CarModelTwo />
