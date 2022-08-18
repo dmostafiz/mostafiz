@@ -99,9 +99,11 @@ export default function MobileAppSection() {
                     </Box>
 
                     <Box w={{ base: 'full', lg: '50%' }}>
-                        <Fade right>
-                            <Image w='full' src='https://storage.googleapis.com/cms-storage-bucket/2f118a9971e4ca6ad737.png' />
-                        </Fade>
+                        <Box position='relative'>
+                            <Fade right>
+                                <Image w='full' src='https://storage.googleapis.com/cms-storage-bucket/2f118a9971e4ca6ad737.png' />
+                            </Fade>
+                        </Box>
                     </Box>
 
                 </Flex>

@@ -14,7 +14,7 @@ export default function LatestArticles() {
 
                 <SectionTitle
                     title='Latest Articles'
-                    subTitle="Read latest articles i written about modern technologies, business concepts and many more things"
+                    // subTitle="Read latest articles i written about modern technologies, business concepts and many more things"
                 />
 
                 <Wrap spacing={3}>

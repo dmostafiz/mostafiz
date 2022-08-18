@@ -6,7 +6,7 @@ import { Fade } from 'react-reveal'
 
 export default function WebsiteSection() {
     return (
-        <Box bg='white' py={{base: 18, lg: 6}}>
+        <Box bg='white' py={{ base: 18, lg: 6 }}>
 
             <Container maxW='6xl'>
 
@@ -22,16 +22,18 @@ export default function WebsiteSection() {
                 >
 
                     <Box w={{ base: 'full', md: '50%' }}>
-                        <Fade left>
-                            <Image w='full' src='https://storage.googleapis.com/cms-storage-bucket/2c3d5baa79bb1e48c6e3.png' />
-                        </Fade>
+                        <Box position='relative'>
+                            <Fade left>
+                                <Image w='full' src='https://storage.googleapis.com/cms-storage-bucket/2c3d5baa79bb1e48c6e3.png' />
+                            </Fade>
+                        </Box>
                     </Box>
 
                     <Box flex='1'>
 
                         <Fade>
 
-                            <Text as='h1' fontWeight='bold' fontSize={{base: '28px', lg:'35px'}} lineHeight={{base: '36px', lg:'40px'}}>
+                            <Text as='h1' fontWeight='bold' fontSize={{ base: '28px', lg: '35px' }} lineHeight={{ base: '36px', lg: '40px' }}>
                                 Highly customizable Web applications for online business
                             </Text>
 

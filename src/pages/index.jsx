@@ -24,7 +24,7 @@ export default function Home() {
 
       <WebsiteSection />
 
-      {/* <ThreeDSection /> */}
+      <ThreeDSection />
 
       <Technologies />
 
