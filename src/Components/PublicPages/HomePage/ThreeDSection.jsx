@@ -8,10 +8,10 @@ import ThreeDCarModel from '../../ThreeD/ThreeDCarModel'
 
 export default function ThreeDSection() {
 
-    const { ref, inView } = useInView();
+  
 
     return (
-        <Box as='div' ref={ref} py={{ base: 5, md: 0 }}>
+        <Box as='div' py={{ base: 5, md: 0 }}>
 
             <Container maxW='6xl'>
 
@@ -96,7 +96,7 @@ export default function ThreeDSection() {
 
                     <Box w={{ base: 'full', md: '50%' }} zIndex={99}>
 
-                        <ThreeDCarModel key={inView} />
+                        <ThreeDCarModel />
 
                     </Box>
 
