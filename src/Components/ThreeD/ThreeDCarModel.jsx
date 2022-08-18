@@ -15,13 +15,9 @@ export default function ThreeDCarModel() {
   return (
 
     <Box ref={ref} height={{ base: '380px', md: '550px' }} w='full' bg='#ffd801'>
-
       <Canvas flat linear shadows>
-
         <Three key={inView ?? true} />
-
       </Canvas>
-
     </Box>
 
   )
