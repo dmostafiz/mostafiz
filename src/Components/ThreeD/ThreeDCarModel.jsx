@@ -6,6 +6,7 @@ import { angleToRadians } from '../../Helpers/angleToRadians'
 import { Box } from '@chakra-ui/react'
 import Three from './Three'
 import { useInView } from 'react-intersection-observer'
+import { Box2 } from 'three'
 
 export default function ThreeDCarModel() {
 
@@ -13,19 +14,15 @@ export default function ThreeDCarModel() {
 
   return (
 
-    <>
-      <Box ref={ref}></Box>
+    <Box ref={ref} height={{ base: '380px', md: '550px' }} w='full' bg='#ffd801'>
 
-      <Box height={{ base: '380px', md: '550px' }} w='full' bg='#ffd801'>
+      {inView && <Canvas flat linear shadows>
 
-        {inView && <Canvas flat linear shadows>
+        <Three />
 
-          <Three />
+      </Canvas>}
 
-        </Canvas>}
-
-      </Box>
-
-    </>
+    </Box>
+    
   )
 }
