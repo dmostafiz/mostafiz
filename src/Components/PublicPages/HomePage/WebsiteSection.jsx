@@ -23,7 +23,7 @@ export default function WebsiteSection() {
 
                     <Box w={{ base: 'full', md: '50%' }}>
                         <Box position='relative'>
-                            <Fade left>
+                            <Fade left={{base: false, md: true}}>
                                 <Image w='full' src='https://storage.googleapis.com/cms-storage-bucket/2c3d5baa79bb1e48c6e3.png' />
                             </Fade>
                         </Box>
