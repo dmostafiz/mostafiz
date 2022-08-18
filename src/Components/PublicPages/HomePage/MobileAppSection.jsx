@@ -1,10 +1,17 @@
-import { Avatar, Box, Container, Flex, Icon, Image, Spacer, Tag, TagLabel, Text, Wrap } from '@chakra-ui/react'
+import { Avatar, Box, Container, Flex, Icon, Image, Spacer, Tag, TagLabel, Text, useBreakpointValue, Wrap } from '@chakra-ui/react'
 import Link from 'next/link'
 import React from 'react'
 import { BsArrowRightCircle, BsFillArrowRightCircleFill } from 'react-icons/bs'
 import { Fade, Zoom } from 'react-reveal'
 
 export default function MobileAppSection() {
+
+
+    const fade = useBreakpointValue({ 
+        base: false, 
+        md: true
+      })
+
     return (
         <Box bg='#f5f5f5' py={{ base: 18, lg: 6 }}>
 
@@ -99,11 +106,11 @@ export default function MobileAppSection() {
                     </Box>
 
                     <Box w={{ base: 'full', lg: '50%' }}>
-                        <Box position='relative'>
-                            <Fade right={{base: false, md: true}}>
-                                <Image w='full' src='https://storage.googleapis.com/cms-storage-bucket/2f118a9971e4ca6ad737.png' />
-                            </Fade>
-                        </Box>
+
+                        <Fade right={fade}>
+                            <Image w='full' src='https://storage.googleapis.com/cms-storage-bucket/2f118a9971e4ca6ad737.png' />
+                        </Fade>
+
                     </Box>
 
                 </Flex>

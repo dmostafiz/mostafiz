@@ -96,9 +96,7 @@ export default function ThreeDSection() {
 
                     <Box w={{ base: 'full', md: '50%' }} zIndex={99}>
 
-
                         <ThreeDCarModel key={inView} />
-
 
                     </Box>
 

@@ -1,10 +1,16 @@
-import { Box, Container, Flex, Icon, Image, Spacer, Text, Wrap } from '@chakra-ui/react'
+import { Box, Container, Flex, Icon, Image, Spacer, Text, useBreakpointValue, Wrap } from '@chakra-ui/react'
 import Link from 'next/link'
 import React from 'react'
 import { BsArrowRightCircle } from 'react-icons/bs'
 import { Fade } from 'react-reveal'
 
 export default function WebsiteSection() {
+
+    const fade = useBreakpointValue({
+        base: false,
+        md: true
+    })
+
     return (
         <Box bg='white' py={{ base: 18, lg: 6 }}>
 
@@ -22,11 +28,11 @@ export default function WebsiteSection() {
                 >
 
                     <Box w={{ base: 'full', md: '50%' }}>
-                        <Box position='relative'>
-                            <Fade left={{base: false, md: true}}>
-                                <Image w='full' src='https://storage.googleapis.com/cms-storage-bucket/2c3d5baa79bb1e48c6e3.png' />
-                            </Fade>
-                        </Box>
+
+                        <Fade left={fade}>
+                            <Image w='full' src='https://storage.googleapis.com/cms-storage-bucket/2c3d5baa79bb1e48c6e3.png' />
+                        </Fade>
+
                     </Box>
 
                     <Box flex='1'>
