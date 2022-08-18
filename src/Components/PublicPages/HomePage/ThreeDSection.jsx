@@ -22,7 +22,7 @@ export default function ThreeDSection() {
                     gap={10}
                 >
 
-                    <Box flex={{ base: '0', lg: '1' }} px={{ base: 5, md: 0 }}>
+                    <Box flex={{ base: '0', lg: '1' }}>
 
                         <Text as='h1' fontWeight='bold' fontSize={{ base: '28px', lg: '35px' }} lineHeight={{ base: '36px', lg: '40px' }}>
                             Let customers play with your products within the web.

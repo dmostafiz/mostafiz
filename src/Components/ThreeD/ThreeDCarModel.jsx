@@ -15,24 +15,22 @@ export default function ThreeDCarModel() {
 
   useEffect(() => {
 
-    if(inView){
+    if (inView) {
       setShow(true)
     }
 
   }, [inView])
 
   return (
-    
-    <Box height={{ base: '380px', md: '550px' }} w='full' bg='#ffd801'>
 
-      <Canvas ref={ref} flat linear shadows>
-        {/* <Suspense fallback={'Loading...'}>
-           
-      </Suspense> */}
+    <Box ref={ref} height={{ base: '380px', md: '550px' }} w='full' bg='#ffd801'>
 
-         <Three key={showThreeD} show={showThreeD} /> 
+      {showThreeD && <Canvas flat linear shadows>
 
-      </Canvas>
+          <Three />
+
+      </Canvas>}
+
     </Box>
   )
 }
