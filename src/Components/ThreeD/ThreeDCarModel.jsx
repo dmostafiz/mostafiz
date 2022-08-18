@@ -30,7 +30,7 @@ export default function ThreeDCarModel() {
            
       </Suspense> */}
 
-        {showThreeD && <Three />} 
+         <Three key={showThreeD} show={showThreeD} /> 
 
       </Canvas>
     </Box>

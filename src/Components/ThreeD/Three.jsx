@@ -7,7 +7,7 @@ import gsap from 'gsap'
 import { CarModelTwo } from './Models/Car/CarModelTwo'
 // import { useInView } from 'react-intersection-observer'
 
-export default function Three() {
+export default function Three({show}) {
 
     const orbitControlRef = useRef(null)
 
@@ -47,7 +47,7 @@ export default function Three() {
 
         }
 
-    }, [ballRef.current])
+    }, [ballRef.current, show])
 
     return (
         <mesh>
