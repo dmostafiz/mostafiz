@@ -24,7 +24,7 @@ export function CarModelTwo(props) {
           <group position={[76.19, 31.52, -126.95]} scale={148.22}>
             <mesh castShadow receiveShadow geometry={nodes.Wheel001_Wheel_0.geometry} material={materials.Wheel} />
           </group>
-          <group position={[76.19, 31.52, 138.51]} rotation={[0, -0.58, 0]} scale={148.22}>
+          <group position={[76.19, 31.52, 138.51]} rotation={[0, 0.58, 0]} scale={148.22}>
             <mesh castShadow receiveShadow geometry={nodes.Wheel_Wheel_0.geometry} material={materials.Wheel} />
           </group>
           <group position={[2.81, 16.66, 0.5]} rotation={[-Math.PI / 2, 0, 0]} scale={100}>

@@ -41,7 +41,7 @@ export default function Article() {
 
           <Flex w='full' gap={5} direction={{ base: 'column', lg: 'row' }}>
 
-            <Box flex={{ base: '0', lg: '1' }} bg={'white'} boxShadow={'md'} roundedTop={'xl'}>
+            <Box flex={{ base: '0', lg: '1' }} bg={'white'} boxShadow={'sm'} roundedTop={'xl'}>
 
               <Image roundedTop={'sm'} w='full' src={bgImage} />
 
@@ -77,7 +77,7 @@ export default function Article() {
                       // maxW={'320px'}
                       w={'full'}
                       bg={useColorModeValue('white', 'gray.900')}
-                      shadow={'md'}
+                      shadow={'sm'}
                       rounded={'lg'}
                       textAlign={'center'}
                     >
@@ -160,10 +160,9 @@ export default function Article() {
                           <Box textAlign='left'>
                             <Text fontWeight={`semibold`} ml={1}>Subscribe newsletter</Text>
                             <Spacer h={2} />
-                            <InputGroup size={'md'} spacing={0}>
-                              <Input placeholder='Enter your email' roundedLeft={`full`} _focus={{ borderColor: '#fbbf24', ring: 'none' }} />
-                              <Button loadingText='Wait...' px={6} fontSize={`12px`} roundedRight='full' variant={`solid`} bg='#fbbf24' colorScheme={`yellow`}>Subscribe</Button>
-
+                            <InputGroup size={'md'} gap={'0px'}>
+                              <Input placeholder='Enter your email' roundedLeft={`full`} border='1px' borderColor='yellow.400' bg='yellow.400'  _hover={{borderColor: 'yellow.400'}} _focus={{ borderColor: 'yellow.400', ring: 'none' }} />
+                              <Button loadingText='Wait...' px={6} fontSize={`12px`} roundedRight='full' variant={`solid`} bg='yellow.400' colorScheme={`yellow`}>Subscribe</Button>
                             </InputGroup>
                           </Box>
                         </Box>

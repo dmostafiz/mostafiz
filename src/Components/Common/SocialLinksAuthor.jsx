@@ -11,14 +11,15 @@ export default function SocialLinksAuthor() {
                 as='a'
                 w='full'
                 size='sm'
-                roundedLeft='full'
+                roundedLeft='xl'
+                roundedRight='none'
                 shadow='sm'
                 gap={2}
                 href='https://fb.com/mostafiz.dev'
                 target='_blank'
                 rel='noopener'
                 colorScheme='facebook'
-                variant='solid'
+                variant='outline'
             >
                 <MdFacebook size={24} /> Facebook
             </Button>
@@ -27,14 +28,15 @@ export default function SocialLinksAuthor() {
                 as='a'
                 w='full'
                 size='sm'
-                roundedRight='full'
+                roundedRight='xl'
+                roundedLeft='none'
                 shadow='sm'
                 gap={2}
                 href='https://www.linkedin.com/in/mostafiz-rahaman-010a8913a/'
                 target='_blank'
                 rel='noopener'
                 colorScheme='linkedin'
-                variant='solid'
+                variant='outline'
                 // flex={1}
             >
                <BsTwitter size={24} /> Twitter

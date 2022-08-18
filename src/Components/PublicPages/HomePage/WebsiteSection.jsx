@@ -29,7 +29,7 @@ export default function WebsiteSection() {
 
                     <Box flex='1'>
 
-                        <Fade right>
+                        <Fade>
 
                             <Text as='h1' fontWeight='bold' fontSize={{base: '28px', lg:'35px'}} lineHeight={{base: '36px', lg:'40px'}}>
                                 Highly customizable Web applications for online business

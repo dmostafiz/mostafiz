@@ -22,8 +22,7 @@ export default function MobileAppSection() {
 
                     <Box flex={{ base: '0', lg: '1' }}>
 
-                        <Fade left>
-
+                        <Fade>
                             <Text as='h1' fontWeight='bold' fontSize={{ base: '28px', lg: '35px' }} lineHeight={{ base: '36px', lg: '40px' }}>
                                 Cross platform native application for Android & IOS
                             </Text>
