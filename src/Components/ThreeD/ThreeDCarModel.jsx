@@ -18,7 +18,7 @@ export default function ThreeDCarModel() {
 
       <Canvas flat linear shadows>
 
-        <Three show={inView ? true : false}/>
+        <Three key={inView} />
 
       </Canvas>
 
