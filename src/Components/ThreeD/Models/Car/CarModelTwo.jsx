@@ -6,33 +6,172 @@ source: https://sketchfab.com/3d-models/pontiac-600-65317a10cd6c48ffa4a2a4e29045
 title: Pontiac 600
 */
 
-import React, { useRef } from 'react'
+import React, { useEffect, useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
+import gsap from 'gsap'
 
 export function CarModelTwo(props) {
+
+
   const { nodes, materials } = useGLTF('/scene-transformed.glb')
+
+  const carRef = useRef(null)
+
+  useEffect(() => {
+
+    if (carRef.current) {
+
+      const timeline = new gsap.timeline()
+
+      // X axis motion
+      timeline.to(carRef.current.position, {
+        x: -1,
+        duration: 4,
+        ease: 'power2.out'
+      })
+
+      timeline.to(carRef.current.rotation, {
+        z: -0.6,
+        duration: 2,
+        ease: 'none'
+      }, '<')
+
+
+      timeline.to(carRef.current.rotation, {
+        z: 10,
+        duration: 60,
+        repeat: -1,
+        ease: 'none'
+      }, '>')
+    }
+
+  }, [carRef.current])
+
+
+  const frontRightWheel = useRef(null)
+
+  useEffect(() => {
+
+    if (frontRightWheel.current) {
+
+      const timeline = new gsap.timeline()
+
+      // X axis motion
+
+      timeline.to(frontRightWheel.current.rotation, {
+        x: +8,
+        duration: 1,
+        // repeat: -1,
+        ease: 'none'
+      })
+
+
+      timeline.to(frontRightWheel.current.rotation, {
+        x: 0,
+        duration: 0.1,
+        // repeat: -1,
+        ease: 'none'
+      })
+
+      timeline.to(frontRightWheel.current.rotation, {
+        y: 0.58,
+        duration: 2,
+        // repeat: -1,
+        ease: 'power2.in'
+      }, ">")
+
+
+    }
+
+  }, [frontRightWheel.current])
+
+
+  const frontLeftWheel = useRef(null)
+
+
+  useEffect(() => {
+
+    if (frontLeftWheel.current) {
+
+      const timeline = new gsap.timeline()
+
+      // X axis motion
+      timeline.to(frontLeftWheel.current.rotation, {
+        y: -0.58,
+        duration: 4,
+        ease: 'power2.in'
+      })
+    }
+
+  }, [frontLeftWheel.current])
+
+
+
+  const backRightWheel = useRef(null)
+
+  useEffect(() => {
+
+    if (backRightWheel.current) {
+
+      const timeline = new gsap.timeline()
+
+      // X axis motion
+
+      timeline.to(backRightWheel.current.rotation, {
+        x: +8,
+        duration: 3,
+        // repeat: -1,
+        ease: 'none'
+      })
+
+
+      timeline.to(backRightWheel.current.rotation, {
+        x: 0,
+        duration: 0,
+        // repeat: -1,
+        ease: 'none'
+      })
+
+    }
+
+  }, [backRightWheel.current])
+
+
+
   return (
-    <group {...props} dispose={null}>
-      <group scale={.9} position={[0,0,-2.4]} rotation={[-Math.PI / 2, 0, -.9]}>
-        <group rotation={[Math.PI / 2, 0, 0]} scale={0.01}>
-          <group position={[-70.62, 31.52, -126.95]} rotation={[Math.PI, 0, Math.PI]} scale={148.22}>
-            <mesh castShadow receiveShadow geometry={nodes.Wheel003_Wheel_0.geometry} material={materials.Wheel} />
-          </group>
-          <group position={[-70.62, 31.52, 138.51]} rotation={[Math.PI, 0.56, -Math.PI]} scale={148.22}>
-            <mesh castShadow receiveShadow geometry={nodes.Wheel002_Wheel_0.geometry} material={materials.Wheel} />
-          </group>
-          <group position={[76.19, 31.52, -126.95]} scale={148.22}>
-            <mesh castShadow receiveShadow geometry={nodes.Wheel001_Wheel_0.geometry} material={materials.Wheel} />
-          </group>
-          <group position={[76.19, 31.52, 138.51]} rotation={[0, 0.58, 0]} scale={148.22}>
-            <mesh castShadow receiveShadow geometry={nodes.Wheel_Wheel_0.geometry} material={materials.Wheel} />
-          </group>
-          <group position={[2.81, 16.66, 0.5]} rotation={[-Math.PI / 2, 0, 0]} scale={100}>
-            <mesh castShadow receiveShadow geometry={nodes.LowPoly_Material_0.geometry} material={materials.Material} />
+    <mesh>
+      <group {...props} dispose={null}>
+        <group ref={carRef} scale={.9} position={[5, 0, -2.4]} rotation={[-Math.PI / 2, 0, -.8]}>
+          <group rotation={[Math.PI / 2, 0, 0]} scale={0.01}>
+
+            {/* Back wheel left */}
+            <group position={[-70.62, 31.52, -126.95]} rotation={[Math.PI, 0, Math.PI]} scale={148.22}>
+              <mesh castShadow receiveShadow geometry={nodes.Wheel003_Wheel_0.geometry} material={materials.Wheel} />
+            </group>
+
+            {/* Back wheel right */}
+            <group ref={backRightWheel} position={[76.19, 31.52, -126.95]} scale={148.22}>
+              <mesh castShadow receiveShadow geometry={nodes.Wheel001_Wheel_0.geometry} material={materials.Wheel} />
+            </group>
+
+            {/* Front wheel left */}
+            <group ref={frontLeftWheel} position={[-70.62, 31.52, 138.51]} rotation={[Math.PI, 0, -Math.PI]} scale={148.22}>
+              <mesh castShadow receiveShadow geometry={nodes.Wheel002_Wheel_0.geometry} material={materials.Wheel} />
+            </group>
+
+            {/* Front wheel right */}
+            <group ref={frontRightWheel} position={[76.19, 31.52, 138.51]} rotation={[0, 0, 0]} scale={148.22}>
+              <mesh castShadow receiveShadow geometry={nodes.Wheel_Wheel_0.geometry} material={materials.Wheel} />
+            </group>
+
+            {/* Car Body */}
+            <group position={[2.81, 16.66, 0.5]} rotation={[-Math.PI / 2, 0, 0]} scale={100}>
+              <mesh castShadow receiveShadow geometry={nodes.LowPoly_Material_0.geometry} material={materials.Material} />
+            </group>
           </group>
         </group>
       </group>
-    </group>
+    </mesh>
   )
 }
 

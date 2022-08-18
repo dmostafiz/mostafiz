@@ -4,23 +4,23 @@ import { useFrame } from '@react-three/fiber'
 import { angleToRadians } from '../../Helpers/angleToRadians'
 import * as THREE from 'three'
 import gsap from 'gsap'
-import {CarModelTwo} from './Models/Car/CarModelTwo'
+import { CarModelTwo } from './Models/Car/CarModelTwo'
 // import { useInView } from 'react-intersection-observer'
 
 export default function Three() {
 
     const orbitControlRef = useRef(null)
 
-    useFrame((state) => {
+    // useFrame((state) => {
 
-        if (orbitControlRef.current) {
-            const { x, y } = state.mouse
+    //     if (orbitControlRef.current) {
+    //         const { x, y } = state.mouse
 
-            orbitControlRef.current.setAzimuthalAngle(-x * angleToRadians(45))
-            orbitControlRef.current.setPolarAngle((y + 2) * angleToRadians(90 - 30))
-            orbitControlRef.current.update()
-        }
-    })
+    //         orbitControlRef.current.setAzimuthalAngle(-x * angleToRadians(45))
+    //         orbitControlRef.current.setPolarAngle((y + 2) * angleToRadians(90 - 30))
+    //         orbitControlRef.current.update()
+    //     }
+    // })
 
 
     const ballRef = useRef(null)
@@ -28,13 +28,13 @@ export default function Three() {
     // const { ref, inView } = useInView();
 
     useEffect(() => {
-        if(ballRef.current){
+        if (ballRef.current) {
 
             const timeline = new gsap.timeline()
 
             // X axis motion
             timeline.to(ballRef.current.position, {
-                x: 1.9,
+                x: 1.2,
                 duration: 5,
                 ease: 'power2.out'
             })
@@ -46,20 +46,20 @@ export default function Three() {
             }, "<")
 
         }
-        
+
     }, [ballRef.current])
 
     return (
         <mesh>
-            
-            <PerspectiveCamera  makeDefault position={[0, -1, 5]} />
 
-            <OrbitControls ref={orbitControlRef} enableZoom={false} rotation={[1,-1,-10]} minPolarAngle={angleToRadians(40)} maxPolarAngle={angleToRadians(80)} />
+            <PerspectiveCamera makeDefault position={[0, -1, 5]} />
+
+            <OrbitControls ref={orbitControlRef} enableZoom={false} rotation={[1, -1, -10]} minPolarAngle={angleToRadians(40)} maxPolarAngle={angleToRadians(80)} />
 
             {/* Ball */}
             <mesh ref={ballRef} position={[-3, 2, 0]} castShadow>
                 <sphereGeometry args={[0.4, 35, 32]} />
-                <meshStandardMaterial color='#ffffff' metalness={0.6} roughness={0.2}/>
+                <meshStandardMaterial color='#ffffff' metalness={0.6} roughness={0.2} />
             </mesh>
 
             <CarModelTwo />
