@@ -12,8 +12,10 @@ export default function ThreeDCarModel() {
   const { ref, inView } = useInView();
 
   return (
-    <Box ref={ref} height={{ base: '380px', md: '550px' }} w='full' bg='#ffd801'>
-      <Canvas flat linear shadows>
+    
+    <Box height={{ base: '380px', md: '550px' }} w='full' bg='#ffd801'>
+
+      <Canvas ref={ref} flat linear shadows>
         {/* <Suspense fallback={'Loading...'}>
            
       </Suspense> */}

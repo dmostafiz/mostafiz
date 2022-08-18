@@ -1,9 +1,7 @@
-import { Box, Container, Flex, Icon, Image, Show, Spacer, Stack, Text, Wrap } from '@chakra-ui/react'
+import { Box, Container, Flex, Icon, Image, Spacer, Text, Wrap } from '@chakra-ui/react'
 import Link from 'next/link'
 import React from 'react'
 import { BsArrowRightCircle } from 'react-icons/bs'
-import { useInView } from 'react-intersection-observer'
-import { Fade } from 'react-reveal'
 import ThreeDCarModel from '../../ThreeD/ThreeDCarModel'
 
 export default function ThreeDSection() {
