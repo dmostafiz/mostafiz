@@ -21,8 +21,8 @@ const MainNav = () => {
 
         <>
             {isOpen && <Alert bg='#ffd801' color='blackAlpha.900' zIndex={999} variant='solid' py={{ base: 1, md: 0 }}>
-
-                <Container minW='6xl'>
+                
+                <Container maxW='6xl'>
                     <AlertDescription>
                         <Text lineHeight='18px' fontSize={{ base: '14px', md: '16px' }}>
                             Please be noted! This website is currently under development process, it`s containing many fake and dummy contents.
@@ -38,7 +38,7 @@ const MainNav = () => {
                 />
 
             </Alert>
-            }
+        }
 
             <StickyBox offsetTop={0} style={{ zIndex: 999 }}>
 
