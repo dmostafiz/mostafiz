@@ -21,6 +21,7 @@ const MainNav = () => {
 
         <>
             {isOpen && <Alert bg='#ffd801' color='blackAlpha.900' zIndex={999} variant='solid' py={{ base: 1, md: 0 }}>
+
                 <Container minW='6xl'>
                     <AlertDescription>
                         <Text lineHeight='18px' fontSize={{ base: '14px', md: '16px' }}>
@@ -28,13 +29,16 @@ const MainNav = () => {
                         </Text>
                     </AlertDescription>
                 </Container>
+
                 <CloseButton
                     alignSelf='flex-start'
                     position='relative'
                     rounded='full'
                     onClick={onClose}
                 />
-            </Alert>}
+
+            </Alert>
+            }
 
             <StickyBox offsetTop={0} style={{ zIndex: 999 }}>
 
