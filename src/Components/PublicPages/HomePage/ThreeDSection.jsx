@@ -11,7 +11,7 @@ export default function ThreeDSection() {
     const { ref, inView } = useInView();
 
     const Show3DContent = () => {
-        return <Fade>
+        return <>
 
             <Text as='h1' fontWeight='bold' fontSize={{ base: '28px', lg: '35px' }} lineHeight={{ base: '36px', lg: '40px' }}>
                 Let customers play with your products within the web.
@@ -79,7 +79,7 @@ export default function ThreeDSection() {
                 </Link>
 
             </Box>
-        </Fade>
+        </>
     }
 
     return (
