@@ -14,18 +14,18 @@ export default function ThreeDCarModel() {
   return (
 
     <>
-      <Box ref={ref} />
+      <Box ref={ref}></Box>
 
       <Box height={{ base: '380px', md: '550px' }} w='full' bg='#ffd801'>
 
-        {showThreeD && <Canvas flat linear shadows>
+        {inView && <Canvas flat linear shadows>
 
           <Three />
 
         </Canvas>}
 
       </Box>
-      
+
     </>
   )
 }
