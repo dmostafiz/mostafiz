@@ -6,7 +6,8 @@ import { BsArrowRightCircle } from 'react-icons/bs'
 import dynamic from 'next/dynamic';
 
 const ThreeDCarModel = dynamic(() => import('../../ThreeD/ThreeDCarModel'), {
-    ssr: false
+    ssr: false,
+    // suspense: true
 })
 
 // import ThreeDCarModel from '../../ThreeD/ThreeDCarModel'

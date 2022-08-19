@@ -6,6 +6,7 @@ import { angleToRadians } from '../../Helpers/angleToRadians'
 import { Box, Text } from '@chakra-ui/react'
 import Three from './Three'
 import { useInView } from 'react-intersection-observer'
+import LoadingSpinner from '../Common/LoadingSpinner'
 
 export default function ThreeDCarModel() {
 
@@ -14,7 +15,7 @@ export default function ThreeDCarModel() {
   return (
 
     <Box ref={ref} height={{ base: '380px', md: '550px' }} w='full' bg='#ffd801'>
-      <Suspense fallback={<Text>Loading...</Text>}>
+      <Suspense fallback={<LoadingSpinner />}>
         <Canvas flat linear shadows>
           <Three key={inView} />
         </Canvas>
