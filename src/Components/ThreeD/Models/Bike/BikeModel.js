@@ -12,9 +12,8 @@ import { useGLTF } from '@react-three/drei'
 export function BikeModel(props) {
   const { nodes, materials } = useGLTF('/models_glb/scene-honda.glb')
   return (
-
     <group {...props} dispose={null}>
-      <group rotation={[-Math.PI / 2, 0, -.7]} position={[1,0,2]} scale={1.11}>
+      <group rotation={[-Math.PI / 2, 0, -.7]} position={[1, 0, 2]} scale={1.11}>
         <mesh castShadow receiveShadow geometry={nodes.Object_2.geometry} material={materials.aluminium} />
         <mesh castShadow receiveShadow geometry={nodes.Object_3.geometry} material={materials.black_chrome} />
         <mesh castShadow receiveShadow geometry={nodes.Object_4.geometry} material={materials.black_mate} />
@@ -40,7 +39,6 @@ export function BikeModel(props) {
         <mesh castShadow receiveShadow geometry={nodes.Object_24.geometry} material={materials.material_18} />
       </group>
     </group>
-    
   )
 }
 
