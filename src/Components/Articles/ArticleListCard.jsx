@@ -10,7 +10,7 @@ export default function ArticleListCard({ article }) {
                     <Image
                         w='full'
                         roundedLeft='xl'
-                        shadow='md'
+                        shadow='sm'
                         src={article.image}
                         alt='A detailed article about fiverr freelancing'
                     />

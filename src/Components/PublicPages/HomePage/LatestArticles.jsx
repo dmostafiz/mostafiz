@@ -9,7 +9,7 @@ import StickyBox from "react-sticky-box";
 
 export default function LatestArticles() {
     return (
-        <Box as='section' py={5} bg='white'>
+        <Box as='section' py={3} bg='white'>
             <Container maxW='6xl' p={5}>
 
                 <SectionTitle
@@ -115,7 +115,7 @@ export default function LatestArticles() {
                 <Spacer h={8} />
 
                 <Box>
-                    <Stack direction='column' gap={5}>
+                    <Stack direction='column' gap={2}>
 
                         <ArticleListCard article={{
                             title: 'detailed article about fiverr freelancing',
