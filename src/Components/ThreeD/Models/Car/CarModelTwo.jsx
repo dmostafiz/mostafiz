@@ -60,6 +60,7 @@ export function CarModelTwo(props) {
       timeline.to(frontRightWheel.current.rotation, {
         x: +8,
         duration: 1.2,
+        delay:-1,
         // repeat: -1,
         ease: 'none'
       })
@@ -67,14 +68,15 @@ export function CarModelTwo(props) {
 
       timeline.to(frontRightWheel.current.rotation, {
         x: 0,
-        duration: 0.2,
+        duration: 0.4,
         // repeat: -1,
         ease: 'none'
       })
 
       timeline.to(frontRightWheel.current.rotation, {
         y: 0.58,
-        duration: 1,
+        duration: .6,
+        delay: -0.1,
         // repeat: -1,
         ease: 'none'
       }, ">")

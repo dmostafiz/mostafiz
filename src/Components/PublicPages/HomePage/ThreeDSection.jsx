@@ -27,7 +27,7 @@ export default function ThreeDSection() {
                         lg: 'row'
                     }}
                     alignItems='center'
-                    gap={10}
+                    gap={{base: 4,lg: 10}}
                 >
 
                     <Box flex={{ base: '0', lg: '1' }}>
@@ -36,9 +36,9 @@ export default function ThreeDSection() {
                             Let customers play with your products within the web.
                         </Text>
 
-                        <Spacer h={4} />
+                        <Spacer h={{base: 1, lg: 4}} />
 
-                        <Text as='p' fontSize={'17px'} fontWeight='normal'>Nowadays showing static product images to your customers is not enough to grab their attention. So therefor almost all big companies are showcasing their products as 3D models. Customers can feel and move it to see all aspects of that product by touching and moving it. Its really increasing their sales day by day.
+                        <Text as='p' fontSize={{base: '16px', md:'17px'}} fontWeight='normal'>Nowadays showing static product images to your customers is not enough to grab their attention. So therefor almost all big companies are showcasing their products as 3D models. Customers can feel and move it to see all aspects of that product by touching and moving it. Its really increasing their sales day by day.
 
                             <br /> <br />
                             We are a dedicated team of highly creative peoples and doing very good job in 3D product modeling for varius companies. So why you don't hiring us today to taking care of yours?</Text>

@@ -5,14 +5,17 @@ import SectionTitle from '../../Common/SectionTitle'
 export default function Technologies() {
     return (
         <Box bg='whiteAlpha.500' as='section' py={5}>
+
             <Container maxW='6xl' p={5}>
 
                 <SectionTitle
-                    title='Technologies'
-                    subTitle="Choose best technologies for your next project to build faster and for scalability"
+                    title='Technologies we use'
+                    // subTitle="Choose best technologies for your next project to build faster and for scalability"
                 />
 
-                <SimpleGrid columns={{ base: 3, md: 5, lg: 7 }} spacing={{ base: 3, md: 5 }}>
+                <Spacer h={{base:0, lg:3}} />
+
+                <SimpleGrid columns={{ base: 5, sm:5, md: 8, lg: 10 }} spacing={{ base: 2, lg: 4 }}>
                     <Box p={2} bg='white' shadow='md' rounded='xl'>
                         <Image w='full' src='https://res.cloudinary.com/dgzzionee/image/upload/v1628519599/webexe/nodejs_t4bipc.png' />
                     </Box>
