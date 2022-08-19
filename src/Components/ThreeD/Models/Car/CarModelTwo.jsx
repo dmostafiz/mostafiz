@@ -34,7 +34,7 @@ export function CarModelTwo(props) {
         z: -0.7,
         duration: 2,
         ease: 'none'
-      }, '<')
+      }, '<=')
 
 
       timeline.to(carRef.current.rotation, {
@@ -59,7 +59,7 @@ export function CarModelTwo(props) {
 
       timeline.to(frontRightWheel.current.rotation, {
         x: +8,
-        duration: 1,
+        duration: 1.2,
         // repeat: -1,
         ease: 'none'
       })
@@ -67,7 +67,7 @@ export function CarModelTwo(props) {
 
       timeline.to(frontRightWheel.current.rotation, {
         x: 0,
-        duration: 0.1,
+        duration: 0.2,
         // repeat: -1,
         ease: 'none'
       })
@@ -76,7 +76,7 @@ export function CarModelTwo(props) {
         y: 0.58,
         duration: 1,
         // repeat: -1,
-        ease: 'power2.in'
+        ease: 'none'
       }, ">")
 
 
@@ -140,7 +140,7 @@ export function CarModelTwo(props) {
   return (
     <mesh>
       <group {...props} dispose={null}>
-        <group ref={carRef} scale={.9} position={[5, 0, -2.4]} rotation={[-Math.PI / 2, 0, -.8]}>
+        <group ref={carRef} scale={.9} position={[5, 0, -2.4]} rotation={[-Math.PI / 2, 0, -2]}>
           <group rotation={[Math.PI / 2, 0, 0]} scale={0.01}>
 
             {/* Back wheel left */}

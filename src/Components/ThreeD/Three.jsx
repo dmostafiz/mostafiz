@@ -53,7 +53,7 @@ export default function Three() {
     return (
         <mesh>
 
-            <PerspectiveCamera makeDefault position={[0, -1, 5]} />
+            <PerspectiveCamera makeDefault position={[0, 1.6, 5]} />
 
             <OrbitControls ref={orbitControlRef} enableZoom={false} rotation={[1, -1, -10]} minPolarAngle={angleToRadians(40)} maxPolarAngle={angleToRadians(80)} />
 
