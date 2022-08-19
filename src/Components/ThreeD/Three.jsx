@@ -5,6 +5,7 @@ import { angleToRadians } from '../../Helpers/angleToRadians'
 import * as THREE from 'three'
 import gsap from 'gsap'
 import { CarModelTwo } from './Models/Car/CarModelTwo'
+import { BikeModel } from './Models/Bike/BikeModel'
 // import { useInView } from 'react-intersection-observer'
 
 export default function Three() {
@@ -63,6 +64,9 @@ export default function Three() {
             </mesh>
 
             <CarModelTwo />
+
+            <BikeModel />
+
 
             {/* Floor */}
             <mesh rotation={[-(angleToRadians(90)), 0, 0]} receiveShadow>
