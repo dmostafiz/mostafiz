@@ -67,11 +67,11 @@ export default function Three() {
             {/* Floor */}
             <mesh rotation={[-(angleToRadians(90)), 0, 0]} receiveShadow>
                 <planeGeometry args={[7, 7]} />
-                <meshPhongMaterial color='#eed78f' />
+                <meshPhongMaterial color='#ffd801' />
             </mesh>
 
             {/* Brightness */}
-            <ambientLight args={['#ffffff', 1]} />
+            <ambientLight args={['#ffffff', 1.2]} />
 
             <spotLight args={['#ffffff', 2, 7, angleToRadians(45), 0.8]} position={[-3, 1, 0]} castShadow />
 
@@ -79,7 +79,7 @@ export default function Three() {
             <Environment background>
                 <mesh scale={100}>
                     <sphereGeometry args={[10, 100, 100]} />
-                    <meshBasicMaterial side={THREE.BackSide} color='#eed78f' />
+                    <meshBasicMaterial side={THREE.BackSide} color='#ffea00' />
                 </mesh>
             </Environment>
 
