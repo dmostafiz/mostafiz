@@ -2,11 +2,18 @@ import { Box, Container, Flex, Icon, Image, Spacer, Text, Wrap } from '@chakra-u
 import Link from 'next/link'
 import React from 'react'
 import { BsArrowRightCircle } from 'react-icons/bs'
-import ThreeDCarModel from '../../ThreeD/ThreeDCarModel'
+
+import dynamic from 'next/dynamic';
+
+const ThreeDCarModel = dynamic(() => import('../../ThreeD/ThreeDCarModel'), {
+    ssr: false
+})
+
+// import ThreeDCarModel from '../../ThreeD/ThreeDCarModel'
 
 export default function ThreeDSection() {
 
-  
+
 
     return (
         <Box as='div' py={{ base: 5, md: 0 }}>

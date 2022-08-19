@@ -13,7 +13,6 @@ import { useInView } from "react-intersection-observer";
 
 export default function Home() {
 
-  const { ref, inView } = useInView();
 
   return (
     <PublicLayout>
