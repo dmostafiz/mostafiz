@@ -74,7 +74,7 @@ export function CarModelTwo(props) {
 
       timeline.to(frontRightWheel.current.rotation, {
         y: 0.58,
-        duration: 2,
+        duration: 1,
         // repeat: -1,
         ease: 'power2.in'
       }, ">")
