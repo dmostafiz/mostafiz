@@ -25,22 +25,21 @@ export function CarModelTwo(props) {
 
       // X axis motion
       timeline.to(carRef.current.position, {
-        x: -1,
+        x: -.7,
         duration: 4,
         ease: 'power2.out'
       })
 
       timeline.to(carRef.current.rotation, {
-        z: -0.6,
+        z: -0.7,
         duration: 2,
         ease: 'none'
       }, '<')
 
 
       timeline.to(carRef.current.rotation, {
-        z: 10,
-        duration: 60,
-        repeat: -1,
+        z: -.5,
+        duration: 1,
         ease: 'none'
       }, '>')
     }

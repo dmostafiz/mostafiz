@@ -14,7 +14,7 @@ export default function ThreeDCarModel() {
 
   return (
 
-    <Box ref={ref} height={{ base: '380px', md: '550px' }} w='full' bg='#ffd801'>
+    <Box ref={ref} height={{ base: '380px', md: '550px' }} w='full' bg='#daad46'>
       <Suspense fallback={<LoadingSpinner text='Loading 3D Models...' />}>
         <Canvas flat linear shadows>
           <Three key={inView} />
