@@ -3,7 +3,7 @@ import React, { Suspense, useCallback, useEffect, useMemo, useState } from 'reac
 import { angleToRadians } from '../../Helpers/angleToRadians'
 // import { SphereGeometry } from 'three'
 // import { SphereGeometry } from 'three'
-import { Box } from '@chakra-ui/react'
+import { Box, Text } from '@chakra-ui/react'
 import Three from './Three'
 import { useInView } from 'react-intersection-observer'
 
@@ -14,11 +14,11 @@ export default function ThreeDCarModel() {
   return (
 
     <Box ref={ref} height={{ base: '380px', md: '550px' }} w='full' bg='#ffd801'>
-      <Canvas flat linear shadows>
-        <Suspense>
+      <Suspense fallback={<Text>Loading...</Text>}>
+        <Canvas flat linear shadows>
           <Three key={inView} />
-        </Suspense>
-      </Canvas>
+        </Canvas>
+      </Suspense>
     </Box>
 
   )
