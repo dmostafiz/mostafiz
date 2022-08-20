@@ -1,4 +1,4 @@
-import { Box, Button, Container, Flex, Image, List, ListIcon, ListItem, Spacer, Text } from '@chakra-ui/react'
+import { Box, Button, Container, Flex, Image, List, ListIcon, ListItem, Spacer, Text, Wrap } from '@chakra-ui/react'
 import React, { useEffect, useState } from 'react'
 import { MdCheckCircle } from 'react-icons/md'
 import { Fade } from 'react-reveal'
@@ -27,7 +27,7 @@ export default function HomepageCarousel() {
             pos='relative'
             top='-82px'
         >
-            <Box w='full' bgGradient='linear(to-r,blackAlpha.700, #1968cb96)' backdropFilter='auto' backdropBlur='5px' pb={10} pt={{ base: '100px', md: '140px' }}>
+            <Box w='full' bgGradient='linear(to-r,blackAlpha.700, #1968cb96)' backdropFilter='auto' backdropBlur='5px' pb={0} pt={{ base: '100px', md: '90px' }}>
 
                 <Container maxW='6xl' p={5}>
 
@@ -62,16 +62,18 @@ export default function HomepageCarousel() {
 
                             <Text color='white' fontSize={{ base: '16px', md: '18px', lg: '20px' }}>A fulltime Freelance software programmer from Bangladesh. Basically, I offer innovative digital creations in full-stack solutions for web, mobile or desktop environments to simplify and automate any online based business.</Text>
 
-                            <Spacer h={8} />
+                            <Spacer h={10} />
 
                             <Flex align='center' gap='2'>
                                 <Image maxW='170px' src='/fiverr.png' />
 
-                                <Button as='a' href='#' target='_blank' rel='noopener,norefferer' _hover={{bg: '#1ec7b2'}} bg='#33d0bb' color='white' size='lg' shadow='sm' rounded='full'>
+                                <Button as='a' href='#' target='_blank' rel='noopener,norefferer' _hover={{ bg: '#1ec7b2' }} bg='#33d0bb' color='white' size='lg' shadow='sm' rounded='full'>
                                     Get Started Today
                                 </Button>
 
                             </Flex>
+
+               
 
                         </Box>
 

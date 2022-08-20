@@ -17,7 +17,7 @@ export default function ThreeDSection() {
 
 
     return (
-        <Box as='div' py={{ base: 5, md: 0 }}>
+        <Box as='div' py={{ base: 5, md: 2 }}>
 
             <Container maxW='6xl'>
 
@@ -100,7 +100,7 @@ export default function ThreeDSection() {
 
                     </Box>
 
-                    <Box w={{ base: 'full', md: '50%' }} zIndex={99}>
+                    <Box w={{ base: 'full', md: '50%' }} zIndex={99} py={{base: 0, md:6}}>
 
                         <ThreeDCarModel />
 
