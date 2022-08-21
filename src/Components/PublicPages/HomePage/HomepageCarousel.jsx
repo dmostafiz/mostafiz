@@ -27,18 +27,29 @@ export default function HomepageCarousel() {
             pos='relative'
             top='-82px'
         >
-            <Box w='full' bgGradient='linear(to-r,blackAlpha.700, #1968cb96)' backdropFilter='auto' backdropBlur='5px' pb={0} pt={{ base: '100px', md: '90px' }}>
+            <Box
+                w='full'
+                bgGradient='linear(to-r,blackAlpha.700, #1968cb96)'
+                backdropFilter='auto'
+                backdropBlur='5px'
+                pb={3}
+                pt={{ base: '100px', md: '100px' }}
+            >
 
                 <Container maxW='6xl' p={5}>
 
-                    <Flex direction={{
-                        base: 'column',
-                        lg: 'row'
-                    }}
+                    <Flex
+                        direction={{
+                            base: 'column',
+                            lg: 'row'
+                        }}
                         gap={5}
+                        // alignItems='center'
                     >
 
                         <Box flex={1}>
+
+                            <Spacer h={{base: 0, md: 10}}/>
 
                             <Box>
                                 <Fade>
@@ -49,7 +60,7 @@ export default function HomepageCarousel() {
                                         fontFamily={`'Fugaz One', cursiv`}
                                         // color='yellow.400'
                                         fontSize={{ base: '50px', md: '70px', lg: '79px' }}
-                                        lineHeight={1}
+                                        lineHeight={{ base: '50px', md: '75px' }}
                                         fontWeight='normal'>
                                         I'm Mostafiz Rahaman
                                     </Text>
@@ -72,8 +83,6 @@ export default function HomepageCarousel() {
                                 </Button>
 
                             </Flex>
-
-               
 
                         </Box>
 

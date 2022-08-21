@@ -122,7 +122,7 @@ export default function LatestArticles() {
                 <Spacer h={8} />
 
                 <Box>
-                    <SimpleGrid columns={{base: 1, sm: 1, md:1, lg: 2}} gap={5}>
+                    <SimpleGrid columns={{base: 1, sm: 1, md:1, lg: 2}} gap={8}>
 
                         <ArticleListCardSmall article={{
                             title: 'detailed article about fiverr freelancing',

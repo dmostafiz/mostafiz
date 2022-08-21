@@ -8,10 +8,11 @@ import SocialLinks from '../../Components/Common/SocialLinks'
 import SocialLinksAuthor from '../../Components/Common/SocialLinksAuthor'
 import PublicLayout from '../../Layouts/PublicLayout'
 import StickyBox from "react-sticky-box";
+import NewsLetterCard from '../../Components/Common/NewsLetterCard'
 
 export default function Article() {
 
-  const bgImage = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY6Jx2k9vXU_HptXpZISN3EUpWWpMEZYQaZw&usqp=CAU'
+  const bgImage = 'https://www.codemotion.com/magazine/wp-content/uploads/2022/03/825bc6f1-4341-43ee-9ebe-21dc27378f80-896x504.png'
 
   return (
     <PublicLayout>
@@ -37,7 +38,7 @@ export default function Article() {
 
       <Container maxW='6xl'>
 
-        <Box w='full' py={{ base: 3, md: 8 }}>
+        <Box w='full' py={{ base: 3, md: 5 }}>
 
           <Flex w='full' gap={5} direction={{ base: 'column', lg: 'row' }}>
 
@@ -69,7 +70,8 @@ export default function Article() {
 
             <Box w={{ base: 'full', lg: '320px' }}>
 
-              <StickyBox offsetTop={110} >
+              <StickyBox offsetTop={80} >
+
                 <VStack w='full' gap={5}>
 
                   <Center w='full'>
@@ -78,13 +80,11 @@ export default function Article() {
                       w={'full'}
                       bg={useColorModeValue('white', 'gray.900')}
                       shadow={'sm'}
-                      rounded={'lg'}
                       textAlign={'center'}
                     >
 
                       <Box
                         bgImage={bgImage}
-                        roundedTop={{ base: '0', lg: 'lg' }}
                       >
                         <Box
                           w='full'
@@ -94,37 +94,41 @@ export default function Article() {
                           // bgGradient='linear(to-tr, #fbbf2440, #fbbf24a3)'
                           backdropFilter='auto'
                           backdropBlur='80px'
-                          pt={5}
-                          pb={3}
+                          pt={3}
+                          pb={0}
                           px={3}
                         >
-                          <Avatar
-                            border='2px solid white'
-                            size={'2xl'}
-                            src={
-                              '/img/mostafiz1.jpg'
-                            }
-                            alt={'Avatar Alt'}
-                            mb={3}
-                            pos={'relative'}
-                            _after={{
-                              content: '""',
-                              w: 4,
-                              h: 4,
-                              bg: '#fbbf24',
-                              border: '2px solid white',
-                              rounded: 'full',
-                              pos: 'absolute',
-                              bottom: 2,
-                              right: 3,
-                            }}
-                          />
-                          <Heading fontSize={'2xl'} color={'blackAlpha.900'} fontFamily={'body'}>
-                            Mostafiz Rahaman
-                          </Heading>
-                          <Text fontWeight={600} color={'blackAlpha.700'} mb={2}>
-                            author@mostafiz.dev
-                          </Text>
+                          <Flex alignItems='center' gap={3}>
+                            <Avatar
+                              border='2px solid white'
+                              size={'lg'}
+                              src={
+                                '/img/mostafiz1.jpg'
+                              }
+                              alt={'Avatar Alt'}
+                              mb={3}
+                              pos={'relative'}
+                              _after={{
+                                content: '""',
+                                w: 3,
+                                h: 3,
+                                bg: '#fbbf24',
+                                border: '2px solid white',
+                                rounded: 'full',
+                                pos: 'absolute',
+                                bottom: 2,
+                                right: -.5,
+                              }}
+                            />
+                            <Flex direction='column' alignItems={'flex-start'}>
+                              <Heading fontSize={'xl'} color={'blackAlpha.900'} fontFamily={'body'}>
+                                Mostafiz Rahaman
+                              </Heading>
+                              <Text fontWeight={600} color={'blackAlpha.700'} mb={2}>
+                                author@mostafiz.dev
+                              </Text>
+                            </Flex>
+                          </Flex>
                         </Box>
                       </Box>
 
@@ -149,23 +153,22 @@ export default function Article() {
 
                         <Box px={3} py={2}>
                           <Box textAlign='left'>
-                         
                             <SocialLinksAuthor />
                           </Box>
                         </Box>
 
-                        <Divider py={1} />
+                        {/* <Divider py={1} />
 
                         <Box px={3} py={2}>
                           <Box textAlign='left'>
                             <Text fontWeight={`semibold`} ml={1}>Subscribe newsletter</Text>
                             <Spacer h={2} />
                             <InputGroup size={'md'} gap={'0px'}>
-                              <Input placeholder='Enter your email' roundedLeft={`full`} border='1px' borderColor='yellow.400' bg='yellow.400'  _hover={{borderColor: 'yellow.400'}} _focus={{ borderColor: 'yellow.400', ring: 'none' }} />
-                              <Button loadingText='Wait...' px={6} fontSize={`12px`} roundedRight='full' variant={`solid`} bg='yellow.400' colorScheme={`yellow`}>Subscribe</Button>
+                              <Input placeholder='Enter your email' roundedLeft={`full`} border='1px' borderColor='gray.200' bg='white' _hover={{ borderColor: 'gray.200' }} _focus={{ borderColor: 'gray.200', ring: 'none' }} />
+                              <Button loadingText='Wait...' px={6} fontSize={`12px`} roundedRight='full' variant={`solid`} bg='gray.100' colorScheme={`gray`}>Subscribe</Button>
                             </InputGroup>
                           </Box>
-                        </Box>
+                        </Box> */}
 
                       </Box>
 
@@ -203,6 +206,11 @@ export default function Article() {
                   </Center>
 
                 </VStack>
+
+                <Spacer h='10px' />
+
+                <NewsLetterCard />
+
               </StickyBox>
 
             </Box>

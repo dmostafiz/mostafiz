@@ -9,7 +9,7 @@ export default function PublicLayout({ children }) {
 
       <MainNav />
 
-      <Box>
+      <Box minH={'calc(100vh - 140px)'}>
         {children}
       </Box>
 

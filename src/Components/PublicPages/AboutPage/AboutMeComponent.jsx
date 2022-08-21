@@ -9,7 +9,7 @@ import SocialLinks from '../../Common/SocialLinks';
 
 export default function AboutMeComponent() {
     return (
-        <Box as='section' py={{ base: 0, lg: 8 }}>
+        <Box as='section' py={{ base: 0, md: 4 }}>
             <Container maxW='6xl' p={5}>
 
                 <Flex direction={{ base: 'column', lg: 'row' }} alignItems='center' gap={10}>
