@@ -1,4 +1,4 @@
-import { Alert, AlertDescription, Box, Button, CloseButton, Container, Flex, HStack, Link, Show, Text, useDisclosure } from '@chakra-ui/react';
+import { Alert, AlertDescription, Box, Button, CloseButton, Container, Flex, HStack, Link, Menu, MenuButton, MenuItem, MenuList, Show, Text, useDisclosure } from '@chakra-ui/react';
 import React from 'react';
 import NextLink from 'next/link'
 import MobileMenu from './MobileMenu';
@@ -25,7 +25,7 @@ const MainNav = () => {
                 <Container maxW='6xl'>
                     <AlertDescription>
                         <Text lineHeight='18px' fontSize={{ base: '14px', md: '16px' }}>
-                            Please be noted! This website is currently under development process, it`s containing many fake and dummy contents.
+                            This website is currently under development and containing dummy contents. Many awesome features are on the way to launch soon.
                         </Text>
                     </AlertDescription>
                 </Container>
@@ -65,83 +65,99 @@ const MainNav = () => {
                             <Show above='lg'>
                                 <Flex gap={0} color='whiteAlpha.700'>
 
-                                    <NextLink href='/about_me'>
-                                        <Link
-                                            px={3}
-                                            py={1}
-                                            rounded='sm'
+
+                                    <Menu>
+                                        <MenuButton
+                                            bg={'transparent'}
+                                            rounded='none'
                                             _hover={{
-                                                textDecoration: 'none',
-                                                bg: 'blackAlpha.300',
+                                                bg: 'blackAlpha.300'
                                             }}
-                                            href='/about_me'
-                                        // bg='blackAlpha.300'
+                                            _active={{
+                                                bg: 'blackAlpha.400'
+                                            }}
+                                            as={Button}
+                                            fontWeight='normal'
                                         >
+                                            Business
+                                        </MenuButton>
+                                        <MenuList color={'blackAlpha.900'} rounded='none'>
+                                            <NextLink href='/about_me'>
+                                                <MenuItem>Professional Details</MenuItem>
+                                            </NextLink>
+                                            <MenuItem>About The Team</MenuItem>
+                                            <MenuItem>Services we offer</MenuItem>
+                                        </MenuList>
+                                    </Menu>
 
-                                            <Text fontWeight='normal'>Business</Text>
 
-                                        </Link>
+                                    <NextLink href='/showcase'>
+                                        <Button
+                                            rounded='none'
+                                            bg={'transparent'}
+                                            _hover={{
+                                                bg: 'blackAlpha.300'
+                                            }}
+                                            _active={{
+                                                bg: 'blackAlpha.400'
+                                            }}
+                                            as='a'
+                                            href='/showcase'
+                                        >
+                                            <Text fontWeight='normal'>Showcase</Text>
+                                        </Button>
                                     </NextLink>
 
                                     <NextLink href='/case_studies'>
-                                        <Link
-                                            px={4}
-                                            py={1}
-                                            rounded='sm'
+                                        <Button
+                                            rounded='none'
+                                            bg={'transparent'}
                                             _hover={{
-                                                textDecoration: 'none',
-                                                bg: 'blackAlpha.300',
+                                                bg: 'blackAlpha.300'
                                             }}
-                                            href='/case_studies'
-                                        >
-                                            <Text fontWeight='normal'>Portfolio</Text>
-                                        </Link>
-                                    </NextLink>
-
-                                    <NextLink href='/case_studies'>
-                                        <Link
-                                            px={4}
-                                            py={1}
-                                            rounded='sm'
-                                            _hover={{
-                                                textDecoration: 'none',
-                                                bg: 'blackAlpha.300',
+                                            _active={{
+                                                bg: 'blackAlpha.400'
                                             }}
+                                            as='a'
                                             href='/case_studies'
                                         >
                                             <Text fontWeight='normal'>Case Studies</Text>
-                                        </Link>
+                                        </Button>
                                     </NextLink>
 
                                     <NextLink href='/tech_articles'>
-                                        <Link
-                                            px={4}
-                                            py={1}
-                                            rounded='sm'
+                                        <Button
+                                            rounded='none'
+                                            bg={'transparent'}
                                             _hover={{
-                                                textDecoration: 'none',
-                                                bg: 'blackAlpha.300',
+                                                bg: 'blackAlpha.300'
                                             }}
+                                            _active={{
+                                                bg: 'blackAlpha.400'
+                                            }}
+                                            as='a'
                                             href='/tech_articles'
                                         >
                                             <Text fontWeight='normal'>Tech Articles</Text>
-                                        </Link>
+                                        </Button>
                                     </NextLink>
 
 
                                     <NextLink href='/how_it_works'>
-                                        <Link
-                                            px={4}
-                                            py={1}
-                                            rounded='sm'
+                                        <Button
+                                            rounded='none'
+                                            bg={'transparent'}
                                             _hover={{
-                                                textDecoration: 'none',
-                                                bg: 'blackAlpha.300',
+                                                bg: 'blackAlpha.300'
                                             }}
+                                            _active={{
+                                                bg: 'blackAlpha.400'
+                                            }}
+                                            as='a'
                                             href='/how_it_works'
                                         >
                                             <Text fontWeight='normal'>How it works?</Text>
-                                        </Link>
+                                        </Button>
                                     </NextLink>
                                 </Flex>
                             </Show>

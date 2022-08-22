@@ -17,7 +17,7 @@ export default function ThreeDSection() {
 
 
     return (
-        <Box as='div' py={{ base: 5, md: 0 }}>
+        <Box as='div' py={{ base: 5, md: 0 }} bg='#ffffb1'>
 
             <Container maxW='6xl'>
 
@@ -30,7 +30,7 @@ export default function ThreeDSection() {
                     gap={{ base: 4, lg: 10 }}
                 >
 
-                    <Box flex={{ base: '0', lg: '1' }}>
+                    <Box flex={{ base: '0', lg: '1' }} py={{base: '0px', md:'20px'}}>
 
                         <Text as='h1' fontWeight='bold' fontSize={{ base: '28px', lg: '35px' }} lineHeight={{ base: '36px', lg: '40px' }}>
                             Let customers play with your products within the web.
