@@ -56,7 +56,7 @@ export default function Three() {
 
             <PerspectiveCamera makeDefault position={[0, 1.6, 5]} />
 
-            <OrbitControls ref={orbitControlRef} enableZoom={false} rotation={[1, -1, -10]} minPolarAngle={angleToRadians(40)} maxPolarAngle={angleToRadians(80)} />
+            <OrbitControls ref={orbitControlRef} enableZoom={false} rotation={[1, -1, -10]} />
 
             {/* Ball */}
             {/* <mesh ref={ballRef} position={[-3, 2, 0]} castShadow>
@@ -79,15 +79,15 @@ export default function Three() {
             </mesh> */}
 
             {/* Brightness */}
-            <ambientLight args={['#ffffff', 1]} />
+            <ambientLight args={['#ffffff', 2]} />
 
             <spotLight args={['#ffffff', 2, 7, angleToRadians(45), 0.8]} position={[-3, 1, 0]} castShadow />
 
 
             <Environment background>
                 <mesh scale={100}>
-                    <sphereGeometry args={[10, 100, 100]} />
-                    <meshBasicMaterial side={THREE.BackSide} color='#fffff5' />
+                    <sphereGeometry args={[1, 32, 32]} />
+                    <meshBasicMaterial side={THREE.BackSide} color='#f9f9f9' />
                 </mesh>
             </Environment>
 
