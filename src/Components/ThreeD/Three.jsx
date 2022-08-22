@@ -6,6 +6,7 @@ import * as THREE from 'three'
 import gsap from 'gsap'
 import { CarModelTwo } from './Models/Car/CarModelTwo'
 import { BikeModel } from './Models/Bike/BikeModel'
+import { HeadphoneModel } from './Models/Headphone/HeadphoneModel'
 // import { useInView } from 'react-intersection-observer'
 
 export default function Three() {
@@ -58,21 +59,24 @@ export default function Three() {
             <OrbitControls ref={orbitControlRef} enableZoom={false} rotation={[1, -1, -10]} minPolarAngle={angleToRadians(40)} maxPolarAngle={angleToRadians(80)} />
 
             {/* Ball */}
-            <mesh ref={ballRef} position={[-3, 2, 0]} castShadow>
+            {/* <mesh ref={ballRef} position={[-3, 2, 0]} castShadow>
                 <sphereGeometry args={[0.4, 35, 32]} />
                 <meshStandardMaterial color='#ffffff' metalness={0.6} roughness={0.2} />
-            </mesh>
+            </mesh> */}
 
-            <CarModelTwo />
+            {/* <CarModelTwo />
 
-            <BikeModel />
+            <BikeModel /> */}
+
+
+            <HeadphoneModel />
 
 
             {/* Floor */}
-            <mesh rotation={[-(angleToRadians(90)), 0, 0]} receiveShadow>
+            {/* <mesh rotation={[-(angleToRadians(90)), 0, 0]} receiveShadow>
                 <planeGeometry args={[7, 7]} />
-                <meshPhongMaterial color='#ffffb1' />
-            </mesh>
+                <meshPhongMaterial color='#fffff5' />
+            </mesh> */}
 
             {/* Brightness */}
             <ambientLight args={['#ffffff', 1]} />
@@ -83,7 +87,7 @@ export default function Three() {
             <Environment background>
                 <mesh scale={100}>
                     <sphereGeometry args={[10, 100, 100]} />
-                    <meshBasicMaterial side={THREE.BackSide} color='#ffffb1' />
+                    <meshBasicMaterial side={THREE.BackSide} color='#fffff5' />
                 </mesh>
             </Environment>
 
