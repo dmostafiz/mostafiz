@@ -7,8 +7,8 @@ const FacebookMessanger = () => {
     return (
         <MessengerChat
             pageId="111333980218534"
-        // language="sv_SE"
-        // themeColor={"#000000"}
+            // language="sv_SE"
+            themeColor={"#fbbf24"}
         // bottomSpacing={300}
         // loggedInGreeting="loggedInGreeting"
         // loggedOutGreeting="loggedOutGreeting"
