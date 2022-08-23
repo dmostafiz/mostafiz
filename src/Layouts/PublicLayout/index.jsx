@@ -1,8 +1,13 @@
 import { Box, Container, Flex, Link, SimpleGrid, Stack, Text, useColorModeValue } from '@chakra-ui/react'
 import React, { Suspense } from 'react'
 import SocialLinks from '../../Components/Common/SocialLinks'
-import FacebookMessanger from '../../Components/PublicPages/FacebookMessanger'
 import MainNav from './partials/MainNav'
+
+import dynamic from 'next/dynamic'
+
+const FacebookMessanger = dynamic(() => import( '../../Components/PublicPages/FacebookMessanger'), {
+  ssr: false
+})
 
 export default function PublicLayout({ children }) {
   return (
@@ -14,15 +19,12 @@ export default function PublicLayout({ children }) {
         {children}
       </Box>
 
-      <FacebookMessanger />
-
       <Box
         w='full'
         bg={useColorModeValue('gray.50', 'gray.900')}
         color={useColorModeValue('gray.700', 'gray.200')}
       // alignContent='flex-end'
       >
-
 
         <Box
           borderTopWidth={1}
@@ -40,6 +42,9 @@ export default function PublicLayout({ children }) {
             <SocialLinks />
           </Container>
         </Box>
+
+
+        <FacebookMessanger />
 
 
       </Box>
