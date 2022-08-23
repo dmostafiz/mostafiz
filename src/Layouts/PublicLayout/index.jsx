@@ -3,12 +3,6 @@ import React, { Suspense } from 'react'
 import SocialLinks from '../../Components/Common/SocialLinks'
 import MainNav from './partials/MainNav'
 
-import dynamic from 'next/dynamic'
-
-const FacebookMessanger = dynamic(() => import( '../../Components/PublicPages/FacebookMessanger'), {
-  ssr: false
-})
-
 export default function PublicLayout({ children }) {
   return (
     <Suspense fallback={() => <Text fontSize={'100px'} fontWeight='bold' color='black'>Loading...</Text>}>
@@ -42,10 +36,6 @@ export default function PublicLayout({ children }) {
             <SocialLinks />
           </Container>
         </Box>
-
-
-        <FacebookMessanger />
-
 
       </Box>
 

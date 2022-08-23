@@ -6,11 +6,16 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 // import 'swiper/css/fade';
 import 'swiper/css/effect-fade';
+import dynamic from 'next/dynamic'
 
+const FacebookMessanger = dynamic(() => import( '../Components/PublicPages/FacebookMessanger'), {
+  ssr: false
+})
 
 function MyApp({ Component, pageProps }) {
   return <ChakraProvider>
     <Component {...pageProps} />
+    <FacebookMessanger />
   </ChakraProvider>
 }
 
