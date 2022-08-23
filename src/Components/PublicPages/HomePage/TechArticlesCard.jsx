@@ -9,9 +9,7 @@ import StickyBox from "react-sticky-box";
 
 export default function TechArticlesCard() {
     return (
-        <Box as='section' py={3} bg='white'>
-            <Container maxW='6xl' p={5}>
-
+        <Box as='section' p={3} bg='white'>
                 <SectionTitle
                     title='Latest Articles'
                     // subTitle="Read latest articles i written about modern technologies, business concepts and many more things"
@@ -158,7 +156,6 @@ export default function TechArticlesCard() {
 
                     </Stack>
                 </Box>
-            </Container >
         </Box >
     )
 }
