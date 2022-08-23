@@ -1,7 +1,7 @@
 import { Box, Button, Container, Flex, Image, List, ListIcon, ListItem, Spacer, Text, Wrap } from '@chakra-ui/react'
 import React, { useEffect, useState } from 'react'
 import { MdCheckCircle } from 'react-icons/md'
-import { Fade } from 'react-reveal'
+import { Fade, Zoom } from 'react-reveal'
 
 export default function HomepageCarousel() {
 
@@ -44,28 +44,26 @@ export default function HomepageCarousel() {
                             lg: 'row'
                         }}
                         gap={5}
-                        // alignItems='center'
+                    // alignItems='center'
                     >
 
                         <Box flex={1}>
 
-                            <Spacer h={{base: 0, md: 10}}/>
+                            <Spacer h={{ base: 0, md: 10 }} />
 
                             <Box>
-                                <Fade>
-                                    <Text
-                                        bgGradient='linear(to-r, #ffd801, #ebd8bc)'
-                                        bgClip='text'
-                                        textShadow=''
-                                        fontFamily={`'Fugaz One', cursiv`}
-                                        // color='yellow.400'
-                                        fontSize={{ base: '50px', md: '70px', lg: '79px' }}
-                                        lineHeight={{ base: '50px', md: '75px' }}
-                                        fontWeight='normal'>
-                                        I'm Mostafiz Rahaman
-                                    </Text>
 
-                                </Fade>
+                                <Text
+                                    bgGradient='linear(to-r, #ffd801, #ebd8bc)'
+                                    bgClip='text'
+                                    textShadow=''
+                                    fontFamily={`'Fugaz One', cursiv`}
+                                    // color='yellow.400'
+                                    fontSize={{ base: '50px', md: '70px', lg: '79px' }}
+                                    lineHeight={{ base: '50px', md: '75px' }}
+                                    fontWeight='normal'>
+                                    I'm Mostafiz Rahaman
+                                </Text>
 
                             </Box>
 
