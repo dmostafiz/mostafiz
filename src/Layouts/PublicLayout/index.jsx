@@ -1,6 +1,7 @@
 import { Box, Container, Flex, Link, SimpleGrid, Stack, Text, useColorModeValue } from '@chakra-ui/react'
 import React, { Suspense } from 'react'
 import SocialLinks from '../../Components/Common/SocialLinks'
+import FacebookMessanger from '../../Components/PublicPages/FacebookMessanger'
 import MainNav from './partials/MainNav'
 
 export default function PublicLayout({ children }) {
@@ -12,6 +13,8 @@ export default function PublicLayout({ children }) {
       <Box minH={'calc(100vh - 140px)'}>
         {children}
       </Box>
+
+      <FacebookMessanger />
 
       <Box
         w='full'
@@ -37,7 +40,10 @@ export default function PublicLayout({ children }) {
             <SocialLinks />
           </Container>
         </Box>
+
+
       </Box>
+
     </Suspense>
   )
 }
