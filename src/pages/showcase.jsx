@@ -38,6 +38,51 @@ const Showcase = () => {
             url: 'https://frechk.com'
         },
 
+        {
+            image: '/showcase/12.png',
+            title: 'Salient Demo',
+            url: 'https://salient-demo.herokuapp.com'
+        },
+
+        {
+            image: '/showcase/13.jpg',
+            title: 'Tiflato - Realestate',
+            url: 'https://tiflato-demo.vercel.app'
+        },
+
+        {
+            image: '/showcase/15.jpg',
+            title: 'Tiflato - Developer Dashboard',
+            url: 'https://tiflato-demo.vercel.app'
+        },
+
+        {
+            image: '/showcase/16.jpg',
+            title: 'Tiflato - Buyer Dashboard',
+            url: 'https://tiflato-demo.vercel.app'
+        },
+
+
+        {
+            image: '/showcase/17.jpg',
+            title: 'Tiflato - Admin Dashboard',
+            url: 'https://tiflato-demo.vercel.app'
+        },
+
+
+
+        {
+            image: '/showcase/14.jpg',
+            title: 'Tiflato - Search',
+            url: 'https://tiflato-demo.vercel.app'
+        },
+
+        
+        {
+            image: '/showcase/18.png',
+            title: 'Webexe Platform - Custom CMS',
+            url: 'https://webexe.vercel.app/sign-in'
+        },
     ]
 
     return (
@@ -54,7 +99,7 @@ const Showcase = () => {
 
                     <Box overflow={'hidden'}>
                         <ResponsiveMasonry
-                            columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 2 }}
+                            columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}
                         >
                             <Masonry
                                 gutter='25px'
@@ -62,9 +107,9 @@ const Showcase = () => {
 
                                 {data.map((mes, index) => {
                                     return <Box role="group" key={index}>
-                                        <Box _groupHover={{ rounded: '3xl' }} position='relative' overflow='hidden' borderColor='blackAlpha.200' shadow='md' w='full'>
+                                        <Box _groupHover={{ rounded: '3xl' }} rounded='xl' position='relative' overflow='hidden' borderColor='blackAlpha.200' shadow='md' w='full'>
 
-                                            <Image _groupHover={{ rounded: '3xl' }} transition='.3s linear' zIndex={50} position='relative' w='full' src={mes.image} />
+                                            <Image _groupHover={{ rounded: '3xl' }} rounded='xl' transition='.3s linear' zIndex={50} position='relative' w='full' src={mes.image} />
 
                                             <Box
                                                 as={motion.div}
@@ -75,8 +120,9 @@ const Showcase = () => {
                                                 h='full'
                                                 bg='blackAlpha.50'
                                                 transition='.3s linear'
+                                                rounded='xl'
                                                 _groupHover={{
-                                                    bg: 'blackAlpha.800',
+                                                    bg: 'blackAlpha.700',
                                                     zIndex: 99,
                                                     shadow: '2xl',
                                                     rounded: '3xl'
