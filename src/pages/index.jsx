@@ -21,7 +21,9 @@ export default function Home() {
 
       <MySkills />
 
-      <LatestArticles />
+      <Fade>
+        <LatestArticles />
+      </Fade>
 
       <MobileAppSection />
 
