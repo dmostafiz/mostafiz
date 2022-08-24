@@ -17,7 +17,7 @@ export default function LatestArticles() {
                 // subTitle="Read latest articles i written about modern technologies, business concepts and many more things"
                 />
 
-                <Wrap spacing={{base: 1, md:2}}>
+                <Wrap spacing={{ base: 1, md: 2 }}>
 
                     <NextLink href='#'>
                         <Link href='#'>
@@ -122,7 +122,7 @@ export default function LatestArticles() {
                 <Spacer h={8} />
 
                 <Box>
-                    <SimpleGrid columns={{base: 1, sm: 1, md:1, lg: 2}} gap={8}>
+                    <SimpleGrid columns={{ base: 1, sm: 1, md: 1, lg: 2 }} gap={8}>
 
                         <ArticleListCardSmall article={{
                             title: 'detailed article about fiverr freelancing',
@@ -174,7 +174,9 @@ export default function LatestArticles() {
                     </SimpleGrid>
 
                     <Center pt={10} pb={1}>
-                        <Button variant='yellow' maxW='300px' bg='yellow.400' rounded='full'>Read More Articles</Button>
+                        <NextLink href={`/tech_articles`}>
+                            <Button variant='yellow' maxW='300px' bg='yellow.400' rounded='full'>Read More Articles</Button>
+                        </NextLink>
                     </Center>
 
                 </Box>

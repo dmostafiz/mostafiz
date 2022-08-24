@@ -4,6 +4,7 @@ import SectionTitle from '../Components/Common/SectionTitle';
 import PublicLayout from '../Layouts/PublicLayout';
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry"
 import { motion } from "framer-motion";
+import BreadCrumb from '../Components/Common/BreadCrumb';
 
 const Showcase = () => {
 
@@ -77,7 +78,7 @@ const Showcase = () => {
             url: 'https://tiflato-demo.vercel.app'
         },
 
-        
+
         {
             image: '/showcase/18.png',
             title: 'Webexe Platform - Custom CMS',
@@ -87,7 +88,21 @@ const Showcase = () => {
 
     return (
         <PublicLayout>
-            <Container maxW='6xl' py={5}>
+
+
+            <BreadCrumb links={[
+                {
+                    name: 'Home',
+                    path: '/'
+                },
+                {
+                    name: 'Showcase',
+                    path: '/showcase'
+                }
+            ]} />
+
+
+            <Container maxW='full' py={5}>
 
                 <Box w='full' h='auto' p={3} bg='white' shadow='md'>
                     <SectionTitle
@@ -132,7 +147,7 @@ const Showcase = () => {
                                                     <Flex direction='column' alignItems='center' px={5} textAlign='center' gap={3}>
                                                         <Text color='whiteAlpha.900' fontSize='24px' lineHeight='24px' fontWeight='semibold'>{mes.title}</Text>
                                                         <Link _hover={{
-                                                         textDecoration: 'none'
+                                                            textDecoration: 'none'
                                                         }} href={mes.url} target='_blank'>
                                                             <Button size='sm' colorScheme='yellow'>Live project</Button>
                                                         </Link>

@@ -50,7 +50,7 @@ const MainNav = () => {
                     py={2}
                 >
 
-                    <Container maxW='6xl'>
+                    <Container maxW='full'>
 
                         <Flex justify='space-between' alignItems='center'>
 
@@ -68,6 +68,7 @@ const MainNav = () => {
 
                                     <Menu>
                                         <MenuButton
+                                            size='sm'
                                             bg={'transparent'}
                                             rounded='none'
                                             _hover={{
@@ -93,6 +94,7 @@ const MainNav = () => {
 
                                     <NextLink href='/showcase'>
                                         <Button
+                                            size='sm'
                                             rounded='none'
                                             bg={'transparent'}
                                             _hover={{
@@ -110,6 +112,7 @@ const MainNav = () => {
 
                                     <NextLink href='/case_studies'>
                                         <Button
+                                            size='sm'
                                             rounded='none'
                                             bg={'transparent'}
                                             _hover={{
@@ -127,6 +130,7 @@ const MainNav = () => {
 
                                     <NextLink href='/tech_articles'>
                                         <Button
+                                            size='sm'
                                             rounded='none'
                                             bg={'transparent'}
                                             _hover={{
@@ -145,6 +149,7 @@ const MainNav = () => {
 
                                     <NextLink href='/how_it_works'>
                                         <Button
+                                            size='sm'
                                             rounded='none'
                                             bg={'transparent'}
                                             _hover={{

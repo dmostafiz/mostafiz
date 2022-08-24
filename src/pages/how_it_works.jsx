@@ -1,11 +1,24 @@
 import { Box, Container, Text } from '@chakra-ui/react';
 import React from 'react';
+import BreadCrumb from '../Components/Common/BreadCrumb';
 import SectionTitle from '../Components/Common/SectionTitle';
 import PublicLayout from '../Layouts/PublicLayout';
 
 const HowItWorks = () => {
     return (
         <PublicLayout>
+
+            <BreadCrumb maxW='6xl' links={[
+                {
+                    name: 'Home',
+                    path: '/'
+                },
+                {
+                    name: 'How it works',
+                    path: '/how_it_works'
+                }
+            ]} />
+
             <Container maxW='6xl' py={5}>
                 <Box w='full' p={3} bg='white' shadow='md'>
                     <SectionTitle
