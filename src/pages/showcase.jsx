@@ -89,7 +89,7 @@ const Showcase = () => {
         <PublicLayout>
             <Container maxW='6xl' py={5}>
 
-                <Box w='full' h='auto' p={5} bg='' shadow=''>
+                <Box w='full' h='auto' p={3} bg='white' shadow='md'>
                     <SectionTitle
                         title='Showcase'
                         subTitle="Check out hundreds of our hand-built projects"
