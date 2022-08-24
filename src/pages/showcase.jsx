@@ -1,4 +1,4 @@
-import { Box, Center, Container, Flex, Image, Link, Spacer, Text, VStack } from '@chakra-ui/react';
+import { Box, Button, Center, Container, Flex, Image, Link, Spacer, Text, VStack } from '@chakra-ui/react';
 import React from 'react';
 import SectionTitle from '../Components/Common/SectionTitle';
 import PublicLayout from '../Layouts/PublicLayout';
@@ -89,10 +89,10 @@ const Showcase = () => {
         <PublicLayout>
             <Container maxW='6xl' py={5}>
 
-                <Box w='full' h='auto' p={5} bg='white' shadow='md'>
+                <Box w='full' h='auto' p={5} bg='' shadow=''>
                     <SectionTitle
                         title='Showcase'
-                        subTitle="Check hundreds of projects that have built on our hands"
+                        subTitle="Check out hundreds of our hand-built projects"
                     />
 
                     <Spacer h={5} />
@@ -102,7 +102,7 @@ const Showcase = () => {
                             columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}
                         >
                             <Masonry
-                                gutter='25px'
+                                gutter='15px'
                             >
 
                                 {data.map((mes, index) => {
@@ -130,9 +130,11 @@ const Showcase = () => {
                                             >
                                                 <Center w='full' h='full'>
                                                     <Flex direction='column' alignItems='center' px={5} textAlign='center' gap={3}>
-                                                        <Text color='whiteAlpha.800' fontSize='32px' lineHeight='36px' fontWeight='semibold'>{mes.title}</Text>
-                                                        <Link href={mes.url} target='_blank'>
-                                                            <Text color='blue.300'>{mes.url}</Text>
+                                                        <Text color='whiteAlpha.900' fontSize='24px' lineHeight='24px' fontWeight='semibold'>{mes.title}</Text>
+                                                        <Link _hover={{
+                                                         textDecoration: 'none'
+                                                        }} href={mes.url} target='_blank'>
+                                                            <Button size='sm' colorScheme='yellow'>Live project</Button>
                                                         </Link>
                                                     </Flex>
                                                 </Center>

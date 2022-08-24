@@ -40,7 +40,7 @@ export default function WebsiteSection() {
                         <Fade>
 
                             <Text as='h1' fontWeight='bold' fontSize={{ base: '28px', lg: '35px' }} lineHeight={{ base: '36px', lg: '40px' }}>
-                                Highly customizable Web applications for online business
+                                Highly scalable websites & cloud applications
                             </Text>
 
                             <Spacer h={5} />
@@ -126,6 +126,18 @@ export default function WebsiteSection() {
                                                 h='25px'
                                             />
                                             <Text fontSize='16px'>MySql</Text>
+                                        </Flex>
+                                    </Box>
+
+
+                                    <Box rounded='full' border='1px solid #bd2117' p={1} pl={2} pr={3}>
+                                        <Flex alignItems='center' gap={2}>
+                                            <Image
+                                                src='https://meterpreter.org/wp-content/uploads/2017/09/redis-1.png'
+                                                w='25px'
+                                                h='25px'
+                                            />
+                                            <Text fontSize='16px'>Redis</Text>
                                         </Flex>
                                     </Box>
 
