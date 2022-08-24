@@ -29,9 +29,9 @@ export default function WebsiteSection() {
 
                     <Box w={{ base: 'full', md: '50%' }}>
 
-                        <Zoom>
+                        <Fade>
                             <Image w='full' src='https://storage.googleapis.com/cms-storage-bucket/2c3d5baa79bb1e48c6e3.png' />
-                        </Zoom>
+                        </Fade>
 
                     </Box>
 

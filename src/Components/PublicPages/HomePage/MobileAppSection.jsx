@@ -107,9 +107,9 @@ export default function MobileAppSection() {
 
                     <Box w={{ base: 'full', lg: '50%' }}>
 
-                        <Zoom>
+                        <Fade>
                             <Image w='full' src='https://storage.googleapis.com/cms-storage-bucket/2f118a9971e4ca6ad737.png' />
-                        </Zoom>
+                        </Fade>
 
                     </Box>
 

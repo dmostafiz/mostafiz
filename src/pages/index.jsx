@@ -25,13 +25,21 @@ export default function Home() {
         <LatestArticles />
       </Fade>
 
-      <MobileAppSection />
+      <Fade>
+        <MobileAppSection />
+      </Fade>
 
-      <WebsiteSection />
+      <Fade>
+        <WebsiteSection />
+      </Fade>
 
-      <ThreeDSection />
+      <Fade>
+        <ThreeDSection />
+      </Fade>
 
-      <Technologies />
+      <Fade>
+        <Technologies />
+      </Fade>
 
     </PublicLayout>
   )
