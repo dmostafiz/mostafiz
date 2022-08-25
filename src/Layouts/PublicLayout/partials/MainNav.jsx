@@ -22,7 +22,7 @@ const MainNav = () => {
         <>
             {isOpen && <Alert bg='#ffd801' color='blackAlpha.900' zIndex={999} variant='solid' py={{ base: 1, md: 0 }}>
 
-                <Container maxW='6xl'>
+                <Container maxW='full' px={0}>
                     <AlertDescription>
                         <Text lineHeight='18px' fontSize={{ base: '14px', md: '16px' }}>
                             This website is currently under development and containing dummy contents. Many awesome features are on the way to launch soon.

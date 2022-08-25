@@ -102,9 +102,9 @@ const Showcase = () => {
             ]} />
 
 
-            <Container maxW='full' py={5}>
+            <Container maxW='full' py={3}>
 
-                <Box w='full' h='auto' p={3} bg='white' shadow='md'>
+                <Box w='full' h='auto' p={3} bg='white' shadow='sm'>
                     <SectionTitle
                         title='Showcase'
                         subTitle="Check out hundreds of our hand-built projects"

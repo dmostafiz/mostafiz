@@ -21,8 +21,8 @@ const CaseStudies = () => {
 
 
 
-            <Container maxW='6xl' py={5}>
-                <Box w='full' p={3} bg='white' shadow='md'>
+            <Container maxW='6xl' py={3}>
+                <Box w='full' p={3} bg='white' shadow='sm'>
                     <SectionTitle
                         title='Case Studies'
                         subTitle="You will get details about our projects and keynotes"

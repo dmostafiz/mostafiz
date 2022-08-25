@@ -19,8 +19,8 @@ const HowItWorks = () => {
                 }
             ]} />
 
-            <Container maxW='6xl' py={5}>
-                <Box w='full' p={3} bg='white' shadow='md'>
+            <Container maxW='6xl' py={3}>
+                <Box w='full' p={3} bg='white' shadow='sm'>
                     <SectionTitle
                         title='How it works?'
                         subTitle="Learn about the website and its awesome features"

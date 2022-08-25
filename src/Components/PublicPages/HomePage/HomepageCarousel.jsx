@@ -1,7 +1,15 @@
 import { Box, Button, Container, Flex, Image, List, ListIcon, ListItem, Spacer, Text, Wrap } from '@chakra-ui/react'
 import React, { useEffect, useState } from 'react'
-import { MdCheckCircle } from 'react-icons/md'
-import { Fade, Zoom } from 'react-reveal'
+// import { MdCheckCircle } from 'react-icons/md'
+// import { Fade } from 'react-reveal'
+// import ItemOne from './CarouselItems/ItemOne'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Scrollbar, A11y, Lazy, Zoom, EffectFade, EffectCoverflow, Autoplay , Parallax, EffectCards, EffectCreative} from 'swiper';
+// import ItemTwo from './CarouselItems/ItemTwo'
+// import RightCardBoard from './CarouselItems/RightCardBoard'
+import CarouselItemOne from './CarouselItems/CarouselItemOne'
+import CarouselItemTwo from './CarouselItems/CarouselItemTwo';
+import CarouselItemThree from './CarouselItems/CarouselItemThree';
 
 export default function HomepageCarousel() {
 
@@ -19,144 +27,43 @@ export default function HomepageCarousel() {
 
     return (
         <Box
-            bgImage={bgImage}
-            bgRepeat="no-repeat"
-            bgPosition="center"
-            bgSize={`cover`}
-            backgroundAttachment='fixed'
+            // bgImage={bgImage}
+            // bgRepeat="no-repeat"
+            // bgPosition="center"
+            // bgSize={`cover`}
+            // backgroundAttachment='fixed'
             pos='relative'
-            top='-82px'
+        // top='-82px'
         >
-            <Box
-                w='full'
-                bgGradient='linear(to-r,blackAlpha.700, #1968cb96)'
-                backdropFilter='auto'
-                backdropBlur='5px'
-                pb={3}
-                pt={{ base: '100px', md: '100px' }}
+
+
+            <Swiper
+                modules={[Navigation, Pagination, Scrollbar, A11y, Lazy, Zoom,Parallax, EffectCards, EffectCreative, EffectFade, EffectCoverflow, Autoplay]}
+                effect='fade'
+                // spaceBetween={10}
+                lazy={true}
+                slidesPerView={1}
+                // onSlideChange={() => setBgImage(images[Math.floor(Math.random() * images.length)])}
+                onSwiper={(swiper) => console.log(swiper)}
+                loop={true}
+                autoplay={{
+                    delay: 5000,
+                    disableOnInteraction: true
+                }}
+
+            
+                zoom={true}
+                // navigation
+            
+                pagination={{ clickable: true }}
+            // scrollbar={{ draggable: true }}
             >
+                <SwiperSlide><CarouselItemOne bgImage={bgImage} /> </SwiperSlide>
+                <SwiperSlide><CarouselItemTwo bgImage={bgImage} /> </SwiperSlide>
+                <SwiperSlide><CarouselItemThree bgImage={bgImage} /> </SwiperSlide>
 
-                <Container maxW='6xl' p={5}>
+            </Swiper>
 
-                    <Flex
-                        direction={{
-                            base: 'column',
-                            lg: 'row'
-                        }}
-                        gap={5}
-                    // alignItems='center'
-                    >
-
-                        <Box flex={1}>
-
-                            <Spacer h={{ base: 0, md: 10 }} />
-
-                            <Box>
-
-                                <Text
-                                    bgGradient='linear(to-r, #ffd801, #ebd8bc)'
-                                    bgClip='text'
-                                    textShadow=''
-                                    fontFamily={`'Fugaz One', cursiv`}
-                                    // color='yellow.400'
-                                    fontSize={{ base: '50px', md: '70px', lg: '79px' }}
-                                    lineHeight={{ base: '50px', md: '75px' }}
-                                    fontWeight='normal'>
-                                    I'm Mostafiz Rahaman
-                                </Text>
-
-                            </Box>
-
-                            <Spacer h={5} />
-
-                            <Text color='white' fontSize={{ base: '16px', md: '18px', lg: '20px' }}>A fulltime Freelance software programmer from Bangladesh. Basically, I offer innovative digital creations in full-stack solutions for web, mobile or desktop environments to simplify and automate any online based business.</Text>
-
-                            <Spacer h={10} />
-
-                            <Flex align='center' gap='2'>
-                                <Image maxW='170px' src='/fiverr.png' />
-
-                                <Button as='a' href='#' target='_blank' rel='noopener,norefferer' _hover={{ bg: '#1ec7b2' }} bg='#33d0bb' color='white' size='lg' shadow='sm' rounded='full'>
-                                    Get Started Today
-                                </Button>
-
-                            </Flex>
-
-                        </Box>
-
-                        <Box width='50px' />
-
-                        <Box width={{
-                            base: 'full',
-                            // md: '350px',
-                            lg: '400px'
-                        }}>
-                            <Box w='full' bg='blackAlpha.500' p={5} rounded='md'>
-                                <Text color='white' fontWeight='bold' fontSize='28px'>Why you should hire me?</Text>
-
-                                <Spacer h={3} />
-
-                                <Text color='white' >
-                                    I have more than 7 years of extensive experience in participating in all phases of software development cycles. Very proficient in technology and writing code to build reliable and user-friendly systems.
-                                </Text>
-
-                                <Spacer h={5} />
-
-                                <Box bg='whiteAlpha.900' w='full' p={4} rounded='md'>
-                                    {/* <Text fontWeight='bold' fontSize='20px' color='gray.600'>I have expirtise in</Text> */}
-
-                                    {/* <Spacer h={3} /> */}
-
-                                    <Box>
-                                        <List spacing={2}>
-                                            <ListItem>
-                                                <ListIcon as={MdCheckCircle} color='green.500' />
-                                                <Text as='span' fontSize={{ base: '14px', md: '16' }}>
-                                                    Native & Web apps (PWA, Android, IOS)
-                                                </Text>
-                                            </ListItem>
-                                            <ListItem>
-                                                <ListIcon as={MdCheckCircle} color='green.500' />
-                                                <Text as='span' fontSize={{ base: '14px', md: '16' }}>
-                                                    Online business - Problems and solutions
-                                                </Text>
-                                            </ListItem>
-                                            <ListItem>
-                                                <ListIcon as={MdCheckCircle} color='green.500' />
-                                                <Text as='span' fontSize={{ base: '14px', md: '16' }}>
-                                                    Blockchain technology (DAPP)
-                                                </Text>
-                                            </ListItem>
-                                            {/* You can also use custom icons from react-icons */}
-                                            <ListItem>
-                                                <ListIcon as={MdCheckCircle} color='green.500' />
-                                                <Text as='span' fontSize={{ base: '14px', md: '16' }}>
-                                                    Ecommerce, Affiliates, and MLM solutions
-                                                </Text>
-                                            </ListItem>
-                                            <ListItem>
-                                                <ListIcon as={MdCheckCircle} color='green.500' />
-                                                <Text as='span' fontSize={{ base: '14px', md: '16' }}>
-                                                    EdTech, Fintech and other solutions
-                                                </Text>
-                                            </ListItem>
-                                        </List>
-                                    </Box>
-                                </Box>
-
-
-                                <Spacer h={5} />
-
-
-                                <Button colorScheme='yellow' bg='yellow.400' size='lg' rounded='md' w='full'>HIRE ME TODAY, ITS EASY!</Button>
-
-                            </Box>
-                        </Box>
-
-                    </Flex>
-
-                </Container>
-            </Box>
         </Box>
     )
 }
