@@ -10,6 +10,7 @@ import { Navigation, Pagination, Scrollbar, A11y, Lazy, Zoom, EffectFade, Effect
 import CarouselItemOne from './CarouselItems/CarouselItemOne'
 import CarouselItemTwo from './CarouselItems/CarouselItemTwo';
 import CarouselItemThree from './CarouselItems/CarouselItemThree';
+import CarouselItemFour from './CarouselItems/CarouselItemFour';
 
 export default function HomepageCarousel() {
 
@@ -61,6 +62,7 @@ export default function HomepageCarousel() {
                 <SwiperSlide><CarouselItemOne bgImage={bgImage} /> </SwiperSlide>
                 <SwiperSlide><CarouselItemTwo bgImage={bgImage} /> </SwiperSlide>
                 <SwiperSlide><CarouselItemThree bgImage={bgImage} /> </SwiperSlide>
+                <SwiperSlide><CarouselItemFour bgImage={bgImage} /> </SwiperSlide>
 
             </Swiper>
 

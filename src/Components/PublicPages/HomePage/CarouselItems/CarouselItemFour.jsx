@@ -2,7 +2,7 @@ import { Box, Button, Container, Flex, Image, List, ListIcon, ListItem, Spacer, 
 import React, { useEffect, useState } from 'react'
 import RightCardBoard from './RightCardBoard'
 
-export default function CarouselItemThree({bgImage}) {
+export default function CarouselItemFour({bgImage}) {
 
     return (
         <Box
@@ -53,7 +53,7 @@ export default function CarouselItemThree({bgImage}) {
                                     fontSize={{ base: '50px', md: '70px', lg: '70px' }}
                                     lineHeight={{ base: '50px', md: '75px' }}
                                     fontWeight='normal'>
-                                    Add Innovative features
+                                    We are MERN stack specialist
                                 </Text>
 
                             </Box>
