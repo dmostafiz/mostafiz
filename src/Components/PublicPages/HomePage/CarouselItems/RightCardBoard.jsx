@@ -9,7 +9,8 @@ export default function RightCardBoard() {
             // md: '350px',
             lg: '400px'
         }}>
-            <Box w='full' bg='blackAlpha.500' p={5} rounded='md'>
+            <Box w='full' bg='blackAlpha.500' p={5} rounded='md' textAlign={'left'}>
+
                 <Text color='white' fontWeight='bold' fontSize='28px'>Why you should hire us?</Text>
 
                 <Spacer h={3} />
