@@ -37,7 +37,7 @@ export default function HomepageCarousel() {
             // animate={{ pathLength: 1 }}
             // opacity='0'
             // transition='1s background'
-            // bgImage={bgImage}
+            // bgImage={'https://i.gifer.com/bJk.gif'}
             bgRepeat="no-repeat"
             bgPosition="center"
             bgSize={`cover`}
@@ -57,7 +57,7 @@ export default function HomepageCarousel() {
                     w='full'
                     bgGradient='linear(to-r, #0e0c00c4, #00101dc2)'
                     backdropFilter='auto'
-                    backdropBlur='1px'
+                    backdropBlur='2px'
                     pb={{ base: 3, lg: '50px' }}
                     pt={{ base: '20px', md: '55px' }}
                 >
