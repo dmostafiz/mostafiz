@@ -7,11 +7,8 @@ import CarouselItemFour from './CarouselItems/CarouselItemFour';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import RightCardBoard from './CarouselItems/RightCardBoard';
-import { motion } from "framer-motion";
-
+// import { motion } from "framer-motion";
 import dynamic from 'next/dynamic';
-import Vimeo from '@u-wave/react-vimeo';
-import YouTube from '@u-wave/react-youtube';
 
 const YoutubeBackground = dynamic(() => import('react-youtube-background'), {
     ssr: false
@@ -57,9 +54,9 @@ export default function HomepageCarousel() {
                 <Box
 
                     w='full'
-                    bgGradient='linear(to-r, #231d01bd, #00101dc2)'
+                    bgGradient='linear(to-r, #0e0c00c4, #00101dc2)'
                     backdropFilter='auto'
-                    backdropBlur='10px'
+                    backdropBlur='5px'
                     pb={3}
                     pt={{ base: '20px', md: '50px' }}
                 >
