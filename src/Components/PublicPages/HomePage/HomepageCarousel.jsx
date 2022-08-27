@@ -48,7 +48,7 @@ export default function HomepageCarousel() {
         // top='-82px'
         >
             <YoutubeBackground
-                videoId='Jk1CEXwwrt8'
+                videoId='BY2mTMBkuFI'
             >
                 {/* mOFoh9FUR8w */}
                 {/* BY2mTMBkuFI */}
@@ -57,7 +57,7 @@ export default function HomepageCarousel() {
                     w='full'
                     bgGradient='linear(to-r, #0e0c00c4, #00101dc2)'
                     backdropFilter='auto'
-                    backdropBlur='2px'
+                    backdropBlur='1px'
                     pb={{ base: 3, lg: '50px' }}
                     pt={{ base: '20px', md: '55px' }}
                 >
