@@ -56,7 +56,7 @@ export default function HomepageCarousel() {
                     w='full'
                     bgGradient='linear(to-r, #0e0c00c4, #00101dc2)'
                     backdropFilter='auto'
-                    backdropBlur='5px'
+                    backdropBlur='2px'
                     pb={3}
                     pt={{ base: '20px', md: '50px' }}
                 >
