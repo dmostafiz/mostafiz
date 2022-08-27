@@ -7,7 +7,7 @@ import CarouselItemFour from './CarouselItems/CarouselItemFour';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import RightCardBoard from './CarouselItems/RightCardBoard';
-// import { motion } from "framer-motion";
+import { motion } from "framer-motion";
 import dynamic from 'next/dynamic';
 
 const YoutubeBackground = dynamic(() => import('react-youtube-background'), {
@@ -28,20 +28,20 @@ export default function HomepageCarousel() {
         'https://blog.payoneer.com/wp-content/uploads/2020/03/Freelancer-Taxes-2.jpg'
     ]
 
-    // const [bgImage, setBgImage] = useState(images[Math.floor(Math.random() * images.length)])
+    const [bgImage, setBgImage] = useState(images[Math.floor(Math.random() * images.length)])
 
     return (
 
         <Box
-            // as={motion.div}
+            as={motion.div}
             // animate={{ pathLength: 1 }}
             // opacity='0'
-            // transition='1s background'
-            // bgImage={bgImage}
-            // bgRepeat="no-repeat"
-            // bgPosition="center"
-            // bgSize={`cover`}
-            // backgroundAttachment='fixed'
+            transition='1s background'
+            bgImage={bgImage}
+            bgRepeat="no-repeat"
+            bgPosition="center"
+            bgSize={`cover`}
+            backgroundAttachment='fixed'
             pos='relative'
             overflow={'hidden'}
             w='full'
@@ -79,7 +79,7 @@ export default function HomepageCarousel() {
                                     infiniteLoop={true}
                                     showIndicators={false}
                                     swipeable={true}
-                                    showStatus={true}
+                                    showStatus={false}
                                     // centerMode={true}
                                     emulateTouch={true}
                                     showArrows={false}
