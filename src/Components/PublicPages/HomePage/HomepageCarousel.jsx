@@ -1,12 +1,5 @@
-import { Box, Button, Container, Flex, Image, List, ListIcon, ListItem, Spacer, Text, Wrap } from '@chakra-ui/react'
-import React, { useEffect, useState } from 'react'
-// import { MdCheckCircle } from 'react-icons/md'
-// import { Fade } from 'react-reveal'
-// import ItemOne from './CarouselItems/ItemOne'
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Scrollbar, A11y, Lazy, Zoom, EffectFade, EffectCoverflow, Autoplay, Parallax, EffectCards, EffectCreative } from 'swiper';
-// import ItemTwo from './CarouselItems/ItemTwo'
-// import RightCardBoard from './CarouselItems/RightCardBoard'
+import { Box, Container, Flex } from '@chakra-ui/react'
+import React, { useState } from 'react'
 import CarouselItemOne from './CarouselItems/CarouselItemOne'
 import CarouselItemTwo from './CarouselItems/CarouselItemTwo';
 import CarouselItemThree from './CarouselItems/CarouselItemThree';
@@ -39,15 +32,15 @@ export default function HomepageCarousel() {
             bgSize={`cover`}
             backgroundAttachment='fixed'
             pos='relative'
-            top='-82px'
+            // top='-82px'
         >
             <Box
                 w='full'
-                bgGradient='linear(to-r, #011f1dbf, #27aca5db)'
+                bgGradient='linear(to-r, #231d01bd, #4299e1ba)'
                 backdropFilter='auto'
                 backdropBlur='5px'
                 pb={3}
-                pt={{ base: '100px', md: '100px' }}
+                pt={{ base: '20px', md: '50px' }}
             >
 
                 <Container maxW='6xl' py={5}>
