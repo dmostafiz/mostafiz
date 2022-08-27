@@ -90,7 +90,7 @@ const Showcase = () => {
         <PublicLayout>
 
 
-            <BreadCrumb links={[
+            <BreadCrumb maxW='6xl' links={[
                 {
                     name: 'Home',
                     path: '/'
@@ -102,7 +102,7 @@ const Showcase = () => {
             ]} />
 
 
-            <Container maxW='full' py={3}>
+            <Container maxW='6xl' py={3}>
 
                 <Box w='full' h='auto' p={3} bg='white' shadow='sm'>
                     <SectionTitle

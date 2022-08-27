@@ -13,6 +13,7 @@ import CarouselItemThree from './CarouselItems/CarouselItemThree';
 import CarouselItemFour from './CarouselItems/CarouselItemFour';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import RightCardBoard from './CarouselItems/RightCardBoard';
 
 export default function HomepageCarousel() {
 
@@ -29,62 +30,76 @@ export default function HomepageCarousel() {
     const [bgImage, setBgImage] = useState(images[Math.floor(Math.random() * images.length)])
 
     return (
+
         <Box
-            // bgImage={bgImage}
-            // bgRepeat="no-repeat"
-            // bgPosition="center"
-            // bgSize={`cover`}
-            // backgroundAttachment='fixed'
+            // bgGradient='linear(to-r, #011f1dbf, #27aca5db)'
+            bgImage={bgImage}
+            bgRepeat="no-repeat"
+            bgPosition="center"
+            bgSize={`cover`}
+            backgroundAttachment='fixed'
             pos='relative'
-        // top='-82px'
+            top='-82px'
         >
-
-
-            {/* <Swiper
-                modules={[Navigation, Pagination, Scrollbar, A11y, Lazy, Zoom,Parallax, EffectCards, EffectCreative, EffectFade, EffectCoverflow, Autoplay]}
-                effect='fade'
-                // spaceBetween={10}
-                lazy={true}
-                slidesPerView={1}
-                // onSlideChange={() => setBgImage(images[Math.floor(Math.random() * images.length)])}
-                onSwiper={(swiper) => console.log(swiper)}
-                loop={true}
-                autoplay={{
-                    delay: 5000,
-                    disableOnInteraction: true
-                }}
-
-            
-                zoom={true}
-                // navigation
-            
-                // pagination={{ clickable: true }}
-            // scrollbar={{ draggable: true }}
+            <Box
+                w='full'
+                bgGradient='linear(to-r, #011f1dbf, #27aca5db)'
+                backdropFilter='auto'
+                backdropBlur='5px'
+                pb={3}
+                pt={{ base: '100px', md: '100px' }}
             >
-                <SwiperSlide><CarouselItemOne bgImage={bgImage} /> </SwiperSlide>
-                <SwiperSlide><CarouselItemTwo bgImage={bgImage} /> </SwiperSlide>
-                <SwiperSlide><CarouselItemThree bgImage={bgImage} /> </SwiperSlide>
-                <SwiperSlide><CarouselItemFour bgImage={bgImage} /> </SwiperSlide>
 
-            </Swiper> */}
+                <Container maxW='6xl' py={5}>
 
+                    <Flex
+                        direction={{
+                            base: 'column',
+                            lg: 'row'
+                        }}
+                        gap={3}
+                    // alignItems='center'
+                    >
 
-            <Carousel
-                autoPlay={true}
-                dynamicHeight={false}
-                infiniteLoop={true}
-                showIndicators={false}
-                swipeable={true}
-                showStatus={false}
-                //  centerMode={false}
-                emulateTouch={true}
-                showArrows={false}
-            >
-                <CarouselItemOne bgImage={bgImage} />
-                <CarouselItemTwo bgImage={bgImage} />
-                <CarouselItemThree bgImage={bgImage} />
-            </Carousel>
+                        <Box w={{ base: 'full', lg: '60%' }}>
+                            <Carousel
+                                autoPlay={true}
+                                dynamicHeight={false}
+                                infiniteLoop={true}
+                                showIndicators={false}
+                                swipeable={true}
+                                showStatus={true}
+                                // centerMode={true}
+                                emulateTouch={true}
+                                showArrows={false}
+                                navigateWithKeyboard={true}
+                                onChange={() => setBgImage(images[Math.floor(Math.random() * images.length)])}
+                                // axis='vertical'
+                                autoFocus={true}
+                                transitionTime={0}
+                            >
+                                <CarouselItemOne bgImage={bgImage} />
+                                <CarouselItemTwo bgImage={bgImage} />
+                                <CarouselItemThree bgImage={bgImage} />
+                                <CarouselItemFour bgImage={bgImage} />
+                            </Carousel>
+                        </Box>
 
+                        {/* <Box width='50px' /> */}
+
+                        <Box width={{
+                            base: 'full',
+                            // md: '350px',
+                            lg: '600px'
+                        }}>
+                            <RightCardBoard />
+                        </Box>
+
+                    </Flex>
+
+                </Container>
+            </Box>
         </Box>
+
     )
 }
