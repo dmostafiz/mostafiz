@@ -37,10 +37,10 @@ export default function HomepageCarousel() {
             // animate={{ pathLength: 1 }}
             // opacity='0'
             // transition='1s background'
-            // bgImage={bgImage}
-            // bgRepeat="no-repeat"
-            // bgPosition="center"
-            // bgSize={`cover`}
+            bgImage={bgImage}
+            bgRepeat="no-repeat"
+            bgPosition="center"
+            bgSize={`cover`}
             // backgroundAttachment='fixed'
             pos='relative'
             overflow={'hidden'}
@@ -48,18 +48,21 @@ export default function HomepageCarousel() {
         // top='-82px'
         >
             <YoutubeBackground
-                videoId='mOFoh9FUR8w'
+                videoId='BY2mTMBkuFI'
             >
                 {/* mOFoh9FUR8w */}
                 {/* BY2mTMBkuFI */}
                 {/* WIl5F5rM5wQ */}
                 <Box
-
+                    as={motion.div}
                     w='full'
                     bgGradient='linear(to-r, #0e0c00c4, #00101dc2)'
                     backdropFilter='auto'
-                    backdropBlur='1px'
-                    pb={{base: 3, lg: '50px'}}
+                    initial={{ backdropBlur: '50px'}}
+                    animate={{ backdropBlur: '1px' }}
+                    transition='3s'
+                    // backdropBlur='1px'
+                    pb={{ base: 3, lg: '50px' }}
                     pt={{ base: '20px', md: '55px' }}
                 >
 
