@@ -37,12 +37,12 @@ export default function HomepageCarousel() {
             // animate={{ pathLength: 1 }}
             // opacity='0'
             // transition='1s background'
-            bgImage={bgImage}
-            bgRepeat="no-repeat"
-            bgPosition="center"
-            bgSize={`cover`}
+            // bgImage={bgImage}
+            // bgRepeat="no-repeat"
+            // bgPosition="center"
+            // bgSize={`cover`}
             // backgroundAttachment='fixed'
-            // pos='relative'
+            pos='relative'
             overflow={'hidden'}
             w='full'
         // top='-82px'
