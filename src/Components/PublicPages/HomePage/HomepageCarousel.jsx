@@ -7,6 +7,17 @@ import CarouselItemFour from './CarouselItems/CarouselItemFour';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import RightCardBoard from './CarouselItems/RightCardBoard';
+import { motion } from "framer-motion";
+
+import dynamic from 'next/dynamic';
+import Vimeo from '@u-wave/react-vimeo';
+import YouTube from '@u-wave/react-youtube';
+
+const YoutubeBackground = dynamic(() => import('react-youtube-background'), {
+    ssr: false
+})
+// import YoutubeBackground from 'react-youtube-background'
+
 
 export default function HomepageCarousel() {
 
@@ -20,78 +31,89 @@ export default function HomepageCarousel() {
         'https://blog.payoneer.com/wp-content/uploads/2020/03/Freelancer-Taxes-2.jpg'
     ]
 
-    const [bgImage, setBgImage] = useState(images[Math.floor(Math.random() * images.length)])
+    // const [bgImage, setBgImage] = useState(images[Math.floor(Math.random() * images.length)])
 
     return (
 
         <Box
-            // bgGradient='linear(to-r, #011f1dbf, #27aca5db)'
-            bgImage={bgImage}
-            bgRepeat="no-repeat"
-            bgPosition="center"
-            bgSize={`cover`}
-            backgroundAttachment='fixed'
+            // as={motion.div}
+            // animate={{ pathLength: 1 }}
+            // opacity='0'
+            // transition='1s background'
+            // bgImage={bgImage}
+            // bgRepeat="no-repeat"
+            // bgPosition="center"
+            // bgSize={`cover`}
+            // backgroundAttachment='fixed'
             pos='relative'
-            // top='-82px'
+            overflow={'hidden'}
+            w='full'
+        // top='-82px'
         >
-            <Box
-                w='full'
-                bgGradient='linear(to-r, #231d01bd, #4299e1ba)'
-                backdropFilter='auto'
-                backdropBlur='5px'
-                pb={3}
-                pt={{ base: '20px', md: '50px' }}
+            <YoutubeBackground
+                videoId='WIl5F5rM5wQ'
             >
 
-                <Container maxW='6xl' py={5}>
+                <Box
 
-                    <Flex
-                        direction={{
-                            base: 'column',
-                            lg: 'row'
-                        }}
-                        gap={3}
-                    // alignItems='center'
-                    >
+                    w='full'
+                    bgGradient='linear(to-r, #231d01bd, #00101dc2)'
+                    backdropFilter='auto'
+                    backdropBlur='10px'
+                    pb={3}
+                    pt={{ base: '20px', md: '50px' }}
+                >
 
-                        <Box w={{ base: 'full', lg: '60%' }}>
-                            <Carousel
-                                autoPlay={true}
-                                dynamicHeight={false}
-                                infiniteLoop={true}
-                                showIndicators={false}
-                                swipeable={true}
-                                showStatus={true}
-                                // centerMode={true}
-                                emulateTouch={true}
-                                showArrows={false}
-                                navigateWithKeyboard={true}
-                                onChange={() => setBgImage(images[Math.floor(Math.random() * images.length)])}
-                                // axis='vertical'
-                                autoFocus={true}
-                                transitionTime={0}
-                            >
-                                <CarouselItemOne bgImage={bgImage} />
-                                <CarouselItemTwo bgImage={bgImage} />
-                                <CarouselItemThree bgImage={bgImage} />
-                                <CarouselItemFour bgImage={bgImage} />
-                            </Carousel>
-                        </Box>
+                    <Container maxW='6xl' py={5}>
 
-                        {/* <Box width='50px' /> */}
+                        <Flex
+                            direction={{
+                                base: 'column',
+                                lg: 'row'
+                            }}
+                            gap={3}
+                        // alignItems='center'
+                        >
 
-                        <Box width={{
-                            base: 'full',
-                            // md: '350px',
-                            lg: '600px'
-                        }}>
-                            <RightCardBoard />
-                        </Box>
+                            <Box w={{ base: 'full', lg: '60%' }}>
+                                <Carousel
+                                    autoPlay={true}
+                                    dynamicHeight={false}
+                                    infiniteLoop={true}
+                                    showIndicators={false}
+                                    swipeable={true}
+                                    showStatus={true}
+                                    // centerMode={true}
+                                    emulateTouch={true}
+                                    showArrows={false}
+                                    navigateWithKeyboard={true}
+                                    // onChange={() => setBgImage(images[Math.floor(Math.random() * images.length)])}
+                                    // axis='vertical'
+                                    autoFocus={true}
+                                    transitionTime={0}
+                                >
+                                    <CarouselItemOne />
+                                    <CarouselItemTwo />
+                                    <CarouselItemThree />
+                                    <CarouselItemFour />
+                                </Carousel>
+                            </Box>
 
-                    </Flex>
+                            {/* <Box width='50px' /> */}
 
-                </Container>
-            </Box>
+                            <Box width={{
+                                base: 'full',
+                                // md: '350px',
+                                lg: '600px'
+                            }}>
+                                <RightCardBoard />
+                            </Box>
+
+                        </Flex>
+
+                    </Container>
+                </Box>
+            </YoutubeBackground>
         </Box>
 
     )

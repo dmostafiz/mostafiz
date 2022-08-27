@@ -1,10 +1,11 @@
 import { Box, Button, List, ListIcon, ListItem, Spacer, Text } from '@chakra-ui/react'
+import { motion } from 'framer-motion'
 import React from 'react'
 import { MdCheckCircle } from 'react-icons/md'
 
 export default function RightCardBoard() {
     return (
-        <Box w='full' bg='blackAlpha.500' p={5} rounded='md' textAlign={'left'}>
+        <Box as={motion.div} role='group' w='full' bg='blackAlpha.500' p={5} rounded='md' textAlign={'left'}>
 
             <Text color='white' fontWeight='bold' fontSize='28px'>Why you should hire us?</Text>
 
@@ -62,7 +63,7 @@ export default function RightCardBoard() {
             <Spacer h={5} />
 
 
-            <Button colorScheme='yellow' bg='yellow.400' size='lg' rounded='md' w='full'>
+            <Button  as={motion.button}  whileHover={{ scale: 1 }} colorScheme='yellow' bg='yellow.400' size='lg' rounded='md' w='full'>
                 GET A QUOTE !
             </Button>
 
