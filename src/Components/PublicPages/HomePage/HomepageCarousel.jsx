@@ -28,7 +28,14 @@ export default function HomepageCarousel() {
         'https://blog.payoneer.com/wp-content/uploads/2020/03/Freelancer-Taxes-2.jpg'
     ]
 
+    const videos = [
+        'mOFoh9FUR8w',
+        'BY2mTMBkuFI',
+        'WIl5F5rM5wQ',
+    ]
     const [bgImage, setBgImage] = useState(images[Math.floor(Math.random() * images.length)])
+    const [bgVideo, setBgVide] = useState(videos[Math.floor(Math.random() * videos.length)])
+
 
     return (
 
@@ -48,7 +55,7 @@ export default function HomepageCarousel() {
         // top='-82px'
         >
             <YoutubeBackground
-                videoId='BY2mTMBkuFI'
+                videoId={bgVideo}
             >
                 {/* mOFoh9FUR8w */}
                 {/* BY2mTMBkuFI */}
