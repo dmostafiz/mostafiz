@@ -20,7 +20,7 @@ const MainNav = () => {
     return (
 
         <>
-            {isOpen && <Alert bg='#ffd801' color='blackAlpha.900' zIndex={999} variant='solid' py={{ base: 1, md: 0 }}>
+            {isOpen && <Alert bg='blue.400' color='blackAlpha.900' zIndex={999} variant='solid' py={{ base: 1, md: 0 }}>
 
                 <Container maxW='full' px={0}>
                     <AlertDescription>
@@ -44,9 +44,13 @@ const MainNav = () => {
 
                 <Box
                     w='full'
-                    bgGradient='linear(to-r, #2372d6bd, #457ddd)'
+                    // bgGradient='linear(to-r, cyan.800, cyan.800)'
+                    bg='whiteAlpha.800'
                     backdropFilter='auto'
                     backdropBlur='20px'
+                    borderBottom='1.5px'
+                    boxShadow='sm'
+                    borderColor='blackAlpha.300'
                     py={2}
                 >
 
@@ -54,7 +58,7 @@ const MainNav = () => {
 
                         <Flex justify='space-between' alignItems='center'>
 
-                            <Box maxW={{ base: '150', lg: '180px' }} maxH='50px'>
+                            <Box maxW={{ base: '150', lg: '150px' }} maxH='50px'>
                                 <NextLink href='/'>
                                     <Link href='/'>
                                         <MainLogo />
@@ -63,7 +67,7 @@ const MainNav = () => {
                             </Box>
 
                             <Show above='lg'>
-                                <Flex gap={0} color='whiteAlpha.700'>
+                                <Flex gap={0} color='blackAlpha.800'>
 
 
                                     <Menu>
@@ -78,7 +82,7 @@ const MainNav = () => {
                                                 bg: 'blackAlpha.400'
                                             }}
                                             as={Button}
-                                            fontWeight='normal'
+                                            fontWeight='semibold'
                                         >
                                             Business
                                         </MenuButton>
@@ -106,7 +110,7 @@ const MainNav = () => {
                                             as='a'
                                             href='/showcase'
                                         >
-                                            <Text fontWeight='normal'>Showcase</Text>
+                                            <Text fontWeight='semibold'>Showcase</Text>
                                         </Button>
                                     </NextLink>
 
@@ -124,7 +128,7 @@ const MainNav = () => {
                                             as='a'
                                             href='/case_studies'
                                         >
-                                            <Text fontWeight='normal'>Case Studies</Text>
+                                            <Text fontWeight='semibold'>Case Studies</Text>
                                         </Button>
                                     </NextLink>
 
@@ -142,7 +146,7 @@ const MainNav = () => {
                                             as='a'
                                             href='/tech_articles'
                                         >
-                                            <Text fontWeight='normal'>Tech Articles</Text>
+                                            <Text fontWeight='semibold'>Tech Articles</Text>
                                         </Button>
                                     </NextLink>
 
@@ -161,7 +165,7 @@ const MainNav = () => {
                                             as='a'
                                             href='/how_it_works'
                                         >
-                                            <Text fontWeight='normal'>How it works?</Text>
+                                            <Text fontWeight='semibold'>How it works?</Text>
                                         </Button>
                                     </NextLink>
                                 </Flex>

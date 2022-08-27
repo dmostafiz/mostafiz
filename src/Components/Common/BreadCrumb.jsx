@@ -4,7 +4,8 @@ import NextLink from 'next/link';
 
 export default function BreadCrumb({ maxW = 'full', links }) {
     return (
-        <Box py={2} bg={'white'} fontWeight='semibold' shadow='sm'>
+        <Box pt={2} bg={'#f5f5f5'} fontWeight='semibold'>
+            
             <Container maxW={maxW}>
 
                 <Breadcrumb spacing='8px' separator={'/'}>

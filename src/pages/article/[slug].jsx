@@ -9,6 +9,7 @@ import SocialLinksAuthor from '../../Components/Common/SocialLinksAuthor'
 import PublicLayout from '../../Layouts/PublicLayout'
 import StickyBox from "react-sticky-box";
 import NewsLetterCard from '../../Components/Common/NewsLetterCard'
+import BreadCrumb from '../../Components/Common/BreadCrumb'
 
 export default function Article() {
 
@@ -16,25 +17,22 @@ export default function Article() {
 
   return (
     <PublicLayout>
-      <Box py={2} bg={'white'} fontWeight='semibold' shadow='sm'>
-        <Container maxW='6xl'>
 
-          <Breadcrumb spacing='8px' separator={'/'}>
-            <BreadcrumbItem>
-              <BreadcrumbLink href='#'>Home</BreadcrumbLink>
-            </BreadcrumbItem>
+      <BreadCrumb maxW='6xl' links={[
+        {
+          name: 'Home',
+          path: '/'
+        },
+        {
+          name: 'Articles',
+          path: '/tech_articles'
+        },
+        {
+          name: 'A detailed article about fiverr freelancing',
+          path: '#'
+        }
+      ]} />
 
-            <BreadcrumbItem>
-              <BreadcrumbLink href='#'>Articles</BreadcrumbLink>
-            </BreadcrumbItem>
-
-            <BreadcrumbItem>
-              <BreadcrumbLink href='#'>A detailed article about fiverr freelancing</BreadcrumbLink>
-            </BreadcrumbItem>
-
-          </Breadcrumb>
-        </Container >
-      </Box>
 
       <Container maxW='6xl'>
 

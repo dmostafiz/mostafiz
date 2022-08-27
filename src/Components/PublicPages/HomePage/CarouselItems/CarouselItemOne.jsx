@@ -8,7 +8,7 @@ export default function CarouselItemOne({ bgImage }) {
 
     return (
         <Box
-            bgImage={bgImage}
+            bgGradient='linear(to-r, #011f1dbf, #27aca5db)'
             bgRepeat="no-repeat"
             bgPosition="center"
             bgSize={`cover`}
@@ -18,7 +18,7 @@ export default function CarouselItemOne({ bgImage }) {
         >
             <Box
                 w='full'
-                bgGradient='linear(to-r,blackAlpha.700, #1968cb96)'
+                bgGradient='linear(to-r, #011f1dbf, #27aca5db)'
                 backdropFilter='auto'
                 backdropBlur='5px'
                 pb={3}
