@@ -37,7 +37,7 @@ export default function HomepageCarousel() {
             // animate={{ pathLength: 1 }}
             // opacity='0'
             // transition='1s background'
-            bgImage={bgImage}
+            // bgImage={bgImage}
             bgRepeat="no-repeat"
             bgPosition="center"
             bgSize={`cover`}
