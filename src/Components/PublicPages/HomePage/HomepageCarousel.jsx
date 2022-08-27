@@ -4,13 +4,15 @@ import React, { useEffect, useState } from 'react'
 // import { Fade } from 'react-reveal'
 // import ItemOne from './CarouselItems/ItemOne'
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Scrollbar, A11y, Lazy, Zoom, EffectFade, EffectCoverflow, Autoplay , Parallax, EffectCards, EffectCreative} from 'swiper';
+import { Navigation, Pagination, Scrollbar, A11y, Lazy, Zoom, EffectFade, EffectCoverflow, Autoplay, Parallax, EffectCards, EffectCreative } from 'swiper';
 // import ItemTwo from './CarouselItems/ItemTwo'
 // import RightCardBoard from './CarouselItems/RightCardBoard'
 import CarouselItemOne from './CarouselItems/CarouselItemOne'
 import CarouselItemTwo from './CarouselItems/CarouselItemTwo';
 import CarouselItemThree from './CarouselItems/CarouselItemThree';
 import CarouselItemFour from './CarouselItems/CarouselItemFour';
+import { Carousel } from 'react-responsive-carousel';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 export default function HomepageCarousel() {
 
@@ -38,7 +40,7 @@ export default function HomepageCarousel() {
         >
 
 
-            <Swiper
+            {/* <Swiper
                 modules={[Navigation, Pagination, Scrollbar, A11y, Lazy, Zoom,Parallax, EffectCards, EffectCreative, EffectFade, EffectCoverflow, Autoplay]}
                 effect='fade'
                 // spaceBetween={10}
@@ -56,7 +58,7 @@ export default function HomepageCarousel() {
                 zoom={true}
                 // navigation
             
-                pagination={{ clickable: true }}
+                // pagination={{ clickable: true }}
             // scrollbar={{ draggable: true }}
             >
                 <SwiperSlide><CarouselItemOne bgImage={bgImage} /> </SwiperSlide>
@@ -64,7 +66,24 @@ export default function HomepageCarousel() {
                 <SwiperSlide><CarouselItemThree bgImage={bgImage} /> </SwiperSlide>
                 <SwiperSlide><CarouselItemFour bgImage={bgImage} /> </SwiperSlide>
 
-            </Swiper>
+            </Swiper> */}
+
+
+            <Carousel
+                autoPlay={true}
+                dynamicHeight={false}
+                infiniteLoop={true}
+                showIndicators={false}
+                swipeable={true}
+                showStatus={false}
+                //  centerMode={false}
+                emulateTouch={true}
+                showArrows={false}
+            >
+                <CarouselItemOne bgImage={bgImage} />
+                <CarouselItemTwo bgImage={bgImage} />
+                <CarouselItemThree bgImage={bgImage} />
+            </Carousel>
 
         </Box>
     )
