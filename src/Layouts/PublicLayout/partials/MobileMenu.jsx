@@ -36,7 +36,7 @@ export default function MobileMenu() {
                     onClick={onOpen}
                     bg='transparent'
                     colorScheme='blackAlpha'
-                    color='white'
+                    color='blackAlpha.800'
                     icon={<HiMenuAlt3 size={32} />}
                 />
             }
@@ -48,8 +48,12 @@ export default function MobileMenu() {
                 finalFocusRef={btnRef}
             >
                 <DrawerOverlay />
-                <DrawerContent bg='transparent' bgGradient='linear(to-r, #2372d6bd, #457ddd)' backdropFilter='auto' backdropBlur='10px'>
-                    <DrawerCloseButton color='white'/>
+                <DrawerContent
+                    bg='whiteAlpha.800'
+                    // bgGradient='linear(to-r, #2372d6bd, #457ddd)' 
+                    backdropFilter='auto'
+                    backdropBlur='20px'>
+                    <DrawerCloseButton color='black' />
                     <DrawerHeader>
                         <Box maxW='180px'>
                             <MainLogo />
@@ -60,7 +64,7 @@ export default function MobileMenu() {
 
                         {/* <Divider /> */}
 
-                        <Input bg='blackAlpha.500' border='none' color='white' _focus={{border: '0px solid', ring: '0px'}} placeholder='Search here...' />
+                        <Input bg='blackAlpha.200' border='none' color='black' _focus={{ border: '0px solid', ring: '0px' }} placeholder='Search here...' />
 
                         <Spacer h={5} />
 
@@ -69,25 +73,25 @@ export default function MobileMenu() {
 
                             <NextLink href='/about_me'>
                                 <Link href='/about_me'>
-                                    <Text color='whiteAlpha.700' fontWeight='semibold'>About Me</Text>
+                                    <Text color='blackAlpha.700' fontWeight='semibold'>About Me</Text>
                                 </Link>
                             </NextLink>
 
                             <NextLink href='/about_me'>
                                 <Link href='/about_me'>
-                                    <Text color='whiteAlpha.700' fontWeight='semibold'>Projects</Text>
+                                    <Text color='blackAlpha.700' fontWeight='semibold'>Projects</Text>
                                 </Link>
                             </NextLink>
 
                             <NextLink href='/about_me'>
                                 <Link href='/about_me'>
-                                    <Text color='whiteAlpha.700' fontWeight='semibold'>My Achievments</Text>
+                                    <Text color='blackAlpha.700' fontWeight='semibold'>My Achievments</Text>
                                 </Link>
                             </NextLink>
 
                             <NextLink href='/about_me'>
                                 <Link href='/about_me'>
-                                    <Text color='whiteAlpha.700' fontWeight='semibold'>Tech Articles</Text>
+                                    <Text color='blackAlpha.700' fontWeight='semibold'>Tech Articles</Text>
                                 </Link>
                             </NextLink>
                         </Flex>
