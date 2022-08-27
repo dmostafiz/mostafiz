@@ -33,16 +33,16 @@ export default function HomepageCarousel() {
     return (
 
         <Box
-            as={motion.div}
+            // as={motion.div}
             // animate={{ pathLength: 1 }}
             // opacity='0'
-            transition='1s background'
+            // transition='1s background'
             bgImage={bgImage}
             bgRepeat="no-repeat"
             bgPosition="center"
             bgSize={`cover`}
-            backgroundAttachment='fixed'
-            pos='relative'
+            // backgroundAttachment='fixed'
+            // pos='relative'
             overflow={'hidden'}
             w='full'
         // top='-82px'
