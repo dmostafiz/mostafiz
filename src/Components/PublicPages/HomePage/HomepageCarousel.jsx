@@ -54,14 +54,10 @@ export default function HomepageCarousel() {
                 {/* BY2mTMBkuFI */}
                 {/* WIl5F5rM5wQ */}
                 <Box
-                    as={motion.div}
                     w='full'
                     bgGradient='linear(to-r, #0e0c00c4, #00101dc2)'
                     backdropFilter='auto'
-                    initial={{ backdropBlur: '50px'}}
-                    animate={{ backdropBlur: '1px' }}
-                    transition='3s'
-                    // backdropBlur='1px'
+                    backdropBlur='1px'
                     pb={{ base: 3, lg: '50px' }}
                     pt={{ base: '20px', md: '55px' }}
                 >
