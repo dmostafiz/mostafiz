@@ -107,23 +107,24 @@ const CaseStudies = () => {
                         subTitle="You will get details about our projects and keynotes"
                     />
 
-                   <Spacer h={5} />
+                    <Spacer h={5} />
 
-                    <SimpleGrid columns={{base: 1, sm: 2, lg:3}}  gap={2}>
+                    <SimpleGrid columns={{ base: 1, sm: 1, lg: 1 }} gap={5}>
 
                         {data.map((cs, index) => {
-                            return <Flex key={index} direction={'row'} gap={3} justify='space-between' py={3} px={2}  w={'full'} bg='blackAlpha.300' dropShadow={'2xl'}>
-                                
-                                <Box w={'50%'} minH={'150px'} shadow='md' dropShadow='2xl' rounded='2xl'>
+                            return <Flex key={index} direction={'row'} gap={{base:3, md:8}} justify='space-between' w={'full'} rounded='2xl' bg='blackAlpha.50' shadow={'sm'}>
 
-                                    <Image w='full' h='full' src={cs.image} rounded='2xl'/>
-
+                                <Box w={'50%'} h={{base:'150px', md:'300px'}} bgImage={cs.image}>
+                                    <Box w='full' h='full' bg='blackAlpha.400' backdropFilter='auto'
+                                        backdropBlur='7px'>
+                                        <Image w='full' h='full' src={cs.image} rounded='xl' objectFit='contain' />
+                                    </Box>
                                 </Box>
-                      
 
-                                <Flex  direction={'column'} justify='space-between' w='50%' h={'full'} py={2}>
 
-                                    <Text color='black' lineHeight={'20px'} fontWeight={'bold'} fontSize={'17px'}>{cs.title}</Text>
+                                <Flex direction={'column'} justify='space-between' w='50%' h={'full'} py={{base: 2, md: 6}}>
+
+                                    <Text color='black' lineHeight={{base: '20px', md: '20px'}} fontWeight={'bold'} fontSize={{base:'16px', md:'24px'}}>{cs.title}</Text>
 
                                     <Spacer h={6} />
 
@@ -132,7 +133,7 @@ const CaseStudies = () => {
 
                                         </Box>
 
-                                        <Button size='sm' rounded='full' colorScheme='yellow'>Read Details</Button>
+                                        <Button size={{base: 'sm', md: 'md'}} rounded='full' colorScheme='yellow'>Read Details</Button>
                                     </Flex>
 
                                 </Flex>

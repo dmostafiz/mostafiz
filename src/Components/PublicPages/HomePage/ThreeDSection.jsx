@@ -17,7 +17,7 @@ export default function ThreeDSection() {
 
 
     return (
-        <Box as='div' pt={{ base: 5, md: 5 }} bg='#f2f2f2'>
+        <Box as='div'  pb={{ base: 5, lg: 10 }} pt={{ base: 5, lg: 16 }} bg='#f2f2f2'>
 
             <Container maxW='6xl'>
 

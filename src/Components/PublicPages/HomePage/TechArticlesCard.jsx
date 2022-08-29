@@ -15,12 +15,12 @@ export default function TechArticlesCard() {
                     // subTitle="Read latest articles i written about modern technologies, business concepts and many more things"
                 />
 
-                <Wrap spacing={3}>
+                <Wrap spacing={{base:1, md:2}}>
 
                     <NextLink href='#'>
                         <Link href='#'>
                             <Tag
-                                size='lg'
+                                size={{base: 'md', md:'lg'}}
                                 borderRadius='full'
                                 variant='outline'
                                 colorScheme='gray'
@@ -33,7 +33,7 @@ export default function TechArticlesCard() {
                     <NextLink href='#'>
                         <Link href='#'>
                             <Tag
-                                size='lg'
+                                size={{base: 'md', md:'lg'}}
                                 borderRadius='full'
                                 variant='outline'
                                 colorScheme='gray'
@@ -46,7 +46,7 @@ export default function TechArticlesCard() {
                     <NextLink href='#'>
                         <Link href='#'>
                             <Tag
-                                size='lg'
+                                size={{base: 'md', md:'lg'}}
                                 borderRadius='full'
                                 variant='outline'
                                 colorScheme='gray'
@@ -59,7 +59,7 @@ export default function TechArticlesCard() {
                     <NextLink href='#'>
                         <Link href='#'>
                             <Tag
-                                size='lg'
+                                size={{base: 'md', md:'lg'}}
                                 borderRadius='full'
                                 variant='outline'
                                 colorScheme='gray'
@@ -72,7 +72,7 @@ export default function TechArticlesCard() {
                     <NextLink href='#'>
                         <Link href='#'>
                             <Tag
-                                size='lg'
+                                size={{base: 'md', md:'lg'}}
                                 borderRadius='full'
                                 variant='outline'
                                 colorScheme='gray'
@@ -85,7 +85,7 @@ export default function TechArticlesCard() {
                     <NextLink href='#'>
                         <Link href='#'>
                             <Tag
-                                size='lg'
+                                size={{base: 'md', md:'lg'}}
                                 borderRadius='full'
                                 variant='outline'
                                 colorScheme='gray'
@@ -98,7 +98,7 @@ export default function TechArticlesCard() {
                     <NextLink href='#'>
                         <Link href='#'>
                             <Tag
-                                size='lg'
+                                size={{base: 'md', md:'lg'}}
                                 borderRadius='full'
                                 variant='outline'
                                 colorScheme='gray'

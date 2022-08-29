@@ -12,7 +12,7 @@ export default function WebsiteSection() {
     })
 
     return (
-        <Box bg='white' py={{ base: 18, lg: 6 }}>
+        <Box bg='white' py={{ base: 18, lg: 20 }}>
 
             <Container maxW='6xl'>
 

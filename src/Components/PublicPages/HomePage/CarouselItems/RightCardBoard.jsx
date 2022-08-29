@@ -11,8 +11,8 @@ export default function RightCardBoard() {
 
             <Spacer h={3} />
 
-            <Text color='white' >
-                I have more than 7 years of extensive experience in participating in all phases of software development cycles. Very proficient in technology and writing code to build reliable and user-friendly systems.
+            <Text color='white' fontSize={'13px'}>
+                We are building fully customized mobile and web applications with 100% success rate on top marketplaces like Fiverr and Upwork. We maintain ideal phases of a software development process that makes our work successful & increasing our returning client
             </Text>
 
             <Spacer h={5} />
@@ -24,35 +24,30 @@ export default function RightCardBoard() {
 
                 <Box>
                     <List spacing={2}>
+
                         <ListItem>
                             <ListIcon as={MdCheckCircle} color='green.500' />
-                            <Text as='span' fontSize={{ base: '14px', md: '16' }}>
-                                Native & Web apps (PWA, Android, IOS)
+                            <Text as='span' fontSize={{ base: '14px', md: '16px' }}>
+                                Test Driven Development (TDD)
                             </Text>
                         </ListItem>
                         <ListItem>
                             <ListIcon as={MdCheckCircle} color='green.500' />
-                            <Text as='span' fontSize={{ base: '14px', md: '16' }}>
-                                Online business - Problems and solutions
-                            </Text>
-                        </ListItem>
-                        <ListItem>
-                            <ListIcon as={MdCheckCircle} color='green.500' />
-                            <Text as='span' fontSize={{ base: '14px', md: '16' }}>
-                                Blockchain technology (DAPP)
+                            <Text as='span' fontSize={{ base: '14px', md: '16px' }}>
+                                Customization based on your feedback
                             </Text>
                         </ListItem>
                         {/* You can also use custom icons from react-icons */}
                         <ListItem>
                             <ListIcon as={MdCheckCircle} color='green.500' />
-                            <Text as='span' fontSize={{ base: '14px', md: '16' }}>
-                                Ecommerce, Affiliates, and MLM solutions
+                            <Text as='span' fontSize={{ base: '14px', md: '16px' }}>
+                                Continuous Integration & deployment
                             </Text>
                         </ListItem>
                         <ListItem>
                             <ListIcon as={MdCheckCircle} color='green.500' />
-                            <Text as='span' fontSize={{ base: '14px', md: '16' }}>
-                                EdTech, Fintech and other solutions
+                            <Text as='span' fontSize={{ base: '14px', md: '16px' }}>
+                                Focused on performance & security
                             </Text>
                         </ListItem>
                     </List>
@@ -63,7 +58,7 @@ export default function RightCardBoard() {
             <Spacer h={5} />
 
 
-            <Button  as={motion.button}  whileHover={{ scale: 1 }} colorScheme='yellow' bg='yellow.400' size='lg' rounded='md' w='full'>
+            <Button as={motion.button} whileHover={{ scale: 1 }} colorScheme='yellow' bg='yellow.400' size='lg' rounded='md' w='full'>
                 GET A QUOTE !
             </Button>
 

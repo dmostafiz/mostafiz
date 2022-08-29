@@ -13,7 +13,7 @@ export default function MobileAppSection() {
       })
 
     return (
-        <Box bg='#f5f5f5' py={{ base: 18, lg: 6 }}>
+        <Box bg='#f5f5f5' py={{ base: 18, lg: 20 }}>
 
             <Container maxW='6xl'>
 

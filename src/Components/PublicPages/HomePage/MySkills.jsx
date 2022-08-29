@@ -6,7 +6,7 @@ import IntroVideoModal from '../../Common/IntroVideoModal'
 
 export default function MySkills() {
     return (
-        <Box as='section' pt={{base: 8, lg: 10}} pb={10}>
+        <Box as='section' pt={{base: 8, lg: 16}} pb={{base:6, lg:16}}>
             <Container maxW='6xl'>
                 <Flex direction={{ base: 'column-reverse', lg: 'row' }} alignItems='center' gap={10}>
 

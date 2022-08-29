@@ -9,7 +9,7 @@ import StickyBox from "react-sticky-box";
 
 export default function LatestArticles() {
     return (
-        <Box as='section' py={3} bg='white'>
+        <Box as='section' py={{base:6, lg:16}} bg='white'>
             <Container maxW='6xl' p={5}>
 
                 <SectionTitle
@@ -22,7 +22,7 @@ export default function LatestArticles() {
                     <NextLink href='#'>
                         <Link href='#'>
                             <Tag
-                                size='lg'
+                                size={{base: 'md', md:'lg'}}
                                 borderRadius='full'
                                 variant='outline'
                                 colorScheme='gray'
@@ -36,7 +36,7 @@ export default function LatestArticles() {
                     <NextLink href='#'>
                         <Link href='#'>
                             <Tag
-                                size='lg'
+                                size={{base: 'md', md:'lg'}}
                                 borderRadius='full'
                                 variant='outline'
                                 colorScheme='gray'
@@ -50,7 +50,7 @@ export default function LatestArticles() {
                     <NextLink href='#'>
                         <Link href='#'>
                             <Tag
-                                size='lg'
+                                size={{base: 'md', md:'lg'}}
                                 borderRadius='full'
                                 variant='outline'
                                 colorScheme='gray'
@@ -64,7 +64,7 @@ export default function LatestArticles() {
                     <NextLink href='#'>
                         <Link href='#'>
                             <Tag
-                                size='lg'
+                                size={{base: 'md', md:'lg'}}
                                 borderRadius='full'
                                 variant='outline'
                                 colorScheme='gray'
@@ -78,7 +78,7 @@ export default function LatestArticles() {
                     <NextLink href='#'>
                         <Link href='#'>
                             <Tag
-                                size='lg'
+                                size={{base: 'md', md:'lg'}}
                                 borderRadius='full'
                                 variant='outline'
                                 colorScheme='gray'
@@ -92,7 +92,7 @@ export default function LatestArticles() {
                     <NextLink href='#'>
                         <Link href='#'>
                             <Tag
-                                size='lg'
+                                size={{base: 'md', md:'lg'}}
                                 borderRadius='full'
                                 variant='outline'
                                 colorScheme='gray'
@@ -106,7 +106,7 @@ export default function LatestArticles() {
                     <NextLink href='#'>
                         <Link href='#'>
                             <Tag
-                                size='lg'
+                                size={{base: 'md', md:'lg'}}
                                 borderRadius='full'
                                 variant='outline'
                                 colorScheme='gray'
@@ -122,7 +122,7 @@ export default function LatestArticles() {
                 <Spacer h={8} />
 
                 <Box>
-                    <SimpleGrid columns={{ base: 1, sm: 1, md: 1, lg: 2 }} gap={8}>
+                    <SimpleGrid columns={{ base: 1, sm: 1, md: 1, lg: 2 }} gap={{base:3, lg:8}}>
 
                         <ArticleListCardSmall article={{
                             title: 'detailed article about fiverr freelancing',
