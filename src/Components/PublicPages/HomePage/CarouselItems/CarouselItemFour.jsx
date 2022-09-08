@@ -34,7 +34,7 @@ export default function CarouselItemFour({ bgImage }) {
             <Spacer h={10} />
 
             <Flex justify={'left'} align='center' gap='2'>
-                <Image maxW='170px' src='/fiverr.png' />
+                <Image alt='' maxW='170px' src='/fiverr.png' />
 
                 <Button as='a' href='#' target='_blank' rel='noopener,norefferer' _hover={{ bg: '#1ec7b2' }} bg='#33d0bb' color='white' size='lg' shadow='sm' rounded='full'>
                     Get Started Today
