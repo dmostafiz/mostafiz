@@ -119,7 +119,7 @@ const CaseStudies = () => {
                                     <Box w={{ base: 'full', md: '45%' }} h={{ base: '150px', md: '320px' }} bgImage={cs.image}>
                                         <Box w='full' h='full' bg='blackAlpha.400' backdropFilter='auto'
                                             backdropBlur='7px'>
-                                            <Image w='full' h='full' src={cs.image} rounded='xl' objectFit='contain' />
+                                            <Image w='full' h='full' src={cs.image} rounded='xl' objectFit='contain' alt='Image' />
                                         </Box>
                                     </Box>
 

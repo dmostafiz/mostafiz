@@ -18,7 +18,7 @@ export default function AboutMeComponent() {
                         base: '100%',
                         lg: '50%'
                     }} bg='transparent'>
-                        {/* <Image w='full' src='/img/mostafiz2.jpg' rounded='xl' /> */}
+                        {/* <Image alt='Slider' w='full' src='/img/mostafiz2.jpg' rounded='xl' /> */}
                         <Swiper
                             modules={[Navigation, Pagination, Scrollbar, A11y, Zoom, EffectFade, Autoplay]}
                             effect='fade'
@@ -32,14 +32,14 @@ export default function AboutMeComponent() {
                             pagination={{ clickable: true }}
                         // scrollbar={{ draggable: true }}
                         >
-                            <SwiperSlide><Image w='full' src='/img/mostafiz1.jpg' /></SwiperSlide>
-                            <SwiperSlide><Image w='full' src='/img/mostafiz2.jpg' /></SwiperSlide>
-                            <SwiperSlide><Image w='full' src='/img/mostafiz3.jpg' /></SwiperSlide>
-                            {/* <SwiperSlide><Image w='full' src='/img/mostafiz4.jpg' /></SwiperSlide> */}
-                            {/* <SwiperSlide><Image w='full' src='/img/mostafiz5.jpg' /></SwiperSlide> */}
-                            {/* <SwiperSlide><Image w='full' src='/img/mostafiz6.jpg' /></SwiperSlide> */}
-                            <SwiperSlide><Image w='full' src='/img/mostafiz7.jpg' /></SwiperSlide>
-                            <SwiperSlide><Image w='full' src='/img/mostafiz8.jpg' /></SwiperSlide>
+                            <SwiperSlide><Image alt='Slider' w='full' src='/img/mostafiz1.jpg' /></SwiperSlide>
+                            <SwiperSlide><Image alt='Slider' w='full' src='/img/mostafiz2.jpg' /></SwiperSlide>
+                            <SwiperSlide><Image alt='Slider' w='full' src='/img/mostafiz3.jpg' /></SwiperSlide>
+                            {/* <SwiperSlide><Image alt='Slider' w='full' src='/img/mostafiz4.jpg' /></SwiperSlide> */}
+                            {/* <SwiperSlide><Image alt='Slider' w='full' src='/img/mostafiz5.jpg' /></SwiperSlide> */}
+                            {/* <SwiperSlide><Image alt='Slider' w='full' src='/img/mostafiz6.jpg' /></SwiperSlide> */}
+                            <SwiperSlide><Image alt='Slider' w='full' src='/img/mostafiz7.jpg' /></SwiperSlide>
+                            <SwiperSlide><Image alt='Slider' w='full' src='/img/mostafiz8.jpg' /></SwiperSlide>
 
                         </Swiper>
                     </Box>
