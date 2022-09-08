@@ -89,86 +89,90 @@ const Showcase = () => {
     return (
         <PublicLayout>
 
+            <Box bg='white'>
 
-            <BreadCrumb maxW='6xl' links={[
-                {
-                    name: 'Home',
-                    path: '/'
-                },
-                {
-                    name: 'Showcase',
-                    path: '/showcase'
-                }
-            ]} />
+                <BreadCrumb maxW='6xl' links={[
+                    {
+                        name: 'Home',
+                        path: '/'
+                    },
+                    {
+                        name: 'Showcase',
+                        path: '/showcase'
+                    }
+                ]} />
 
 
-            <Container maxW='6xl' py={3}>
+                <Container maxW='6xl' py={3}>
 
-                <Box w='full' h='auto' p={3} bg='white' shadow='sm'>
-                    <SectionTitle
-                        title='Showcase'
-                        subTitle="Check out hundreds of our hand-built projects"
-                    />
+                    <Box w='full' h='auto' p={3} bg='white' shadow='sm'>
+                        <SectionTitle
+                            title='Showcase'
+                            subTitle="Check out hundreds of our hand-built projects"
+                        />
 
-                    <Spacer h={5} />
+                        <Spacer h={5} />
 
-                    <Box overflow={'hidden'}>
-                        <ResponsiveMasonry
-                            columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}
-                        >
-                            <Masonry
-                                gutter='15px'
+                        <Box overflow={'hidden'}>
+                            <ResponsiveMasonry
+                                columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}
                             >
+                                <Masonry
+                                    gutter='15px'
+                                >
 
-                                {data.map((mes, index) => {
-                                    return <Box role="group" key={index}>
-                                        <Box _groupHover={{ rounded: '3xl' }} rounded='xl' position='relative' overflow='hidden' borderColor='blackAlpha.200' shadow='md' w='full'>
+                                    {data.map((mes, index) => {
+                                        return <Box role="group" key={index}>
+                                            <Box _groupHover={{ rounded: '3xl' }} rounded='xl' position='relative' overflow='hidden' borderColor='blackAlpha.200' shadow='md' w='full'>
 
-                                            <Image _groupHover={{ rounded: '3xl' }} rounded='xl' transition='.3s linear' zIndex={50} position='relative' w='full' src={mes.image} />
+                                                <Image _groupHover={{ rounded: '3xl' }} rounded='xl' transition='.3s linear' zIndex={50} position='relative' w='full' src={mes.image} />
 
-                                            <Box
-                                                as={motion.div}
-                                                position='absolute'
-                                                top={0}
-                                                // zIndex={0}
-                                                w='full'
-                                                h='full'
-                                                bg='blackAlpha.50'
-                                                transition='.3s linear'
-                                                rounded='xl'
-                                                _groupHover={{
-                                                    bg: 'blackAlpha.700',
-                                                    zIndex: 99,
-                                                    shadow: '2xl',
-                                                    rounded: '3xl'
-                                                }}
-                                            >
-                                                <Center w='full' h='full'>
-                                                    <Flex direction='column' alignItems='center' px={5} textAlign='center' gap={3}>
-                                                        <Text color='whiteAlpha.900' fontSize='24px' lineHeight='24px' fontWeight='semibold'>{mes.title}</Text>
-                                                        <Link _hover={{
-                                                            textDecoration: 'none'
-                                                        }} href={mes.url} target='_blank'>
-                                                            <Button size='sm' colorScheme='yellow'>Live project</Button>
-                                                        </Link>
-                                                    </Flex>
-                                                </Center>
+                                                <Box
+                                                    as={motion.div}
+                                                    position='absolute'
+                                                    top={0}
+                                                    // zIndex={0}
+                                                    w='full'
+                                                    h='full'
+                                                    bg='blackAlpha.50'
+                                                    transition='.3s linear'
+                                                    rounded='xl'
+                                                    _groupHover={{
+                                                        bg: 'blackAlpha.700',
+                                                        zIndex: 99,
+                                                        shadow: '2xl',
+                                                        rounded: '3xl'
+                                                    }}
+                                                >
+                                                    <Center w='full' h='full'>
+                                                        <Flex direction='column' alignItems='center' px={5} textAlign='center' gap={3}>
+                                                            <Text color='whiteAlpha.900' fontSize='24px' lineHeight='24px' fontWeight='semibold'>{mes.title}</Text>
+                                                            <Link _hover={{
+                                                                textDecoration: 'none'
+                                                            }} href={mes.url} target='_blank'>
+                                                                <Button size='sm' colorScheme='yellow'>Live project</Button>
+                                                            </Link>
+                                                        </Flex>
+                                                    </Center>
 
+                                                </Box>
                                             </Box>
                                         </Box>
-                                    </Box>
-                                })}
+                                    })}
 
 
-                            </Masonry>
-                        </ResponsiveMasonry>
+                                </Masonry>
+                            </ResponsiveMasonry>
+
+                        </Box>
+
 
                     </Box>
 
+                </Container>
+            </Box>
 
-                </Box>
 
-            </Container>
         </PublicLayout>
     );
 }

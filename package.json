@@ -10,6 +10,7 @@
     "server": "nodemon ./server/server.js"
   },
   "dependencies": {
+    "@chakra-ui/icons": "^2.0.9",
     "@chakra-ui/react": "^2.2.4",
     "@emotion/react": "^11.10.0",
     "@emotion/styled": "^11.10.0",
@@ -32,6 +33,7 @@
     "react-responsive-masonry": "^2.1.5",
     "react-reveal": "^1.2.2",
     "react-slick": "^0.29.0",
+    "react-stars": "^2.2.5",
     "react-sticky-box": "^1.0.2",
     "react-youtube-background": "^1.0.0",
     "swiper": "^8.3.2",

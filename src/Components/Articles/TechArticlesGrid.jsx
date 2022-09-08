@@ -1,15 +1,14 @@
 import React from 'react'
-import { Box, Button, Center, Stack } from '@chakra-ui/react'
-import ArticleGridCard from '../../Articles/ArticleGridCard '
-import ArticleListCard from '../../Articles/ArticleListCard'
+import { Box, Button, Center, SimpleGrid, Stack } from '@chakra-ui/react'
+import ArticleGridCard from './ArticleGridCard '
 
 
-export default function TechArticlesCard() {
+export default function TechArticlesGrid() {
     return (
         <Box as='div'>
-            <Stack direction='column' gap={2}>
+            <SimpleGrid direction='column' columns={{base:1, sm:2, lg:3}} spacing={10}>
 
-                <ArticleListCard article={{
+                <ArticleGridCard article={{
                     title: 'detailed article about fiverr freelancing',
                     slug: 'detailed_article_about_fiverr',
                     body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil porro ab dignissimos provident soluta eius natus illo commodi libero, neque, minus eum adipisci quas magnam asperiores, reprehenderit sint a quisquam atque. Eaque in dolores aliquam perferendis aspernatur...',
@@ -21,7 +20,7 @@ export default function TechArticlesCard() {
                 }} />
 
 
-                <ArticleListCard article={{
+                <ArticleGridCard article={{
                     title: 'How does fiverr works & make money',
                     slug: 'how_does_fiverr_works',
                     body: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo magni, optio quos voluptatibus assumenda at? Sint fugit rerum, repellendus nulla deserunt commodi natus illum asperiores, similique enim expedita laudantium necessitatibus...',
@@ -33,7 +32,7 @@ export default function TechArticlesCard() {
                 }} />
 
 
-                <ArticleListCard article={{
+                <ArticleGridCard article={{
                     title: 'Fully custom web app develop with',
                     slug: 'fully_custom_web_app_development',
                     body: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo magni, optio quos voluptatibus assumenda at? Sint fugit rerum, repellendus nulla deserunt commodi natus illum asperiores, similique enim expedita laudantium necessitatibus similique enim expedita laudantium necessitatibus...',
@@ -44,11 +43,11 @@ export default function TechArticlesCard() {
                     }
                 }} />
 
-                <Center>
-                    <Button variant='yellow' maxW='300px' bg='yellow.400' rounded='full'>Read More Articles</Button>
-                </Center>
+            </SimpleGrid>
 
-            </Stack>
+            <Center py={5}>
+                <Button variant='yellow' maxW='300px' bg='yellow.400' rounded='full'>Read More Articles</Button>
+            </Center>
         </Box>
     )
 }
