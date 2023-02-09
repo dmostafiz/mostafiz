@@ -177,9 +177,12 @@ const MainNav = () => {
                                         <Link href='/sign_in' bg='white' rounded='full' px={'3'} py={'2'}>Sign In</Link>
                                     </NextLink>
 
-                                    <NextLink href='/sign_in'>
-                                        <Link href='/sign_in' bg='yellow.400' rounded='full' px={'3'} py={'2'}>Be a partner</Link>
-                                    </NextLink>
+                                    <a href='https://client.mostafiz.dev/auth/register' >
+                                        <Box bg='yellow.400' rounded='full' px={'3'} py={'2'}>
+                                            Be a partner
+                                        </Box>
+                                    </a>
+
                                     {/* <Button colorScheme='yellow' bg='yellow.400' rounded='full'>Be a partner</Button> */}
                                 </Flex>
                             </Show>
